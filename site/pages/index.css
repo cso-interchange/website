@@ -1,18 +1,11 @@
-body {
-	max-width: 40em;
-	margin: 2em auto;
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 5.0em);
 }
-h1 {
-	font-weight: lighter;
-	font-size: 2.5em;
-}
-samp {
-	color: #000;
-}
-dt {
-	font-family: monospace;
-}
-dl p {
-	font-style: italic;
-	color: #545454;
+
+.Aligner-item {
+  max-width: 50%;
+  font-size: 2.0em;
 }
