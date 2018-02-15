@@ -1,0 +1,8 @@
+{
+    "output": "./build",
+    "site": "./site",
+    "helpers": "./site/helpers",
+    "layouts": "./site/layouts",
+    "pages": "./site/pages",
+    "partials": "./site/partials"
+}
