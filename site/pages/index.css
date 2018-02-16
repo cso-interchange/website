@@ -1,9 +1,16 @@
-.banner {
+.background {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#455daa+0,3294d0+66,2aabe0+100 */
-	background: linear-gradient(45deg, #455daa 0%,#3294d0 66%,#2aabe0 100%);
+	/*background: linear-gradient(45deg, #455daa 0%,#3294d0 66%,#2aabe0 100%);*/
 	min-height: 709px;
-	position: relative;
-    overflow: hidden;
+	position: absolute;
+    width: 100%;
+    background-image: url(/asset/image/cio-ciso-background.svg);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+}
+.header-container {
+	min-height: 709px;
 }
 body {
 	padding-top: 0;
@@ -15,7 +22,7 @@ body {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    padding: 1em 2em;
+    padding: 0.9em 2em;
     font-size: 11pt;
 }
 .register {
@@ -25,21 +32,17 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 2em;
-	margin-bottom: 3.7em;
+	margin-bottom: 3.6em;
 }
 .logo {
 	margin-left: 30px;
 }
-.topic-container {
-	margin: 0 auto;
-}
 .inaugural {
 	color: #34C3FF;
 	text-transform: uppercase;
-	
 	font-weight: 500;
-	margin-bottom: 3px;
-    font-size: 16.1pt;
+	margin-bottom: 0;
+    font-size: 16.6pt;
 }
 h1 {
 	color: #fff;
@@ -54,31 +57,45 @@ h1 {
 	color: #fff;
 	font-weight: 500;
     font-size: 17.8pt;
-    margin-top: 14px;
+    margin-top: 11px;
     margin-bottom: 27px;
 }
 .cio-ciso {
 	position: absolute;
 	width: 100%;
-	bottom: -48px;
+	bottom: -73px;
 }
 .down-arrow {
     margin-left: 214px;
 }
 .strip-container {
-	margin-top: -4em;
+	height: 100px;
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    position: relative;
 }
-.strip {
+.strip.transparent {
+    width: 13%;
+}
+.strip.white {
     background-color: #fff;
-    padding-top: 22px;
-    min-height: 4em;
+    width: 87%;
 }
 .content-container {
-    margin-top: -3em;
+    margin-top: -5em;
+}
+p {
+    font-size: 12.6pt;
+    margin-bottom: 1.5em;
 }
 h2 {
 	font-weight: 400;
 	color: #1D2737;
+    font-size: 29.5pt;
+}
+h2.about {
+	margin-bottom: 23px;
 }
 @media (min-width: 720px) {
 	.q-company-carousel__slide {
@@ -107,6 +124,18 @@ h2 {
 }
 .location-container {
 	margin-bottom: 5em;
+	display: flex;
+}
+.location-subcontainer {
+	width: 50%;
+}
+.hotel-photo {
+	float: right;
+}
+.location-info {
+	margin-left: 50px;
+	max-width: 450px;
+	margin-top: 100px;
 }
 .directions,
 .bio-link {
@@ -126,15 +155,41 @@ h2 {
 .quote-container {
 	margin-bottom: 5em;
 }
+/*.footer-container {
+	max-width: none;
+	padding: 0;
+}
 .footer-container .q-grid__column {
 	min-height: 551px;
 }
-.updates {
+.updates-container {
 	background-color: #1D2737;
 	color: #fff;
 	font-size: 20pt;
 	padding-left: 150px;
 	padding-top: 100px;
+}
+.updates {
+	margin-left: 30px;
+}*/
+.footer-container {
+	display: flex;
+	min-height: 551px;
+}
+.footer-subcontainer {
+	padding: 100px 0;
+}
+.updates-container {
+	width: 50%;
+	background-color: #1D2737;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+}
+.social-container {
+	width: 50%;
+	background-color: #F7FAFC;
+	padding-left: 100px;
 }
 .abstract {
 	margin-top: 1em;
@@ -150,11 +205,6 @@ h2 {
 }
 .updates-form {
 	margin-bottom: 150px;
-}
-.social {
-	background-color: #F7FAFC;
-	padding-left: 100px;
-	padding-top: 120px;
 }
 .follow-us {
 	color: #1D2737;
@@ -207,14 +257,17 @@ h2 {
     margin-top: 10em;
     margin-bottom: 10em;
 }
+.speaker-container .q-grid__column {
+	width: 100%;
+}
 .register-container h2 {
-    font-size: 26pt;
+    font-size: 28.7pt;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: -6px;
 }
 .register-container h3 {
     color: #1D2737;
-    font-size: 19pt;
+    font-size: 21.2pt;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 38px;
