@@ -1,32 +1,69 @@
 <!DOCTYPE html>
-<html lang="{{page.lang}}">
+<html lang="{{#if page.lang}}{{page.lang}}{{else}}{{site.lang}}{{/if}}" class="no-js">
 <head>
 
     <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-    <title>
-        {{#if page.title}}
-            {{page.title}}
-        {{else}}
-            {{site.title}}
+    {{#block "meta-tags"}}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{#if page.description}}
+            <meta name="description" content="{{page.description}}" class="swiftype" data-type="text">
         {{/if}}
-    </title>
+    {{/block}}
+    <title>{{page.title}}</title>
+
+    {{! preconnect to CDNs to set up DNS/TCP/TLS connections ahead of time}}
+    {{#block "hints"}}
+        {{#if site.env.production}}
+            <link rel="preconnect" href="https://rum-static.pingdom.net" crossorigin>
+            <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+        {{/if}}
+        <link rel="preconnect" href="https://d1uyme8f6ss6qi.cloudfront.net" crossorigin>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="preconnect" href="https://cdn.rawgit.com" crossorigin>
+    {{/block}}
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" sizes="32x32">
+    <link rel="icon" href="/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/favicon-256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png">
+    <link rel="mask-icon" href="/mask-icon.svg" color="#ED2E26">
 
     {{#block "styles"}}
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/asset/stylesheet/common.css">
+    {{/block}}
+
+    {{! script tags in scripts-head should be async}}
+    {{#block "scripts-head"}}
     {{/block}}
 
 </head>
 <body>
 
-    {{#block "content"}}
-        <h1>Hello, World!</h1>
-    {{/block}}
-
-    {{> footer}}
+    {{#block "content"}}{{/block}}
 
     {{#block "scripts"}}
-        <script src="/scripts.js"></script>
+        <!-- polyfills -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha384-a3YBYay0H8GoZiGBLXAhPS9QXJrDy8BgrAE9MDudcVn/UyxSK30xxZoqbYjRsf8o" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-sham.min.js" integrity="sha384-Ay+Iy+aRzuF4vhPZXIfjKYcl+6LqMNBv+VBsbHUqRnzhKZWADUDBriILOHpg/1uT" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/native-promise-only/0.8.1/npo.js" integrity="sha384-G1LHj+SfI1gc9FouJCB24YnAzzjhDNfhwrUPgo2Fb4Jde/lBnkHXjd83QvEZraLK" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/iamdustan/smoothscroll/3dec2146/dist/smoothscroll.js" integrity="sha384-aOWNA3pTVo+UjgQtkm7LfRXs2U9D7e5sKS80Udp+xkEGnY3cl+C7xMPp/OA6gvPF" crossorigin="anonymous"></script>
+
+        <!-- libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha384-zZbyq8BQ4BvQcv4xPxkJWWGPSVW6z+MufIHfxNTdnFQwc7J2Idz0zxeP6/bMqWJn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js" integrity="sha384-nK4khbhvZ/TNQaGnwee6RVFCDRfxcrLKZZqKCVqk1rF9AT8Etq3UZYCXZ7CCAd0K" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js" integrity="sha384-WqEScjxyw0yOP2ju1kbQJ8APJNbmaWpdAZSwRi/nraoM49F+HxMDJsde89iJf7aZ" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js" integrity="sha384-oM7KUiyhXXYyjNHgi9mU4jOEnYws3nPIVNCOrrXOR+brNqWehako/J+xpY5lT2Ly" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineLite.min.js" integrity="sha384-IJw13RXI83M+WFl5jv6VPK+mynJi49/m0B8+FrzGA7bTLF0dVx+TaloW/ojYVGWl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js" integrity="sha384-cGM7lEGgAGtB8gsizZzUz37H5ILaVXioDdKzbmdif6rKBYvZY+5BGcn9H8FgdYPc" crossorigin="anonymous"></script>
+        <script src="/asset/script/common.js"></script>
     {{/block}}
 
 </body>
