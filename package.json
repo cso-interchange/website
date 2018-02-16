@@ -21,7 +21,7 @@
     "watch:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages --watch",
     "watch:html": "orchid-lead watch",
     "watch:js": "babel site/pages/ --out-dir build --ignore data.js --source-maps --watch",
-    "watch:static": "chokidar 'site/static/**/*' -c 'rsync -arv site/static/ build/'",
+    "watch:static": "chokidar --initial 'site/static/**/*' -c 'rsync --archive --info=name site/static/ build'",
     "watch:server": "npm run browser-sync",
     "browser-sync": "browser-sync start --config bs-config.js"
   },
