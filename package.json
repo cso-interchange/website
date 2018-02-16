@@ -7,10 +7,11 @@
     "email": "github@keithws.net"
   },
   "scripts": {
-    "build": "run-p build:*",
+    "build": "mkdir -p build && run-p build:*",
     "build:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages",
     "build:html": "orchid-lead build --save-future-pub-dates",
     "build:js": "babel site/pages/ --out-dir build --ignore data.js --source-maps",
+    "build:static": "cp -pR site/static/ build/",
     "lint": "run-s lint:*",
     "lint:es": "eslint \"site/**/*.js\"",
     "start": "npm run watch",
@@ -20,6 +21,7 @@
     "watch:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages --watch",
     "watch:html": "orchid-lead watch",
     "watch:js": "babel site/pages/ --out-dir build --ignore data.js --source-maps --watch",
+    "watch:static": "chokidar 'site/static/**/*' -c 'rsync -arv site/static/ build/'",
     "watch:server": "npm run browser-sync",
     "browser-sync": "browser-sync start --config bs-config.js"
   },
@@ -39,6 +41,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "chokidar-cli": "^1.2.0",
     "eslint": "^4.17.0",
     "stylelint": "^8.4.0"
   },
