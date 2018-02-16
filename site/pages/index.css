@@ -104,20 +104,28 @@ h2.about {
 }
 .q-company-profile__name {
 	margin-bottom: 0;
+    font-size: 11pt;
 }
 .q-company-profile__role {
 	margin: 0;
+	font-size: 11pt;
 }
 .q-company-profile__company {
 	margin-top: 0;
 	color: #1D2737;
 	font-weight: 500;
+	font-size: 12pt;
+}
+.q-company-profile__image {
+    margin-bottom: 34px;
 }
 .q-company-profile__bio {
 	max-height: 250px;
+    line-height: 1.5;
 }
 .q-company-management__carousel {
-	margin-bottom: 11em;
+	margin-bottom: 4.7em;
+    margin-top: 4.5em;
 }
 .location .description {
 	font-family: "Caecilia", serif;
@@ -129,13 +137,27 @@ h2.about {
 .location-subcontainer {
 	width: 50%;
 }
+h2.location {
+	margin-bottom: 9px;
+}
 .hotel-photo {
 	float: right;
 }
+.address {
+    margin-top: 36px;
+    font-size: 13.5pt;
+	line-height: 1.5;
+}
 .location-info {
-	margin-left: 50px;
-	max-width: 450px;
-	margin-top: 100px;
+    margin-left: 52px;
+    max-width: 490px;
+    margin-top: 93px;
+}
+.location-info .description {
+	font-size: 14pt;
+	margin-top: 0;
+    line-height: 1.5;
+	margin-bottom: 55px;
 }
 .directions,
 .bio-link {
@@ -143,35 +165,25 @@ h2.about {
 	color: #D0021B;
 	font-weight: 500;
 }
+.bio-link-wrapper {
+	font-size: 11pt;
+    margin-top: 27px;
+}
 .quote {
 	width: 266px;
 }
 .quote-wrapper {
 	display: flex;
+	margin-bottom: 5em;
+	justify-content: center;
 }
 .byline {
 	font-size: 10pt;
 }
-.quote-container {
-	margin-bottom: 5em;
+.participation {
+	font-size: 11pt;
+    margin-bottom: 32px;
 }
-/*.footer-container {
-	max-width: none;
-	padding: 0;
-}
-.footer-container .q-grid__column {
-	min-height: 551px;
-}
-.updates-container {
-	background-color: #1D2737;
-	color: #fff;
-	font-size: 20pt;
-	padding-left: 150px;
-	padding-top: 100px;
-}
-.updates {
-	margin-left: 30px;
-}*/
 .footer-container {
 	display: flex;
 	min-height: 551px;
@@ -192,7 +204,9 @@ h2.about {
 	padding-left: 100px;
 }
 .abstract {
-	margin-top: 1em;
+    margin-top: 2em;
+    font-size: 11pt;
+    line-height: 1.9;
 }
 .get-updates {
 	max-width: 395px;
@@ -223,13 +237,13 @@ h2.about {
 	margin-right: 20px;
 }
 .partner {
-	margin-bottom: 20px;
+	margin-bottom: 33px;
 }
 .register-container {
 	margin-bottom: 5em;
 }
 .agenda .time {
-    min-width: 200px;
+    min-width: 224px;
 }
 .agenda .description {
 	min-width: 520px;
@@ -242,10 +256,11 @@ h2.about {
 }
 .agenda table {
 	border-collapse: collapse;
+    font-size: 13.3pt;
 }
 .agenda td {
 	border-bottom: 1px solid #ccc;
-    padding: 20px 0;
+    padding: 28px 0;
     vertical-align: text-bottom;
     color: #1D2737;
 }
@@ -254,8 +269,9 @@ h2.about {
 }
 .speaker-container {
     background-color: #F7FAFC;
-    margin-top: 10em;
-    margin-bottom: 10em;
+    margin-top: 7em;
+    margin-bottom: 9.2em;
+    padding-top: 4.7em;
 }
 .speaker-container .q-grid__column {
 	width: 100%;
