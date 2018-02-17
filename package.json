@@ -19,7 +19,7 @@
     "test": "#mocha",
     "watch": "run-p watch:*",
     "watch:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages --watch",
-    "watch:html": "orchid-lead watch",
+    "watch:html": "GIT_BRANCH=`git rev-parse --abbrev-ref HEAD` orchid-lead watch",
     "watch:js": "babel site/pages/ --out-dir build --ignore data.js --source-maps --watch",
     "watch:static": "chokidar --initial 'site/static/**/*' -c 'rsync -av site/static/ build'",
     "watch:server": "npm run browser-sync",
