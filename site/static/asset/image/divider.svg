@@ -1,0 +1,18 @@
+
+<svg width="1180px" height="6px" viewBox="0 0 1180 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.106213489%" y1="50.208%" x2="99.7314057%" y2="50.208%" id="linearGradient-1">
+            <stop stop-color="#455DAA" offset="0%"></stop>
+            <stop stop-color="#2AABE0" offset="99.91%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="CIO/CISO-Interchange" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Webpage" transform="translate(-185.000000, -1148.000000)" fill="url(#linearGradient-1)">
+            <g id="About" transform="translate(184.000000, 609.000000)">
+                <polygon id="Rectangle-6" transform="translate(591.000000, 542.000000) scale(1, -1) translate(-591.000000, -542.000000) " points="1 539 629.34375 539 648.121094 539 1181 539 1181 545 1 545"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

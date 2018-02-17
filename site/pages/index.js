@@ -15,3 +15,20 @@ var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 setTimeout(function () {
 	swiper.update(true);
 }, 100);
+
+// expand / collapse agenda rows
+(function ($) {
+	"use strict";
+
+	$(".toggle").on("click", function(event){
+		if ($(event.currentTarget).hasClass("expanded")) {
+			console.log("expanded");
+			$(event.currentTarget).removeClass("expanded").addClass("collapsed");
+			$(event.currentTarget).parent("tr").find(".abstract").addClass("hidden");
+		} else if ($(event.currentTarget).hasClass("collapsed")) {
+			$(event.currentTarget).removeClass("collapsed").addClass("expanded");
+			$(event.currentTarget).parent("tr").find(".abstract").removeClass("hidden");
+		}
+	});
+
+}(jQuery));

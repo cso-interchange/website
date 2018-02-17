@@ -9,6 +9,7 @@ title: CSO Interchange
 {{/append}}
 
 {{#append "scripts"}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 {{/append}}
 
@@ -19,7 +20,7 @@ title: CSO Interchange
 			<div class="q-grid__column q-grid__column-12 header">
 				<img class="logo" src="/asset/image/cso-interchange-logo.svg" width="222" height="63" alt="CIO / CISO Interchange">
 				<div>
-					<a class="button register" href="">Register</a>
+					<a class="q-button register" href="">Register</a>
 				</div>
 			</div>
 		</div>
@@ -48,6 +49,14 @@ title: CSO Interchange
 			</div>
 		</div>
 	</div>
+	{{!-- <div class="q-grid__container divider-container">
+		<div class="q-grid__row">
+			<div class="q-grid__column q-grid__column-11 q-grid__column-push-1">
+				<img src="/asset/image/divider.svg" height="6">
+				<img class="divider-end" src="/asset/image/divider-end.svg">
+			</div>
+		</div>
+	</div> --}}
 	<div class="q-grid__container register-container">
 		<div class="q-grid__row">
 			<div class="q-grid__column q-grid__column-10 q-grid__column-push-1">
@@ -55,7 +64,7 @@ title: CSO Interchange
 				<h3>Four Seasons, San Francisco <br>
 					April 16, 4:00 – 6:30 PM</h3>
 
-				<a class="button register" href="">Register</a>
+				<a class="q-button register" href="">Register</a>
 			</div>
 		</div>
 	</div>
@@ -65,52 +74,70 @@ title: CSO Interchange
 				<table>
 					<tr>
 						<td class="time">4:00 PM</td>
-						<td class="description">Registration & Breakfast</td>
+						<td class="description">Registration</td>
 						<td class="toggle"></td>
 					</tr>
 					<tr>
 						<td class="time">4:30 PM</td>
 						<td class="description">Welcome and Introduction<br>
 							<span class="speaker">Philippe Courtot, Chairman and CEO, Qualys</span></td>
-						<td class="toggle"><img src="/asset/image/plus.svg" width="14.94" height="14.94"></td>
+						<td class="toggle collapsed">
+							<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
+							<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
+						</td>
 					</tr>
 					<tr>
 						<td class="time">4:50 PM</td>
 						<td class="description">
 							<div class="text">
-								Our Journey into the Cloud: The Qualys Cloud Platform and Architecture	<br>
+								Presentation<br>
 								<span class="speaker">Jim Reavis, Co-founder and Chief Executive Officer, Cloud Security Alliance</span>
 								<div class="abstract">
 									Sumedh discusses the Qualys Cloud Platform and its architecture, which enables customers to secure their global assets across InfoSec, AppSec, Endpoints, DevSec, and Cloud environments. He also reviews 2017 updates and roadmap, and demonstrates the latest platform innovations.
 
-									<p class="bio-link-wrapper"><a href="" class="bio-link">Jim Reavis bio</a></p>
+									<p class="bio-link-wrapper"><a href="#speakers" class="bio-link cso-link">Jim Reavis bio</a></p>
 								</div>
 							</div>
 						</td>
-						<td class="toggle"><img src="/asset/image/minus.svg" width="14.94" height="1.66"></td>
+						<td class="toggle expanded">
+							<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
+							<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
+						</td>
 					</tr>
 					<tr>
 						<td class="time">5:10 PM</td>
-						<td class="description">Refreshments & Networking<br>
+						<td class="description">Presentation<br>
 							<span class="speaker">Chris Moyer, CTO Security, Cloud Security Alliance</span></td>
-						<td class="toggle"><img src="/asset/image/plus.svg" width="14.94" height="14.94"></td>
+						<td class="toggle collapsed">
+							<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
+							<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
+						</td>
 					</tr>
 					<tr>
 						<td class="time">5:30 PM</td>
-						<td class="description">The Future of Digital Transformation<br>
+						<td class="description">Presentation<br>
 							<span class="speaker">Julie Ask, VP, Principal Analyst, Forrester</span></td>
-						<td class="toggle"><img src="/asset/image/plus.svg" width="14.94" height="14.94"></td>
+						<td class="toggle collapsed">
+							<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
+							<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
+						</td>
 					</tr>
 					<tr>
 						<td class="time">6:00 PM</td>
-						<td class="description">Introduction of Advisory Board Member<br>
+						<td class="description">Presentation<br>
 							<span class="speaker">Philippe Courtot, Chairman and CEO, Qualys</span></td>
-						<td class="toggle"><img src="/asset/image/plus.svg" width="14.94" height="14.94"></td>
+						<td class="toggle collapsed">
+							<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
+							<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
+						</td>
 					</tr>
 					<tr>
 						<td class="time">7:00 PM</td>
 						<td class="description">Networking Reception – SFMOMA</td>
-						<td class="toggle"></td>
+						<td class="toggle collapsed">
+							<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
+							<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
+						</td>
 					</tr>
 				</table>
 			</div>
@@ -126,7 +153,7 @@ title: CSO Interchange
 		<div class="q-grid__container">
 			<div class="q-grid__row">
 				<div class="q-grid__column q-grid__column-11 q-grid__column-push-1">
-					<h2>Speakers</h2>
+					<h2 id="speakers">Speakers</h2>
 
 					<div class="q-company-management__carousel">
 						<div class="q-company-carousel">
@@ -139,13 +166,16 @@ title: CSO Interchange
 										<!-- Profile component -->
 										<div class="q-company-profile">
 
-											<img class="q-company-profile__image" src="/asset/image/headshot-philippe-courtot-300-2x.jpg" width="440" height="440" alt="Headshot of Philippe Courtot">
+											<img class="q-company-profile__image" src="/asset/image/headshot-philippe-courtot-300-2x.jpg" width="300" height="290" alt="Headshot of Philippe Courtot">
 
 											<div class="q-company-profile__content">
 												<p class="q-company-profile__name">Philippe Courtot</p>
 												<p class="q-company-profile__role">Chairman & CEO</p>
 												<p class="q-company-profile__company">Qualys</p>
-												<p class="q-company-profile__bio">Demonstrating a unique mix of technical vision, marketing and business acumen, Philippe Courtot has repeatedly built innovative companies into industry leaders. As CEO of Qualys, Philippe has worked with thousands of companies to improve their IT security and compliance postures. Philippe received the SC Magazine Editor’s Award in 2004 for bringing on demand technology to the network security industry and for co-founding the CSO Interchange to provide a forum for sharing information in the security industry. He was also named the 2011 CEO of the Year by SC Magazine Awards Europe.</p>
+												<div class="bio-wrapper expandable">
+													<p class="q-company-profile__bio">Demonstrating a unique mix of technical vision, marketing and business acumen, Philippe Courtot has repeatedly built innovative companies into industry leaders. As CEO of Qualys, Philippe has worked with thousands of companies to improve their IT security and compliance postures. Philippe received the SC Magazine Editor’s Award in 2004 for bringing on demand technology to the network security industry and for co-founding the CSO Interchange to provide a forum for sharing information in the security industry. He was also named the 2011 CEO of the Year by SC Magazine Awards Europe.</p>
+													<p class="expand-container0"></p>
+												</div>
 											</div>
 
 										</div>
@@ -155,13 +185,16 @@ title: CSO Interchange
 										<!-- Profile component -->
 										<div class="q-company-profile">
 
-											<img class="q-company-profile__image" src="/asset/image/headshot-jim-reavis-300-2x.jpg" width="440" height="440" alt="Headshot of Philippe Courtot">
+											<img class="q-company-profile__image" src="/asset/image/headshot-jim-reavis-300-2x.jpg" width="300" height="290" alt="Headshot of Philippe Courtot">
 
 											<div class="q-company-profile__content">
 												<p class="q-company-profile__name">Jim Reavis</p>
 												<p class="q-company-profile__role">Co-founder and Chief Executive Officer</p>
 												<p class="q-company-profile__company">Cloud Security Alliance</p>
-												<p class="q-company-profile__bio">For many years, Jim Reavis has worked in the information security industry as an entrepreneur, writer, speaker, technologist and business strategist. Jim’s innovative thinking about emerging security trends have been published and presented widely throughout the industry and have influenced many. Jim is helping shape the future of information security and related technology industries as co-founder, CEO and driving force of the Cloud Security Alliance. Jim has been named as one of the Top 10 cloud computing leaders by SearchCloudComputing.com.  Jim received a B.A. in Business Administration / Computer Science from Western Washington University in 1987 and formerly served on WWU’s alumni board. Jim was recognized as a WWU Distinguished Alumnus in 2015. In 2016, Jim was inducted into the Information Systems Security Association (ISSA) Hall of Fame.</p>
+												<div class="bio-wrapper expandable">
+													<p class="q-company-profile__bio">For many years, Jim Reavis has worked in the information security industry as an entrepreneur, writer, speaker, technologist and business strategist. Jim’s innovative thinking about emerging security trends have been published and presented widely throughout the industry and have influenced many. Jim is helping shape the future of information security and related technology industries as co-founder, CEO and driving force of the Cloud Security Alliance. Jim has been named as one of the Top 10 cloud computing leaders by SearchCloudComputing.com.  Jim received a B.A. in Business Administration / Computer Science from Western Washington University in 1987 and formerly served on WWU’s alumni board. Jim was recognized as a WWU Distinguished Alumnus in 2015. In 2016, Jim was inducted into the Information Systems Security Association (ISSA) Hall of Fame.</p>
+													<p class="expand-container0"></p>
+												</div>
 											</div>
 
 										</div>
@@ -171,18 +204,18 @@ title: CSO Interchange
 										<!-- Profile component -->
 										<div class="q-company-profile">
 
-											<img class="q-company-profile__image" src="/asset/image/headshot-julie-ask-300-2x.jpg" width="440" height="440" alt="Headshot of Philippe Courtot">
+											<img class="q-company-profile__image" src="/asset/image/headshot-julie-ask-300-2x.jpg" width="300" height="290" alt="Headshot of Philippe Courtot">
 
 											<div class="q-company-profile__content">
 
 												<p class="q-company-profile__name">Julie A. Ask</p>
 												<p class="q-company-profile__role">Vice President, Principal Analyst</p>
 												<p class="q-company-profile__company">Forrester</p>
-												<p class="q-company-profile__bio">
-												Julie serves eBusiness & Channel Strategy Professionals. Her nearly 30 years of work experience is balanced between the engineering and management consulting work she did in the first half of her career and her work as an analyst for the past 17 years. The combination of technical and business expertise positions prepared her well to work with business leaders to identify new opportunities offered by mobile technology and to develop strategies to engage with consumers on mobile devices. She has worked with hundreds of clients across retail, travel, banking, insurance, CPG, healthcare, and more to advise and guide the development of their mobile strategies.
-
-												Julie's research and analysis have been widely cited in publications including The Wall Street Journal, The New York Times, USA Today, Los Angeles Times, and The Onion, as well as on Bloomberg, CBS, NBC, and PBS.
-												</p>
+												<div class="bio-wrapper expandable">
+													<p class="q-company-profile__bio">Julie serves eBusiness & Channel Strategy Professionals. Her nearly 30 years of work experience is balanced between the engineering and management consulting work she did in the first half of her career and her work as an analyst for the past 17 years. The combination of technical and business expertise positions prepared her well to work with business leaders to identify new opportunities offered by mobile technology and to develop strategies to engage with consumers on mobile devices. She has worked with hundreds of clients across retail, travel, banking, insurance, CPG, healthcare, and more to advise and guide the development of their mobile strategies.</p>
+													<p>Julie's research and analysis have been widely cited in publications including The Wall Street Journal, The New York Times, USA Today, Los Angeles Times, and The Onion, as well as on Bloomberg, CBS, NBC, and PBS.</p>
+													<p class="expand-container0"></p>
+												</div>
 											</div>
 
 										</div>
@@ -192,20 +225,19 @@ title: CSO Interchange
 										<!-- Profile component -->
 										<div class="q-company-profile">
 
-											<img class="q-company-profile__image" src="/asset/image/headshot-chris-moyer-300-2x.jpg" width="440" height="440" alt="Headshot of Philippe Courtot">
+											<img class="q-company-profile__image" src="/asset/image/headshot-chris-moyer-300-2x.jpg" width="300" height="290" alt="Headshot of Philippe Courtot">
 
 											<div class="q-company-profile__content">
-
 												<p class="q-company-profile__name">Chris Moyer</p>
 												<p class="q-company-profile__role">VP & General Manager, Security</p>
 												<p class="q-company-profile__company">DXC.technology</p>
-												<p class="q-company-profile__bio">
-													Chris Moyer, vice president and general manager of Security at DXC Technology (NYSE: DXC), is responsible for the company's security offerings, including advisory services, managed security services, identity management and monitoring, and information assurance.
-													Prior to this role, Mr. Moyer was the CTO for Hewlett Packard Enterprise Services and VP for Mobility and Workplace services for HPES bringing technical thought leadership to clients and delivering market leading workplace and user support services globally.  He incubated new services and built strategic technical alliances for HPES across their offering portfolio.
-
-													He has spent more than 25 years building business and technology solutions for clients in several industries across multiple geographies. In previous roles, Mr. Moyer led solutioning, transformation projects and delivery assurance.  He continues to be a trusted technical advisor to many large, multi-national customers.  Mr. Moyer joined Electronic Data Systems in 1985 supporting automotive, financial, consumer and public sector customers and has lived in the US, Japan and England.
-
-													Moyer has a Bachelor of Science degree in Business Administration from Central Michigan University and is a member of the Institute of Electrical and Electronics Engineers. </p>
+												<div class="bio-wrapper expandable">
+													<p class="q-company-profile__bio">Chris Moyer, vice president and general manager of Security at DXC Technology (NYSE: DXC), is responsible for the company's security offerings, including advisory services, managed security services, identity management and monitoring, and information assurance.</p>
+													<p>Prior to this role, Mr. Moyer was the CTO for Hewlett Packard Enterprise Services and VP for Mobility and Workplace services for HPES bringing technical thought leadership to clients and delivering market leading workplace and user support services globally.  He incubated new services and built strategic technical alliances for HPES across their offering portfolio.</p>
+													<p>He has spent more than 25 years building business and technology solutions for clients in several industries across multiple geographies. In previous roles, Mr. Moyer led solutioning, transformation projects and delivery assurance.  He continues to be a trusted technical advisor to many large, multi-national customers.  Mr. Moyer joined Electronic Data Systems in 1985 supporting automotive, financial, consumer and public sector customers and has lived in the US, Japan and England.</p>
+													<p>Moyer has a Bachelor of Science degree in Business Administration from Central Michigan University and is a member of the Institute of Electrical and Electronics Engineers. </p>
+													<p class="expand-container0"></p>
+												</div>
 											</div>
 
 										</div>
@@ -230,14 +262,14 @@ title: CSO Interchange
 				<p class="address">
 					757 Market St, <br>
 					San Francisco, CA 94103 <br>
-					<a href="#" class="directions">Directions</a>
+					<a href="https://www.google.com/maps/place/757+Market+St,+San+Francisco,+CA+94103/@37.7865227,-122.4044554,17z/data=!3m1!4b1!4m5!3m4!1s0x808580888478050b:0x43b60dd959a640e7!8m2!3d37.7865227!4d-122.4044554?hl=en" class="directions cso-link">Directions</a>
 				</p>
 			</div>
 		</div>
 	</div>
 	<div class="quote-wrapper">
 		<div class="quote">
-			<p>The forum was great! The speakers provided food for though and the round table discussions were very lively.</p>
+			<p class="text">The forum was great! The speakers provided food for though and the round table discussions were very lively.</p>
 			<p class="byline">Nick Courtot, CIO, Microsoft </p>
 		</div>
 		<img class="logo-gray" src="/asset/image/cso-interchange-logo-gray.svg" width="216" alt="Four Seasons Hotel">
@@ -246,7 +278,10 @@ title: CSO Interchange
 		<div class="updates-container footer-subcontainer">
 			<div class="updates">
 				<p class="get-updates">Want to get updates on future events? </p>
-				<form class="updates-form"><input type="text" name="email"></form>
+				<form class="q-search-form" action="" method="GET">
+					<input type="text" name="d" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="q-search-form__input" placeholder="Enter your email">
+					<button class="q-search-form__button q-button" type="submit">Go</button>
+				</form>
 				<p class="copyright">Copyright © 2018 CSO/CISO Interchange. All rights reserved.</p>
 			</div>
 		</div>
@@ -263,7 +298,7 @@ title: CSO Interchange
 					<a href="">Mission</a>
 					<a href="">Events</a>
 					<a href="">Press</a>
-					<a href="">Back to top</a>
+					<a href="#">Back to top</a>
 				</p>
 			</div>
 		</div>
