@@ -11,7 +11,7 @@
     "build:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages",
     "build:html": "orchid-lead build --save-future-pub-dates",
     "build:js": "babel site/pages/ --out-dir build --ignore data.js --source-maps",
-    "build:static": "cp -pPR site/static/ build/",
+    "build:static": "cp -pPR site/static/* build/",
     "lint": "run-s lint:*",
     "lint:es": "eslint \"site/**/*.js\"",
     "start": "npm run watch",
