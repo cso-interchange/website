@@ -16,3 +16,17 @@ deploy:
     local-dir: build
     acl: public_read
     detect_encoding: true
+    on:
+        branch: master
+deploy:
+    provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID # declared in Travis repo settings
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: cso-interchange-develop
+    region: us-west-1
+    skip_cleanup: true
+    local-dir: build
+    acl: public_read
+    detect_encoding: true
+    on:
+        branch: develop
