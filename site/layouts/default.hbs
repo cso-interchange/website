@@ -3,6 +3,9 @@
 <head>
 
     <meta charset="utf-8">
+    {{#unless site.env.production}}
+        <meta name="robots" content="noindex, nofollow">
+    {{/unless}}
     {{#block "meta-tags"}}
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{#if page.description}}
@@ -46,6 +49,18 @@
 
 </head>
 <body>
+
+    {{#unless site.env.production}}
+        <div class="banner--dev">
+            Development version and work in progress. Might not work properly
+            and could go down at any time. For the real thing
+            <span class="nowrap">
+                visit
+                <a href="https://www.csointerchange.org/">www.csointerchange.org</a>
+                instead.
+            </span>
+        </div>
+    {{/unless}}
 
     {{#block "content"}}{{/block}}
 
