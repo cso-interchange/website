@@ -27,16 +27,31 @@ body {
 }
 .register {
 	margin-right: 30px;
+	margin-top: 2em;
 }
 .header {
 	display: flex;
-	justify-content: space-between;
 	padding-top: 2em;
 	margin-bottom: 3.6em;
+	flex-direction: column;
+	justify-content: center;
 }
 .logo {
-	margin-left: 30px;
+	margin-left: 0;
 }
+@media (min-width: 500px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.logo {
+		margin-left: 30px;
+	}
+	.register {
+		margin-top: 0;
+	}
+}
+
 .inaugural {
 	color: #34C3FF;
 	text-transform: uppercase;
@@ -46,12 +61,17 @@ body {
 }
 h1 {
 	color: #fff;
-	font-size: 41pt;
+	font-size: 34pt;
 	font-weight: 500;
 	max-width: 600px;
 	line-height: 1.1;
 	margin-bottom: 0;
 	margin-top: 0;
+}
+@media (min-width: 500px) {
+	h1 {
+		font-size: 41pt;
+	}
 }
 .date-location {
 	color: #fff;
@@ -66,7 +86,12 @@ h1 {
 	bottom: -73px;
 }
 .down-arrow {
-	margin-left: 214px;
+	margin-left: calc(50% - (35px/2));
+}
+@media (min-width: 500px) {
+	.down-arrow {
+		margin-left: 214px;
+	}
 }
 .strip-container {
 	height: 100px;
@@ -76,7 +101,12 @@ h1 {
 	position: relative;
 }
 .strip.transparent {
-	width: 13%;
+	width: 0%;
+}
+@media (min-width: 720px) {
+	.strip.transparent {
+		width: 13%;
+	}
 }
 .strip.white {
 	background-color: #fff;
@@ -128,16 +158,27 @@ h2.about {
 }
 .location-container {
 	margin-bottom: 9.3em;
-	display: flex;
+	display: block;
 }
 .location-subcontainer {
-	width: 50%;
+	width: 75%;
+}
+.hotel-photo {
+	float: none;
+}
+@media (min-width: 650px) {
+	.location-container {
+		display: flex;
+	}
+	.location-subcontainer {
+		width: 50%;
+	}
+	.hotel-photo {
+		float: right;
+	}
 }
 h2.location {
 	margin-bottom: 9px;
-}
-.hotel-photo {
-	float: right;
 }
 .address {
 	margin-top: 36px;
@@ -166,22 +207,37 @@ h2.location {
 	font-size: 11pt;
 	margin-top: 27px;
 }
-.quote {
-	width: 415px;
-	margin-left: 150px;
-	margin-right: 22px;
-}
-.quote-wrapper {
-	display: flex;
-	margin-bottom: 8em;
-	justify-content: center;
-}
 .quote .text {
-	font-size: 23pt;
+	font-size: 15pt;
 	line-height: 1.3;
 	margin-bottom: 0;
 	font-family: "Caecilia", serif;
 	letter-spacing: -0.6px;
+}
+.quote-wrapper {
+	width: 90%;
+	margin: 0 auto 8em;
+}
+.logo-gray {
+	width: 150px;
+}
+@media (min-width: 720px) {
+	.quote .text {
+		font-size: 23pt;
+	}
+	.quote {
+		width: 415px;
+		margin-left: 150px;
+		margin-right: 22px;
+	}
+	.quote-wrapper {
+		display: flex;
+		margin-bottom: 8em;
+		justify-content: center;
+	}
+	.logo-gray {
+		width: auto;
+	}
 }
 .byline {
 	font-size: 13.4pt;
@@ -189,10 +245,19 @@ h2.location {
 .participation {
 	font-size: 11pt;
 	margin-bottom: 32px;
+	margin-top: 4em;
+}
+@media (min-width: 720px) {
+	.participation {
+		font-size: 11pt;
+		margin-bottom: 32px;
+		margin-top: 0;
+	}
 }
 .footer-container {
 	display: flex;
 	min-height: 551px;
+	flex-direction: column;
 }
 .footer-subcontainer {
 	padding: 98px 0 0;
@@ -202,12 +267,44 @@ h2.location {
 	background-color: #1D2737;
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 128px;
+	padding-right: 4vw;
+	order: 2;
 }
 .social-container {
 	width: 50%;
 	background-color: #F7FAFC;
-	padding-left: 169px;
+	padding-left: 4vw;
+	order: 1;
+}
+.updates-container,
+.social-container {
+	width: 100%;
+    padding-bottom: 2em;
+}
+@media (min-width: 1000px) {
+	.footer-container {
+		display: flex;
+		min-height: 551px;
+		flex-direction: row;
+	}
+	.updates-container,
+	.social-container {
+		width: 50%;
+	}
+	.updates-container {
+		order: 1;
+	}
+	.social-container {
+		order: 2;
+	}
+}
+@media (min-width: 1255px) {
+	.updates-container {
+		padding-right: 128px;
+	}
+	.social-container {
+		padding-left: 169px;
+	}
 }
 .abstract {
 	margin-top: 2em;
@@ -253,7 +350,7 @@ h2.location {
 	margin-bottom: 33px;
 }
 .register-container {
-	margin-bottom: 5em;
+	margin-bottom: 4.2em;
 }
 .agenda .time {
 	width: 28%;
@@ -275,6 +372,28 @@ h2.location {
 	border-collapse: collapse;
 	font-size: 13.3pt;
 	width: 100%;
+}
+@media (min-width: 1120px) {
+	.agenda table {
+		max-width: 772px;
+	}
+}
+.partners {
+	width: 100%;
+	margin-top: 4em;
+}
+@media (min-width: 720px) {
+	.agenda {
+		width: 90%;
+	}
+}
+@media (min-width: 800px) {
+	.agenda {
+		width: auto;
+	}
+	.partners {
+		width: auto;
+	}
 }
 .agenda td {
 	border-bottom: 1px solid #ccc;
@@ -304,7 +423,7 @@ h2.location {
 	font-size: 21.2pt;
 	font-weight: 400;
 	margin-top: 0;
-	margin-bottom: 38px;
+	margin-bottom: 27px;
 	line-height: 1.5;
 }
 .invitation-only {
@@ -339,4 +458,23 @@ h2.location {
 	position: absolute;
 	bottom: 0;
 	right: -15px;
+}
+.divider-container {
+	margin-top: -9px;
+	margin-bottom: 88px;
+}
+.divider-container .q-grid__column,
+.divider {
+	min-height: 99px;
+}
+.divider {
+	min-width: 1209px;
+}
+.topic-container {
+	min-width: 100%;
+}
+@media (min-width: 600px) {
+	.topic-container {
+		min-width: 600px;
+	}
 }
