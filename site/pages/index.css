@@ -61,7 +61,7 @@ body {
 }
 h1 {
 	color: #fff;
-	font-size: 34pt;
+	font-size: 28pt;
 	font-weight: 500;
 	max-width: 600px;
 	line-height: 1.1;
@@ -160,22 +160,11 @@ h2.about {
 	margin-bottom: 9.3em;
 	display: block;
 }
-.location-subcontainer {
-	width: 75%;
+.photo-subcontainer {
+	width: 100%;
 }
 .hotel-photo {
 	float: none;
-}
-@media (min-width: 650px) {
-	.location-container {
-		display: flex;
-	}
-	.location-subcontainer {
-		width: 50%;
-	}
-	.hotel-photo {
-		float: right;
-	}
 }
 h2.location {
 	margin-bottom: 9px;
@@ -189,6 +178,7 @@ h2.location {
 	margin-left: 52px;
 	max-width: 490px;
 	margin-top: 93px;
+	padding-right: 2em;
 }
 .location-info .description {
 	font-size: 14pt;
@@ -196,6 +186,22 @@ h2.location {
 	line-height: 1.5;
 	margin-bottom: 55px;
 	font-family: "Caecilia", serif;
+}
+@media (min-width: 850px) {
+	.location-subcontainer {
+		width: 75%;
+	}
+}
+@media (min-width: 650px) {
+	.location-container {
+		display: flex;
+	}
+	.location-subcontainer {
+		width: 50%;
+	}
+	.hotel-photo {
+		float: right;
+	}
 }
 .directions,
 .bio-link {
@@ -279,7 +285,7 @@ h2.location {
 .updates-container,
 .social-container {
 	width: 100%;
-    padding-bottom: 2em;
+	padding: 98px 10% 2em;
 }
 @media (min-width: 1000px) {
 	.footer-container {
@@ -416,15 +422,24 @@ h2.location {
 .register-container h2 {
 	font-size: 28.7pt;
 	font-weight: 500;
-	margin-bottom: -6px;
+	line-height: 1.2;
 }
 .register-container h3 {
 	color: #1D2737;
-	font-size: 21.2pt;
+	font-size: 18.2pt;
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 27px;
-	line-height: 1.5;
+	line-height: 1.2;
+}
+@media (min-width: 720px) {
+	.register-container h2 {
+		margin-bottom: -6px;
+	}
+	.register-container h3 {
+		line-height: 1.5;
+		font-size: 21.2pt;
+	}
 }
 .invitation-only {
 	color: #1D2737;
@@ -460,8 +475,14 @@ h2.location {
 	right: -15px;
 }
 .divider-container {
-	margin-top: -9px;
-	margin-bottom: 88px;
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+@media (min-width: 600px) {
+	.divider-container {
+		margin-top: -9px;
+		margin-bottom: 88px;
+	}
 }
 .divider-container .q-grid__column,
 .divider {
