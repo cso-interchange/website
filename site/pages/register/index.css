@@ -22,7 +22,7 @@ body {
 	justify-content: center;
 }
 .logo {
-	margin-left: 0;
+	margin: 0 auto;
 }
 @media (min-width: 500px) {
 	.header {
@@ -86,4 +86,47 @@ h2 {
 		line-height: 1.5;
 		font-size: 21.2pt;
 	}
+}
+/* BEGIN Marketo form reset */
+.mktoForm,
+.mktoForm .mktoFieldWrap,
+.mktoForm .mktoFormCol,
+.mktoButtonRow,
+.q-form__button-group,
+.mktoButtonRow .mktoButtonWrap {
+	width: 100% !important;
+	margin: 0 !important;
+}
+.mktoForm .mktoOffset,
+.mktoForm .mktoGutter {
+	width: 0 !important;
+}
+.mktoForm  input {
+	width: auto !important;
+}
+.mktoForm input,
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+	height: auto !important;
+}
+/* END Marketo form reset */
+.mktoForm  input {
+	padding: 1em 1em 1em 2em !important;
+	width: 100% !important;
+	font-weight: 500 !important;
+	font-size: 11pt !important;
+}
+.mktoForm .mktoFormCol {
+	margin-bottom: 12px !important;
+}
+.mktoForm button.mktoButton {
+	padding: 2em !important;
+	height: auto !important;
+}
+.mktoForm .mktoError {
+	right: 0 !important;
+	left: 21px !important;
+}
+.mktoForm {
+	max-width: 360px;
 }
