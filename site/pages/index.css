@@ -368,6 +368,9 @@ h2.location {
 .agenda .toggle {
 	width: 4%;
 }
+.toggle-button.minus {
+	padding: 6.44px 0px;
+}
 .collapsed .minus,
 .expanded .plus {
 	display: none;
@@ -449,6 +452,17 @@ h2.location {
 .bio-wrapper {
 	max-height: 277px;
 	position: relative;
+	overflow: hidden;
+}
+.bio-wrapper:hover {
+	cursor: pointer;
+}
+.bio-wrapper.expanded {
+	max-height: none;
+}
+.expandable.expanded [class^="expand-container"],
+.expandable.expanded [class^="collapse-container"] {
+	display: none;
 }
 .expandable [class^="expand-container"],
 .expandable [class^="collapse-container"] {

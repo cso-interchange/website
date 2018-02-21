@@ -32,3 +32,19 @@ setTimeout(function () {
 	});
 
 }(jQuery));
+
+/**
+ * expand / collapse long passages of text
+ */
+(function ($) {
+	"use strict";
+
+	$(".bio-wrapper.expandable").on("click", function(event){
+		if ($(event.currentTarget).hasClass("expanded")) {
+			$(event.currentTarget).removeClass("expanded");
+		} else {
+			$(event.currentTarget).addClass("expanded");
+		}
+	});
+
+}(jQuery));
