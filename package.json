@@ -20,6 +20,7 @@
     "watch": "run-p watch:*",
     "watch:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages --watch",
     "watch:html": "GIT_BRANCH=`git rev-parse --abbrev-ref HEAD` orchid-lead watch",
+    "watch:image:svg": "chokidar 'site/**/*.svg' -c 'svgo -i {path} -o /dev/null'",
     "watch:js": "babel site/pages/ --out-dir build --ignore data.js --source-maps --watch",
     "watch:static": "chokidar --initial 'site/static/**/*' -c 'rsync -av site/static/ build'",
     "watch:server": "npm run browser-sync",
@@ -43,7 +44,8 @@
     "browser-sync": "^2.14.0",
     "chokidar-cli": "^1.2.0",
     "eslint": "^4.17.0",
-    "stylelint": "^8.4.0"
+    "stylelint": "^8.4.0",
+    "svgo": "^1.0.4"
   },
   "repository": {
     "type": "git",
