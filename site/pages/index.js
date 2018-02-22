@@ -61,3 +61,16 @@ setTimeout(function () {
 	});
 
 }(jQuery));
+
+/**
+ * show thank you message
+ */
+(function ($) {
+	"use strict";
+
+	if (window.location.search.indexOf("aliId") > 0) {
+		$(".get-updates").text("Thank you!");
+		window.scrollTo(0,document.body.scrollHeight);
+	}
+
+}(jQuery));
