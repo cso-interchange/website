@@ -8092,18 +8092,21 @@ hr {
 .mktoButtonRow .mktoButtonWrap {
 	width: 100% !important;
 	margin: 0 !important;
+	padding: 0 !important;
+	min-width: none !important;
+	max-width: none !important;
 }
 .mktoForm .mktoOffset,
 .mktoForm .mktoGutter {
 	width: 0 !important;
 }
-.mktoForm  input {
-	width: auto !important;
-}
 .mktoForm input,
 .mktoForm textarea.mktoField,
 .mktoForm select.mktoField {
+	width: auto !important;
 	height: auto !important;
+	min-width: 0 !important;
+	max-width: none !important;
 }
 .mktoForm .mktoError {
 	right: 0 !important;

@@ -41,6 +41,7 @@ h1 {
 	margin: 0 auto;
 	line-height: 1.1;
 	margin-top: 1em;
+	font-weight: 500;
 }
 @media (min-width: 800px) {
 	h1 {
@@ -105,5 +106,5 @@ h2 {
 	left: 21px !important;
 }
 .mktoForm {
-	max-width: 360px;
+	max-width: 360px !important;
 }

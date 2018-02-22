@@ -173,10 +173,16 @@ h2.location {
 	line-height: 1.5;
 }
 .location-info {
-	margin-left: 52px;
-	max-width: 490px;
-	margin-top: 93px;
-	padding-right: 2em;
+	margin: 0 auto;
+	width: 90%;
+}
+@media (min-width: 650px) {
+	.location-info {
+		margin-left: 52px;
+		max-width: 490px;
+		margin-top: 93px;
+		padding-right: 2em;
+	}
 }
 .location-info .description {
 	font-size: 14pt;
