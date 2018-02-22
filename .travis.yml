@@ -15,7 +15,6 @@ deploy:
     skip_cleanup: true
     local-dir: build
     acl: public_read
-    detect_encoding: true
     on:
       branch: master
   - provider: s3
@@ -26,7 +25,6 @@ deploy:
     skip_cleanup: true
     local-dir: build
     acl: public_read
-    detect_encoding: true
     on:
       branch: develop
 after_deploy:
