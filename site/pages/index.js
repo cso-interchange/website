@@ -48,3 +48,16 @@ setTimeout(function () {
 	});
 
 }(jQuery));
+
+/**
+ * wrap marketo form fields in a div
+ */
+(function ($) {
+	"use strict";
+
+	MktoForms2.whenReady(function (form) {
+		var $emailField = $("#Email").parents(".mktoFormRow").addClass("field");
+		var $buttonField = $(".mktoButtonRow").addClass("field");
+	});
+
+}(jQuery));

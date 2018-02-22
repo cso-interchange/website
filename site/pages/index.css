@@ -226,9 +226,6 @@ h2.location {
 	width: 150px;
 }
 @media (min-width: 720px) {
-	.quote .text {
-		font-size: 23pt;
-	}
 	.quote {
 		width: 415px;
 		margin-left: 150px;
@@ -510,4 +507,39 @@ h2.location {
 	.topic-container {
 		min-width: 600px;
 	}
+}
+.mktoForm input,
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    padding: 12px 11px 11px !important;
+    font-family: "Caecilia", serif !important;
+    font-style: italic !important;
+    font-size: 15px !important;
+    color: #fff !important;
+    min-width: 257px;
+    border-right: 0 !important;
+}
+.mktoForm .mktoError {
+	right: 0 !important;
+	left: 21px !important;
+}
+.mktoButton {
+    background: #ed2e26;
+    border: 1px solid #ed2e26;
+    border-radius: 0 2px 2px 0;
+    height: auto;
+    width: auto;
+    padding: 0.6em 1.7em;
+}
+.mktoButton:hover {
+    background: #e3241c;
+    outline: none;
+}
+.form-wrapper {
+	display: flex;
+}
+.field {
+    display: inline-block !important;
+    vertical-align: top !important;
+    width: auto !important;
 }

@@ -87,29 +87,6 @@ h2 {
 		font-size: 21.2pt;
 	}
 }
-/* BEGIN Marketo form reset */
-.mktoForm,
-.mktoForm .mktoFieldWrap,
-.mktoForm .mktoFormCol,
-.mktoButtonRow,
-.q-form__button-group,
-.mktoButtonRow .mktoButtonWrap {
-	width: 100% !important;
-	margin: 0 !important;
-}
-.mktoForm .mktoOffset,
-.mktoForm .mktoGutter {
-	width: 0 !important;
-}
-.mktoForm  input {
-	width: auto !important;
-}
-.mktoForm input,
-.mktoForm textarea.mktoField,
-.mktoForm select.mktoField {
-	height: auto !important;
-}
-/* END Marketo form reset */
 .mktoForm  input {
 	padding: 1em 1em 1em 2em !important;
 	width: 100% !important;
