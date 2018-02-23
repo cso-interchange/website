@@ -7,6 +7,8 @@
     "email": "github@keithws.net"
   },
   "scripts": {
+    "aws:invalidate": "node bin/create-invalidation.js E3IMNPFARDQRBW '/*'",
+    "aws:invalidate:dev": "node bin/create-invalidation.js E2TVYMKZI6J13B '/*'",
     "build": "mkdir -p build && run-p build:*",
     "build:css": "postcss \"site/pages/**/*.css\" --dir build --base site/pages",
     "build:html": "orchid-lead build --save-future-pub-dates",
@@ -28,6 +30,7 @@
   },
   "dependencies": {
     "autoprefixer": "^7.1.1",
+    "aws-sdk": "^2.201.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-minify": "^0.3.0",
