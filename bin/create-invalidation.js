@@ -1,9 +1,13 @@
-const AWS = require('aws-sdk');
+const AWS = require("aws-sdk");
 
-let cf = new AWS.CloudFront({apiVersion: '2016-11-25', region: 'us-east-1'});
+let cf = new AWS.CloudFront({apiVersion: "2016-11-25", region: "us-east-1"});
 
-const distributionId = process.argv[2];
-const paths = process.argv[3];
+const distributionId = process.argv[2] || process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID;
+const paths = process.argv[3] || "/*";
+
+if (!distributionId) {
+    throw new Error(`Invalid Distribution ID: ${distributionId}`);
+}
 
 const now = Math.round(Date.now() / 1000);
 const rand = Math.round(Math.random() * 1000000);
@@ -24,7 +28,7 @@ cf.createInvalidation(params, (err, data) => {
 
     if (err) {
 
-        console.log(err, err.stack);
+        throw err;
 
     } else {
 
