@@ -1,6 +1,8 @@
-.invitation-only {
-	margin-top: 3em;
-}
 .thanks {
 	font-size: 16pt;
+	color: #000;
+	margin-bottom: 0.4em;
+}
+.address {
+	margin-top: 1.4em;
 }

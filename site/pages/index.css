@@ -242,11 +242,6 @@ h2.location {
 		width: auto;
 	}
 }
-@media (min-width: 1336px) {
-	.quote {
-		margin-left: 150px;
-	}
-}
 .byline {
 	font-size: 13.4pt;
 }
