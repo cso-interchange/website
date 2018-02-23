@@ -208,7 +208,7 @@ h2.location {
 	margin-top: 27px;
 }
 .quote .text {
-	font-size: 23pt;
+	font-size: 15pt;
 	line-height: 1.3;
 	margin-bottom: 0;
 	font-family: "Caecilia", serif;
@@ -223,7 +223,7 @@ h2.location {
 }
 .quote-wrapper {
 	width: 70%;
-	margin: 8em auto 8em;
+	margin: 3em auto 0;
 }
 .logo-gray {
 	width: 150px;
@@ -235,11 +235,7 @@ h2.location {
 	}
 	.quote-wrapper {
 		display: flex;
-		margin-bottom: 8em;
 		justify-content: center;
-	}
-	.logo-gray {
-		width: auto;
 	}
 }
 .byline {
@@ -407,9 +403,6 @@ h2.location {
 		line-height: 1.5;
 		font-size: 21.2pt;
 	}
-}
-.invitation-only {
-	color: #1D2737;
 }
 .q-search-form__input {
 	border: 1px solid #6A778B;
