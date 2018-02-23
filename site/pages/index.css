@@ -301,16 +301,23 @@ h2.location {
 	margin-bottom: 4.2em;
 }
 .agenda .time {
-	width: 28%;
+	width: 191px;
+	max-width: 191px;
 }
 .agenda .description {
-	width: 66%;
+	width: 72%;
 }
 .description .text {
 	max-width: 370px;
 }
+.toggle-button {
+	min-height: 14.94px;
+	min-width: 14.94px;
+}
 .agenda .toggle {
 	width: 4%;
+	margin-left: 2em;
+	margin-top: 8px;
 }
 .toggle-button.minus {
 	padding: 6.44px 0px;
@@ -319,31 +326,50 @@ h2.location {
 .expanded .plus {
 	display: none;
 }
+.agenda {
+	width: 100%;
+}
 .agenda table {
 	border-collapse: collapse;
 	font-size: 13.3pt;
 	width: 100%;
 }
-@media (min-width: 1120px) {
-	.agenda table {
-		max-width: 772px;
-	}
-}
 .partners {
-	width: 100%;
 	margin-top: 4em;
+	margin-left: 0;
+	width: auto;
+}
+.partner-container {
+	float: none;
+}
+#agenda .q-grid__row {
+	flex-direction: column;
 }
 @media (min-width: 720px) {
 	.agenda {
-		width: 90%;
-	}
-}
-@media (min-width: 800px) {
-	.agenda {
-		width: auto;
+		width: 80%;
 	}
 	.partners {
-		width: auto;
+		margin-left: calc(1 / 12 * 100%);
+	}
+}
+@media (min-width: 1220px) {
+	#agenda .q-grid__row {
+		flex-direction: row;
+	}
+	.partner-container {
+		float: right;
+	}
+}
+@media (min-width: 1310px) {
+	.partner-container {
+		float: none;
+	}
+	.agenda table {
+		width: 772px;
+	}
+	.agenda {
+		width: inherit;
 	}
 }
 .agenda td {
@@ -533,4 +559,14 @@ h2.location {
 	font-size: 11pt;
 	margin-top: 10px;
 	white-space: nowrap;
+}
+.title-speaker-container {
+	display: flex;
+	justify-content: space-between;
+}
+.title-speaker-container:hover {
+	cursor: pointer;
+}
+.title-speaker-container p {
+	margin-top: 0;
 }

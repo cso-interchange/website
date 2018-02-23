@@ -20,14 +20,13 @@ setTimeout(function () {
 (function ($) {
 	"use strict";
 
-	$(".toggle").on("click", function(event){
+	$(".title-speaker-container").on("click", function(event){
 		if ($(event.currentTarget).hasClass("expanded")) {
-			console.log("expanded");
 			$(event.currentTarget).removeClass("expanded").addClass("collapsed");
-			$(event.currentTarget).parent("tr").find(".abstract").addClass("hidden");
+			$(event.currentTarget).parent(".description").find(".abstract").addClass("hidden");
 		} else if ($(event.currentTarget).hasClass("collapsed")) {
 			$(event.currentTarget).removeClass("collapsed").addClass("expanded");
-			$(event.currentTarget).parent("tr").find(".abstract").removeClass("hidden");
+			$(event.currentTarget).parent(".description").find(".abstract").removeClass("hidden");
 		}
 	});
 
