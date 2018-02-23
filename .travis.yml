@@ -4,6 +4,12 @@ node_js:
 cache:
   directories:
     - "node_modules"
+<<<<<<< HEAD
+=======
+    - "$HOME/.cache/pip"
+install:
+  # `awscli` is required for invalidation of CloudFront distributions.
+  - pip install awscli
 env:
     - NODE_ENV=production
 script:
@@ -30,8 +36,6 @@ deploy:
     on:
       branch: develop
 after_deploy:
-  # `awscli` is required for invalidation of CloudFront distributions.
-  - pip install awscli
   # Allow `awscli` to make requests to CloudFront.
   - aws configure set preview.cloudfront true
   # Invalidate every object in the targeted distribution.
