@@ -1,6 +1,12 @@
 ---
-title: CSO Interchange
+title: CIO/CISO Interchange
 description: CIO/CISO Interchange is an invitation-only forum to discuss ideas and trends concerning all C-level roles. There are no product pitches and no sales personnel, just candid talk on important security issues facing you and your peers.
+og:description: CIO/CISO Interchange is an invitation-only forum to discuss ideas and trends concerning all C-level roles. There are no product pitches and no sales personnel, just candid talk on important security issues facing you and your peers.
+og:title: CIO/CISO Interchange
+og:type: website
+og:url: https://cio-cisointerchange.org/
+og:image: https://cio-cisointerchange.org/apple-touch-icon-180x180.png
+twitter:card: summary
 ---
 
 {{#extends "default"}}
@@ -12,11 +18,14 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 {{#append "scripts"}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js" integrity="sha384-WqEScjxyw0yOP2ju1kbQJ8APJNbmaWpdAZSwRi/nraoM49F+HxMDJsde89iJf7aZ" crossorigin="anonymous"></script>
+	<script src="//app-sj08.marketo.com/js/forms2/js/forms2.min.js"></script>
 	<script src="index.js"></script>
 {{/append}}
 
 {{#block "content"}}
-	<div class="background"></div>
+	<div class="background">
+		<img src="/asset/image/cio-ciso.svg" class="cio-ciso-bg" width="1485" height="325">
+	</div>
 	<div class="q-grid__container header-container">
 		<div class="q-grid__row">
 			<div class="q-grid__column q-grid__column-12 header">
@@ -35,13 +44,9 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 			</div>
 		</div>
 	</div>
-	<div class="strip-container">
-		<div class="transparent strip"></div>
-		<div class="white strip"></div>
-	</div>
 	<div class="q-grid__container content-container">
 		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-8 q-grid__column-push-2">
+			<div class="q-grid__column q-grid__column-8 q-grid__column-push-1">
 				<h2 class="about">About</h2>
 				<p>As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud. </p>
 
@@ -53,8 +58,8 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 	</div>
 	<div class="q-grid__container divider-container">
 		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-12 q-grid__column-push-1">
-				<img class="divider" src="/asset/image/divider2.svg" height="99">
+			<div class="q-grid__column q-grid__column-10 q-grid__column-push-1">
+				<hr class="divider">
 			</div>
 		</div>
 	</div>
@@ -133,6 +138,13 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="quote-wrapper">
+		<div class="quote">
+			<p class="text"><img src="/asset/image/left-quote-mark.svg" width="66.4" height="58.8" class="left-quote">This private event has no product pitches and no sales personnel, just candid talk on the important topics and issues facing you and your peers to secure the digital transformation.</p>
+			<p class="byline">Philippe Courtot, Chairman &amp; CEO, Qualys </p>
+		</div>
+		<img class="logo-gray" src="/asset/image/cso-interchange-logo-gray.svg" width="216" alt="Four Seasons Hotel">
 	</div>
 	<div class="speaker-container">
 		<div class="q-grid__container">
@@ -252,22 +264,13 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 			</div>
 		</div>
 	</div>
-	<div class="quote-wrapper">
-		<div class="quote">
-			<p class="text">This private event has no product pitches and no sales personnel, just candid talk on the important topics and issues facing you and your peers to secure the digital transformation.</p>
-			<p class="byline">Philippe Courtot, Chairman &amp; CEO, Qualys </p>
-		</div>
-		<img class="logo-gray" src="/asset/image/cso-interchange-logo-gray.svg" width="216" alt="Four Seasons Hotel">
-	</div>
 	<div class="footer-container">
 		<div class="q-grid__container">
 			<div class="q-grid__row">
 				<div class="q-grid__column q-grid__column-7 q-grid__column-push-1">
 					<p class="get-updates">Want to get updates on future events? </p>
-					<script src="//app-sj08.marketo.com/js/forms2/js/forms2.min.js"></script>
 					<form id="mktoForm_2446"></form>
-					<script>MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);</script>
-					<p class="copyright">© 2018 CIO/CISO Interchange. <span style="white-space: nowrap;">All rights reserved.</span></p>
+					<p class="copyright">© {{site.year}} CIO/CISO Interchange. <span style="white-space: nowrap;">All rights reserved.</span></p>
 				</div>
 				<div class="q-grid__column q-grid__column-3 q-grid__column-push-1">
 					<a href="#" class="back-to-top-container">

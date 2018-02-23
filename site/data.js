@@ -5,7 +5,7 @@ let envIsProd = process.env.TRAVIS_BRANCH === "master" || process.env.GIT_BRANCH
 
 module.exports = {
 	base: {
-		url: "https://www.csointerchange.org/"
+		url: "https://cio-cisointerchange.org/"
 	},
 	env: {
 		production: envIsProd

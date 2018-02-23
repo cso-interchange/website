@@ -1,3 +1,8 @@
+/**
+ * load Marketo form
+ */
+MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);
+
 // init customers carousel
 var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 	direction: 'horizontal',

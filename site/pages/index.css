@@ -2,10 +2,19 @@
 	min-height: 709px;
 	position: absolute;
 	width: 100%;
-	background-image: url(/asset/image/cio-ciso-background.svg);
-	background-repeat: no-repeat;
-	background-position: center 50%;
-	background-size: cover;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#455daa+0,2aabe0+100 */
+	background: #455daa; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #455daa 0%, #2aabe0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #455daa 0%,#2aabe0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #455daa 0%,#2aabe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.cio-ciso-bg {
+	min-width: 1485px;
+	margin-bottom: -67px;
 }
 .header-container {
 	min-height: 709px;
@@ -15,7 +24,6 @@ body {
 	font-family: "Gotham", sans-serif;
 }
 .button {
-	background-color: #D0021B;
 	border-radius: 3px;
 	color: #fff;
 	font-weight: 500;
@@ -26,6 +34,9 @@ body {
 .register {
 	margin-right: 30px;
 	margin-top: 2em;
+	background-color: #D0021B;
+	min-width: 0;
+	padding: 0 29px;
 }
 .header {
 	display: flex;
@@ -91,28 +102,6 @@ h1 {
 		margin-left: 214px;
 	}
 }
-.strip-container {
-	height: 100px;
-	width: 100%;
-	margin-top: -100px;
-	display: flex;
-	position: relative;
-}
-.strip.transparent {
-	width: 0%;
-}
-@media (min-width: 720px) {
-	.strip.transparent {
-		width: 13%;
-	}
-}
-.strip.white {
-	background-color: #fff;
-	width: 87%;
-}
-.content-container {
-	margin-top: -5em;
-}
 p {
 	font-size: 12.6pt;
 	margin-bottom: 1.5em;
@@ -124,6 +113,7 @@ h2 {
 }
 h2.about {
 	margin-bottom: 23px;
+	margin-top: 2em;
 }
 @media (min-width: 720px) {
 	.q-company-carousel__slide {
@@ -218,23 +208,29 @@ h2.location {
 	margin-top: 27px;
 }
 .quote .text {
-	font-size: 15pt;
+	font-size: 23pt;
 	line-height: 1.3;
 	margin-bottom: 0;
 	font-family: "Caecilia", serif;
 	letter-spacing: -0.6px;
+	color: #1D2737;
+	position: relative;
+}
+.left-quote {
+	position: absolute;
+	left: -41px;
+	top: -27px;
 }
 .quote-wrapper {
-	width: 90%;
-	margin: 0 auto 8em;
+	width: 70%;
+	margin: 8em auto 8em;
 }
 .logo-gray {
 	width: 150px;
 }
 @media (min-width: 720px) {
 	.quote {
-		width: 415px;
-		margin-left: 150px;
+		width: 495px;
 		margin-right: 22px;
 	}
 	.quote-wrapper {
@@ -244,6 +240,11 @@ h2.location {
 	}
 	.logo-gray {
 		width: auto;
+	}
+}
+@media (min-width: 1336px) {
+	.quote {
+		margin-left: 150px;
 	}
 }
 .byline {
@@ -405,7 +406,7 @@ h2.location {
 }
 @media (min-width: 720px) {
 	.register-container h2 {
-		margin-bottom: -6px;
+		margin-bottom: 2px;
 	}
 	.register-container h3 {
 		line-height: 1.5;
@@ -448,31 +449,15 @@ h2.location {
 .cso-link:hover {
 	color: #e8253d;
 }
+hr.divider {
+	height: 1px;
+	border-top: 1px solid #ccc;
+	border-bottom: none;
+}
 .divider-container .q-grid__column {
 	position: relative;
 }
-.divider-end {
-	position: absolute;
-	bottom: 0;
-	right: -15px;
-}
-.divider-container {
-	margin-top: 0;
-	margin-bottom: 2em;
-}
-@media (min-width: 600px) {
-	.divider-container {
-		margin-top: -9px;
-		margin-bottom: 88px;
-	}
-}
-.divider-container .q-grid__column,
-.divider {
-	min-height: 99px;
-}
-.divider {
-	min-width: 1209px;
-}
+
 .topic-container {
 	min-width: 100%;
 }
@@ -504,7 +489,7 @@ h2.location {
 	left: 21px !important;
 }
 .mktoButton {
-	background: #ed2e26;
+	background-color: #D0021B;
 	border: 1px solid #ed2e26;
 	border-radius: 0 2px 2px 0;
 	height: auto;
