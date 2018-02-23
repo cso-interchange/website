@@ -16,13 +16,7 @@
 
     {{! preconnect to CDNs to set up DNS/TCP/TLS connections ahead of time}}
     {{#block "hints"}}
-        {{#if site.env.production}}
-            <link rel="preconnect" href="https://rum-static.pingdom.net" crossorigin>
-            <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-        {{/if}}
-        <link rel="preconnect" href="https://d1uyme8f6ss6qi.cloudfront.net" crossorigin>
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-        <link rel="preconnect" href="https://cdn.rawgit.com" crossorigin>
     {{/block}}
 
 
@@ -52,10 +46,10 @@
     {{#unless site.env.production}}
         <div class="banner--dev">
             Development version and work in progress. Might not work properly
-            and could go down at any time. For the real thing
+            and could go down at any time. For the real thing,
             <span class="nowrap">
                 visit
-                <a href="https://www.csointerchange.org/">www.csointerchange.org</a>
+                <a href="{{site.base.url}}">www.cio-cisointerchange.org</a>
                 instead.
             </span>
         </div>
