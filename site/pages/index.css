@@ -386,6 +386,8 @@ h2.location {
 	font-size: 28.7pt;
 	font-weight: 500;
 	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .register-container h3 {
 	color: #1D2737;
@@ -542,4 +544,9 @@ hr.divider {
 }
 .title-speaker-container p {
 	margin-top: 0;
+}
+.inaugural-event {
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 0;
 }
