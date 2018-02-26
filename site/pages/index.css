@@ -379,9 +379,6 @@ h2.location {
 	margin-bottom: 9.2em;
 	padding-top: 4.7em;
 }
-.speaker-container .q-grid__column {
-	width: 100%;
-}
 .register-container h2 {
 	font-size: 28.7pt;
 	font-weight: 500;
@@ -549,4 +546,7 @@ hr.divider {
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-bottom: 0;
+}
+.swiper-container {
+	overflow: visible;
 }
