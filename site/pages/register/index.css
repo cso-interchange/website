@@ -42,6 +42,7 @@ h1 {
 	line-height: 1.1;
 	margin-top: 1em;
 	font-weight: 500;
+	letter-spacing: -0.1pt;
 }
 @media (min-width: 800px) {
 	h1 {
