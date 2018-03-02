@@ -88,12 +88,12 @@ h1 {
 }
 @media (min-width: 720px) {
 	.topic-container {
-		min-width: 690px;
+		min-width: 700px;
 	}
 }
 @media (min-width: 820px) {
 	h1 {
-		width: 690px;
+		width: 700px;
 	}
 }
 .date-location {
