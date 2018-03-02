@@ -16,6 +16,9 @@
 
     {{! preconnect to CDNs to set up DNS/TCP/TLS connections ahead of time}}
     {{#block "hints"}}
+        {{#if site.env.production}}
+            <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+        {{/if}}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     {{/block}}
 
