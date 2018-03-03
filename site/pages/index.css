@@ -556,3 +556,6 @@ hr.divider {
 .swiper-container {
 	overflow: visible;
 }
+.dr-kaku .q-company-profile__company {
+	margin-bottom: 47px;
+}
