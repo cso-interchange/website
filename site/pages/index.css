@@ -559,3 +559,22 @@ hr.divider {
 .dr-kaku .q-company-profile__company {
 	margin-bottom: 47px;
 }
+.q-home-feed__pagination {
+	display: flex;
+}
+@media (min-width: 720px) {
+	.q-home-feed__pagination {
+		align-self: flex-start;
+		height: 44px;
+		float: right;
+		margin-top: -82px;
+	}
+	.q-home-feed__item {
+		width: 280px;
+	}
+
+}
+.q-home-feed__pagination-wrapper {
+	position: absolute;
+	width: 100vw;
+}
