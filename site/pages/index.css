@@ -236,10 +236,19 @@ h2.location {
 	top: -27px;
 }
 .quote-wrapper {
-	margin: 3em auto 0;
+	margin: 13px auto 0;
 }
 .logo-gray {
 	width: 150px;
+	margin-right: 4em;
+	margin-top: -14px;
+	display: none;
+}
+.quote-container {
+    margin-top: 10px;
+}
+.quote-container .q-grid__column {
+	width: 90%;
 }
 @media (min-width: 720px) {
 	.quote {
@@ -248,6 +257,12 @@ h2.location {
 	}
 	.quote-wrapper {
 		display: flex;
+	}
+	.logo-gray {
+		display: block;
+	}
+	.quote-container .q-grid__column {
+		width: 80%;
 	}
 }
 .byline {
