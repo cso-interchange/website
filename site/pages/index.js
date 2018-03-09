@@ -78,3 +78,19 @@ setTimeout(function () {
 	}
 
 }(jQuery));
+
+/**
+ * when click bio link, expand person's bio
+ */
+(function ($) {
+	"use strict";
+
+	$(".bio-link").on("click", function (event) {
+		var speaker = $(event.currentTarget).attr("data-speaker");
+		var $bioWrapper = $("#"+speaker + " .bio-wrapper");
+		if ($bioWrapper.hasClass("expanded") === false) {
+			$bioWrapper.click();
+		}
+	});
+
+}(jQuery));
