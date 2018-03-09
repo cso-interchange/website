@@ -273,9 +273,9 @@ h2.location {
 	padding: 5em 0;
 }
 .abstract {
-	margin-top: 2em;
 	font-size: 11pt;
 	line-height: 1.9;
+	margin-top: 2em;
 }
 .get-updates {
 	font-size: 22.3pt;
@@ -577,4 +577,34 @@ hr.divider {
 .q-home-feed__pagination-wrapper {
 	position: absolute;
 	width: 100vw;
+}
+.csa-info {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0;
+}
+@media (min-width: 950px) {
+	.csa-info {
+		flex-direction: row;
+		margin: 0 0 2em;
+	}
+}
+.csa-info .csa-logo {
+	margin-right: 2.5em;
+	align-items: center;
+	margin-bottom: 2em;
+}
+@media (min-width: 950px) {
+	.csa-info .csa-logo {
+		margin-bottom: 0;
+	}
+}
+.csa-info .csa-blurb {
+	margin: 0;
+}
+#agenda .title {
+	margin-bottom: 0;
+}
+#agenda .speaker-logo {
+	margin-bottom: 1em;
 }
