@@ -232,8 +232,13 @@ h2.location {
 }
 .left-quote {
 	position: absolute;
-	left: -41px;
+	left: 0;
 	top: -27px;
+}
+@media (min-width: 720px) {
+	.left-quote {
+		left: -41px;
+	}
 }
 .quote-wrapper {
 	margin: 13px auto 0;
