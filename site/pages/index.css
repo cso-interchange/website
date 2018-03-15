@@ -245,7 +245,7 @@ h2.location {
 	display: none;
 }
 .quote-container {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 .quote-container .q-grid__column {
 	width: 90%;
@@ -622,4 +622,18 @@ hr.divider {
 }
 #agenda .speaker-logo {
 	margin-bottom: 1em;
+}
+.not-icon {
+	display: inline-block;
+	margin-right: 0.3em;
+	width: 0.9em;
+	margin-bottom: -3px;
+}
+@media (min-width: 500px) {
+	.not-icon {
+		width: 43px;
+	}
+}
+.not-wrapper {
+	white-space: nowrap;
 }
