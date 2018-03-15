@@ -630,13 +630,12 @@ hr.divider {
 }
 .not-icon {
 	display: inline-block;
-	margin-right: 0.3em;
 	width: 0.9em;
-	margin-bottom: -3px;
+	margin-bottom: -0.1em;
 }
 @media (min-width: 500px) {
 	.not-icon {
-		width: 43px;
+		width: 48px;
 	}
 }
 .not-wrapper {
