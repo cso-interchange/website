@@ -118,3 +118,16 @@ h2 {
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
+.not-icon {
+	display: inline-block;
+	width: 0.9em;
+	margin-bottom: -0.1em;
+}
+@media (min-width: 500px) {
+	.not-icon {
+		width: 48px;
+	}
+}
+.not-wrapper {
+	white-space: nowrap;
+}
