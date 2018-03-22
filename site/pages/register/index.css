@@ -120,12 +120,13 @@ h2 {
 }
 .not-icon {
 	display: inline-block;
-	width: 0.9em;
-	margin-bottom: -0.1em;
+	width: 1em;
+	margin-bottom: -0.15em;
+	margin-left: 2px;
 }
 @media (min-width: 500px) {
 	.not-icon {
-		width: 48px;
+		width: 56px;
 	}
 }
 .not-wrapper {
