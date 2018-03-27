@@ -1,0 +1,48 @@
+{
+  "name": "CIO/CISO Interchange",
+  "description": "The website powering www.cio-ciso-interchange.org.",
+  "repository": {
+    "url": "https://github.com/cso-interchange/website",
+    "license": "MIT"
+  },
+  "participate": {
+    "home": "https://github.com/cso-interchange/website",
+    "docs": "https://github.com/cso-interchange/website/wiki",
+    "ci": "https://travis-ci.org/cso-interchange/website/builds"
+  },
+  "bugs": {
+    "list": "https://github.com/cso-interchange/website/issues",
+    "report": "https://github.com/cso-interchange/website/issues/new"
+  },
+  "urls": {
+    "prod": "https://www.cio-ciso-interchange.org",
+    "dev": "https://dev.cio-ciso-interchange.org"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "aws",
+    "travis-ci",
+    "nodejs",
+    "npm",
+    "autoprefixer",
+    "aws-sdk",
+    "babel-cli",
+    "babel-preset-env",
+    "babel-preset-minify",
+    "babel-register",
+    "cssnano",
+    "dotenv",
+    "handlebars",
+    "npm-run-all",
+    "orchid-lead",
+    "postcss",
+    "postcss-cli",
+    "browser-sync",
+    "chokidar-cli",
+    "eslint",
+    "stylelint",
+    "svgo"
+  ]
+}
