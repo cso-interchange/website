@@ -212,10 +212,19 @@ h2.location {
 	}
 }
 .directions,
-.bio-link {
+.bio-link{
 	text-decoration: none;
 	color: #D0021B;
 	font-weight: 500;
+}
+.press-release {
+	text-decoration: none;
+	color: #D0021B;
+}
+.directions:hover,
+.bio-link:hover,
+.press-release:hover {
+	opacity: 0.5;
 }
 .bio-link-wrapper {
 	font-size: 11pt;
