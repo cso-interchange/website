@@ -2,86 +2,108 @@
 <html lang="{{#if page.lang}}{{page.lang}}{{else}}{{site.lang}}{{/if}}" class="no-js">
 <head>
 
-    <meta charset="utf-8">
-    {{#unless site.env.production}}
-        <meta name="robots" content="noindex, nofollow">
-    {{/unless}}
-    {{#block "meta-tags"}}
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{#if page.description}}
-            <meta name="description" content="{{page.description}}" class="swiftype" data-type="text">
-        {{/if}}
-    {{/block}}
-    <title>{{page.title}}</title>
+	<meta charset="utf-8">
+	{{#unless site.env.production}}
+		<meta name="robots" content="noindex, nofollow">
+	{{/unless}}
+	{{#block "meta-tags"}}
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{#if page.description}}
+			<meta name="description" content="{{page.description}}" class="swiftype" data-type="text">
+		{{/if}}
+	{{/block}}
+	<title>{{page.title}}</title>
 
-    {{! preconnect to CDNs to set up DNS/TCP/TLS connections ahead of time}}
-    {{#block "hints"}}
-        {{#if site.env.production}}
-            <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-        {{/if}}
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    {{/block}}
+	{{! preconnect to CDNs to set up DNS/TCP/TLS connections ahead of time}}
+	{{#block "hints"}}
+		{{#if site.env.production}}
+			<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+		{{/if}}
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+	{{/block}}
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.png" sizes="32x32">
-    <link rel="icon" href="/favicon-64.png" sizes="64x64">
-    <link rel="icon" href="/favicon-128.png" sizes="128x128">
-    <link rel="icon" href="/favicon-256.png" sizes="256x256">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png">
-    <link rel="mask-icon" href="/mask-icon.svg" color="#1D2737">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.png" sizes="32x32">
+	<link rel="icon" href="/favicon-64.png" sizes="64x64">
+	<link rel="icon" href="/favicon-128.png" sizes="128x128">
+	<link rel="icon" href="/favicon-256.png" sizes="256x256">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png">
+	<link rel="mask-icon" href="/mask-icon.svg" color="#1D2737">
 
-    {{#block "styles"}}
-        <link rel="stylesheet" href="/asset/stylesheet/common.css">
-    {{/block}}
+	{{#block "styles"}}
+		<link rel="stylesheet" href="/asset/stylesheet/common.css">
+	{{/block}}
 
-    {{! script tags in scripts-head should be async}}
-    {{#block "scripts-head"}}
-    {{/block}}
+	{{! script tags in scripts-head should be async}}
+	{{#block "scripts-head"}}
+	{{/block}}
 
-    {{#if site.env.production}}
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MK84QFF');</script>
-    <!-- CSP Hash SHA256 0Xlex5b7R2NOFa/U+7SphlZLqZdGWLOGrixUf1juuBw= -->
-    <!-- Note, CSP Hash is white-space and case sensitive -->
-    <!-- End Google Tag Manager -->
-    {{/if}}
+	{{#if site.env.production}}
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MK84QFF');</script>
+	<!-- CSP Hash SHA256 0Xlex5b7R2NOFa/U+7SphlZLqZdGWLOGrixUf1juuBw= -->
+	<!-- Note, CSP Hash is white-space and case sensitive -->
+	<!-- End Google Tag Manager -->
+	{{/if}}
 
 </head>
-<body>
+<body{{#unless site.env.production}} class="cso-dev"{{/unless}}>
 
-    {{#if site.env.production}}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK84QFF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {{/if}}
+	{{#if site.env.production}}
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK84QFF"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	{{/if}}
 
-    {{#unless site.env.production}}
-        <div class="banner--dev">
-            Development version and work in progress. Might not work properly
-            and could go down at any time. For the real thing,
-            <span class="nowrap">
-                visit
-                <a href="{{site.base.url}}">www.cio-cisointerchange.org</a>
-                instead.
-            </span>
-        </div>
-    {{/unless}}
+	{{#unless site.env.production}}
+		<div class="banner--dev">
+			Development version and work in progress. Might not work properly
+			and could go down at any time. For the real thing,
+			<span class="nowrap">
+				visit
+				<a href="{{site.base.url}}">www.cio-cisointerchange.org</a>
+				instead.
+			</span>
+		</div>
+	{{/unless}}
 
-    {{#block "content"}}{{/block}}
+	<div class="cso-header-wrapper">
+		<div class="cso-header-container">
+			<a href="/" class="cso-header-logo">
+				<img src="/asset/image/cio-cisointerchange-logo.svg" width="222" height="63" alt="CIO / CISO Interchange">
+			</a>
+			<div class="cso-header__cta-container">
+				<div class="cso-header__cta-events">
+					<a href="javascript:void(0)" class="q-link cso-header__cta-link">Events</a>
+					<ul class="cso-header__cta-events--menu">
+						<li>
+							<a href="#">Oct 16, 2018 –  <span>Washington, DC</span></a>
+						</li>
+						<li>
+							<a href="#">Dec 10, 2018 –  <span>Florida</span></a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="q-button cso-header__register-button">Register</a>
+			</div>
+		</div>
+	</div>
 
-    {{#block "scripts"}}
-        <!-- libraries -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
-    {{/block}}
+	{{#block "content"}}{{/block}}
+
+	{{#block "scripts"}}
+		<!-- libraries -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+	{{/block}}
 
 </body>
 </html>

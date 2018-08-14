@@ -8144,3 +8144,125 @@ hr {
 	left: 0 !important;
 }
 /* END Marketo form reset */
+
+/* CSO Site Global Styles */
+.cso-dev .cso-header-wrapper {
+	top: 58px;
+}
+.cso-header-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+.cso-header-container {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+@media (min-width: 375px) {
+	.cso-header-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (min-width: 720px) {
+	.cso-header-container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+@media (min-width: 1080px) {
+	.cso-header-container {
+		padding-left: 70px;
+		padding-right: 70px;
+		max-width: 1430px;
+	}
+}
+.cso-header-logo {
+	margin-top: 10px;
+}
+.cso-header__register-button {
+	background: #FFFFFF;
+	border-radius: 2px;
+	color: #2E8BE0;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: 120px;
+}
+.cso-header__register-button:hover,
+.cso-header__register-button:focus,
+.cso-header__register-button:active {
+	background: #ECECEC;
+}
+.cso-header__cta-container {
+	position: relative;
+	min-width: 238px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cso-header__cta-link {
+	color: #FFF;
+	margin-top: 4px;
+}
+.cso-header__cta-link:hover,
+.cso-header__cta-link:focus,
+.cso-header__cta-link:active {
+	color: #ECECEC;
+}
+.cso-header__cta-link:after {
+	background-image: url(https://d1uyme8f6ss6qi.cloudfront.net/image/icon/link-arrow-white.svg);
+}
+.cso-header__cta-events {
+	position: relative;
+	height: 44px;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.cso-header__cta-events--menu {
+	position: absolute;
+	background: rgba(181,208,229,0.8);
+	width: 363px;
+	height: 120px;
+	z-index: 10;
+	top: 100%;
+	margin: 0;
+	list-style: none;
+	margin-left: -180px;
+	left: 50%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	padding: 21px 31px;
+}
+.cso-header__cta-events:hover .cso-header__cta-events--menu {
+	opacity: 1;
+	visibility: visible;
+}
+.cso-header__cta-events--menu ul {
+
+}
+.cso-header__cta-events--menu ul li {
+
+}
+.cso-header__cta-events--menu a {
+	font-size: 18px;
+	color: #262626;
+	line-height: 2;
+	text-decoration: none;
+	font-weight: 400;
+}
+.cso-header__cta-events--menu a:hover {
+	color: #3C3C3C;
+}
+.cso-header__cta-events--menu a > span {
+	font-weight: 500;
+}

@@ -15,14 +15,101 @@ twitter:card: summary
 	<link rel="stylesheet" href="index.css">
 {{/append}}
 
-{{#append "scripts"}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js" integrity="sha256-NCAKIW9CtzSpcjpTZ2RbtRfDHgNrQuK/akgMYogPwSw=" crossorigin="anonymous"></script>
-	<script src="https://app-sj08.marketo.com/js/forms2/js/forms2.min.js"></script>
-	<script src="index.js"></script>
-{{/append}}
-
 {{#block "content"}}
+	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--home">
+		<div class="cso__hero-banner-container">
+			<div class="cso__hero-banner-inner">
+				<div class="cso-hero__box-wrapper">
+					<div class="cso-hero__box-inner">
+						<h2 class="heading--2">
+							Building security into the digital transformation – not bolting it on.
+						</h2>
+						<div class="cso-hero__box-content">
+							<p>
+								As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud.
+							</p>
+							<p>
+								Co-founded by Philippe Courtot, Chairman &amp; CEO, Qualys, Inc. and the Cloud Security Alliance (CSA), the CIO/CISO Interchange is a non-profit, non-commercial organization.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="q-grid__container cso-overview__container">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h2 class="cso-overview__heading">About</h2>
+					<p class="cso-overview__paragraph">
+						The CIO/CISO Interchange is an open forum for discussions, debates and exchanges between CIOs, CTOs and CISOs. CSA’s community of cloud and security executives will provide the CIO/CISO Interchange with vendor-neutral content for securing the next generation of information technology.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="q-grid__container cso-events__container">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h2 class="cso-events__heading">Upcoming events</h2>
+					<p class="cso-overview__paragraph">
+						We are constantly adding events around the world. Find an event below, or <a href="#">sign up to our newsletter</a> to find out about new events near you.
+					</p>
+				</div>
+			</div>
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<div class="cso-evenets__table">
+						<div class="cso-events__table-row">
+							<div class="cso-events__title">
+								<a href="#">CIO/CISO Interchange 2018<br> Washington, DC</a>
+							</div>
+							<div class="cso-events__date">
+								<span>
+									<img src="/asset/image/icon-calendar.svg">
+								</span> Oct 18, 2018
+							</div>
+							<div class="cso-events__location">
+								<span>
+									<img src="/asset/image/icon-location.svg">
+								</span> Washington, DC
+							</div>
+							<div class="cso-events__cta">
+								<a href="#" class="q-button">Register</a>
+							</div>
+						</div>
+						<div class="cso-events__table-row">
+							<div class="cso-events__title">
+								<a href="#">CIO/CISO Interchange 2018<br> Florida</a>
+							</div>
+							<div class="cso-events__date">
+								<span>
+									<img src="/asset/image/icon-calendar.svg">
+								</span> Dec 10, 2018
+							</div>
+							<div class="cso-events__location">
+								<span>
+									<img src="/asset/image/icon-location.svg">
+								</span> Championsgate, FL
+							</div>
+							<div class="cso-events__cta">
+								<a href="#" class="q-button">Register</a>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{!--
 	<div class="background">
 		<img src="/asset/image/cio-ciso.svg" class="cio-ciso-bg" width="1485" height="325">
 	</div>
@@ -328,6 +415,7 @@ Wall Street Journal about this book.</p>
 			</div>
 		</div>
 	</div>
+	--}}
 {{/block}}
 
 {{/extends}}
