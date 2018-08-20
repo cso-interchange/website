@@ -8266,3 +8266,131 @@ hr {
 .cso-header__cta-events--menu a > span {
 	font-weight: 500;
 }
+.cso-footer-quote {
+	text-align: center;
+}
+.cso-footer-quote__container {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+@media (min-width: 375px) {
+	.cso-footer-quote__container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}
+@media (min-width: 720px) {
+	.cso-footer-quote__container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+}
+@media (min-width: 1080px) {
+	.cso-footer-quote__container {
+		padding-left: 70px;
+		padding-right: 70px;
+		max-width: 1430px;
+	}
+
+}
+.cso-footer-quote__content {
+	padding-top: 70px;
+	padding-bottom: 0;
+	margin: 0 auto;
+	max-width: 770px;
+}
+@media (min-width: 720px) {
+	.cso-footer-quote__content {
+		padding-top: 8.74126%;
+	}
+
+}
+@media (min-width: 1430px) {
+	.cso-footer-quote__content {
+		padding-top: 97px;
+	}
+
+}
+.cso-footer-quote__blockquote {
+	background-image: url(/asset/image/cso-logo-gray.svg);
+	background-repeat: no-repeat;
+	background-position: right 37px;
+	padding-left: 10px;
+}
+.cso-footer-quote__blockquote p {
+	font-family: "Caecilia";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #1D2737;
+	letter-spacing: -0.12px;
+	line-height: 38px;
+	background-image: url(/asset/image/upper-quote-icon.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0;
+	padding-left: 41px;
+	text-align: left;
+	padding-top: 30px;
+}
+.cso-footer-quote__blockquote span {
+	background-image: url(/asset/image/lower-quote-icon.svg);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 137px) bottom;
+	display: block;
+	max-width: 480px;
+	padding-bottom: 24px;
+
+}
+.cso-footer {
+	display: flex;
+	flex-direction: row;
+	padding-top: 149px;
+}
+.cso-footer-left {
+	flex: 1;
+	background: #1D2737;
+}
+.cso-footer-right {
+	flex: 1;
+	background: #F3F3F3;
+}
+.cso-footer-quote__footer {
+	text-align: left;
+	color: #6A778B;
+	font-size: 18px;
+	padding-left: 51px;
+	padding-top: 20px;
+	letter-spacing: -0.1px;
+	margin: 0;
+}
+.cso-footer-left__content {
+	padding-top: 129px;
+	max-width: 405px;
+	margin-left: auto;
+	margin-right: 130px;
+	padding-bottom: 130px;
+}
+.cso-footer-left__content h3 {
+	margin: 0 0 48px;
+	padding: 0;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 34px;
+	letter-spacing: -0.15px;
+}
+.mktoLayoutLeft {
+	display: flex;
+}
+.mktoForm input {
+	width: 252px !important;
+	border-radius: 2px 0 0 2px !important;
+	border-right: 0;
+	height: 44px !important;
+	border-right: 0 !important;
+}
+

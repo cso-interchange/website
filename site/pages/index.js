@@ -3,23 +3,8 @@
  */
 MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);
 
-// init customers carousel
-var swiper = new Swiper('.swiper-container', { // eslint-disable-line
-	direction: 'horizontal',
-	loop: false,
-	slidesPerView: 'auto',
-	watchSlidesProgress: true,
-	watchSlidesVisibility: true,
-	scrollbar: false,
-	navigation: {
-		nextEl: '.q-carousel-button--next',
-		prevEl: '.q-carousel-button--prev',
-		disabledClass: 'q-carousel-button--disabled'
-	},
-	spaceBetween: 30
-});
-
 // expand / collapse agenda rows
+/*
 (function ($) {
 	"use strict";
 
@@ -34,10 +19,12 @@ var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 	});
 
 }(jQuery));
+*/
 
 /**
  * expand / collapse long passages of text
  */
+ /*
 (function ($) {
 	"use strict";
 
@@ -50,6 +37,7 @@ var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 	});
 
 }(jQuery));
+*/
 
 /**
  * wrap marketo form fields in a div
@@ -67,6 +55,7 @@ var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 /**
  * show thank you message
  */
+ /*
 (function ($) {
 	"use strict";
 
@@ -76,10 +65,12 @@ var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 	}
 
 }(jQuery));
+*/
 
 /**
  * when click bio link, expand person's bio
  */
+ /*
 (function ($) {
 	"use strict";
 
@@ -92,3 +83,4 @@ var swiper = new Swiper('.swiper-container', { // eslint-disable-line
 	});
 
 }(jQuery));
+*/
