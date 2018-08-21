@@ -1,3 +1,4 @@
+
 /**
  * load Marketo form
  */
@@ -38,6 +39,19 @@ MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);
 
 }(jQuery));
 */
+
+(function ($) {
+	"use strict";
+
+	$(".js-cs-top").on("click", function(){
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		});
+		
+	});
+
+}(jQuery));
 
 /**
  * wrap marketo form fields in a div

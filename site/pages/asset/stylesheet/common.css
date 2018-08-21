@@ -8146,9 +8146,6 @@ hr {
 /* END Marketo form reset */
 
 /* CSO Site Global Styles */
-.cso-dev .cso-header-wrapper {
-	top: 58px;
-}
 .cso-header-wrapper {
 	position: absolute;
 	left: 0;
@@ -8160,11 +8157,11 @@ hr {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 18px;
+	padding-bottom: 18px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-top: 18px;
-	padding-bottom: 18px;
 }
 @media (min-width: 375px) {
 	.cso-header-container {
@@ -8205,8 +8202,15 @@ hr {
 	position: relative;
 	min-width: 238px;
 	display: flex;
+	flex-flow: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+}
+@media (min-width: 680px) {
+	.cso-header__cta-container {
+		flex-flow: row;
+		align-items: center;
+	}
 }
 .cso-header__cta-link {
 	color: #FFF;
@@ -8227,6 +8231,12 @@ hr {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+@media (max-width: 679px) {
+	.cso-header__cta-events {
+		order: 2;
+		padding: 0;
+	}
+}
 .cso-header__cta-events--menu {
 	position: absolute;
 	background: rgba(181,208,229,0.8);
@@ -8242,6 +8252,13 @@ hr {
 	visibility: hidden;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 	padding: 21px 31px;
+}
+@media (max-width: 679px) {
+	.cso-header__cta-events--menu {
+		right: 0;
+		left: auto;
+		margin-left: 0;
+	}
 }
 .cso-header__cta-events:hover .cso-header__cta-events--menu {
 	opacity: 1;
@@ -8315,19 +8332,23 @@ hr {
 
 }
 .cso-footer-quote__blockquote {
-	background-image: url(/asset/image/cso-logo-gray.svg);
-	background-repeat: no-repeat;
-	background-position: right 37px;
 	padding-left: 10px;
+}
+@media (min-width: 810px) {
+	.cso-footer-quote__blockquote {
+		background-image: url(/asset/image/cso-logo-gray.svg);
+		background-repeat: no-repeat;
+		background-position: right 37px;
+	}
 }
 .cso-footer-quote__blockquote p {
 	font-family: "Caecilia";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 1.786em;
 	color: #1D2737;
 	letter-spacing: -0.12px;
-	line-height: 38px;
+	line-height: 1.267;
 	background-image: url(/asset/image/upper-quote-icon.svg);
 	background-repeat: no-repeat;
 	background-position: left top;
@@ -8346,17 +8367,36 @@ hr {
 
 }
 .cso-footer {
-	display: flex;
-	flex-direction: row;
-	margin-top: 149px;
-	min-height: 550px;
+	display: block;
+	margin-top: 6em;
+}
+@media (min-width: 810px) {
+	.cso-footer {
+		margin-top: 149px;
+		display: flex;
+		flex-direction: row;
+	}
+}
+@media (min-width: 1140px) {
+	.cso-footer {
+		min-height: 550px;
+	}
+}
+.cso-footer-left,
+.cso-footer-right {
+	flex: 1;
+	padding-bottom: 5em;
+}
+@media (min-width: 1140px) {
+	.cso-footer-left,
+	.cso-footer-right {
+		padding-bottom: 0;
+	}
 }
 .cso-footer-left {
-	flex: 1;
 	background: #1D2737;
 }
 .cso-footer-right {
-	flex: 1;
 	background: #F3F3F3;
 }
 .cso-footer-quote__footer {
@@ -8369,18 +8409,35 @@ hr {
 	margin: 0;
 }
 .cso-footer-left__content {
-	padding-top: 129px;
-	max-width: 405px;
-	margin-left: auto;
-	margin-right: 130px;
+	padding-top: 5em;
+	margin-left: 0;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+@media (min-width: 810px) {
+	.cso-footer-left__content {
+		max-width: 405px;
+		padding-top: 20%;
+		padding-left: 10%;
+		padding-right: 0;
+	}
+}
+@media (min-width: 1140px) {
+	.cso-footer-left__content {
+		margin-right: 130px;
+		padding-top: 129px;
+		margin-left: auto;
+		padding-left: 0;
+	}
 }
 .cso-footer-left__content h3 {
-	margin: 0 0 48px;
+	margin: 0 0 1.6em;
 	padding: 0;
 	color: #fff;
-	font-size: 30px;
+	font-size: 1.738em;
 	font-weight: 400;
-	line-height: 34px;
+	line-height: 1.133;
 	letter-spacing: -0.15px;
 }
 .cso-footer-left__content .mktoLayoutLeft {
@@ -8488,8 +8545,22 @@ hr {
 	color: #455163;
 }
 .cso-footer-right__content-container {
-	padding-top: 126px;
-	padding-left: 173px;
+	padding-top: 5em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+@media (min-width: 810px) {
+	.cso-footer-right__content-container {
+		padding-top: 20%;
+		padding-left: 10%;
+		padding-right: 0;
+	}
+}
+@media (min-width: 1140px) {
+	.cso-footer-right__content-container {
+		padding-top: 126px;
+		padding-left: 173px;
+	}
 }
 .cso-footer__social-header {
 	margin: 0;
@@ -8500,6 +8571,9 @@ hr {
 	color: #1D2737;
 	letter-spacing: -0.19px;
 	line-height: 34px;
+}
+.cso-site-container {
+	position: relative;
 }
 
 

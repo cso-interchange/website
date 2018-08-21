@@ -123,7 +123,7 @@ h2 {
 	margin-bottom: 1.750em;
 }
 .cso-overview__container {
-	padding-top: 20%;
+	padding-top: 5em;
 }
 @media (min-width: 720px) {
 	.cso-overview__container {
@@ -148,7 +148,12 @@ h2 {
 	color: #52A2EC;
 }
 .cso-events__container {
-	padding-top: 102px;
+	padding-top: 5em;
+}
+@media (min-width: 720px) {
+	.cso-events__container {
+		padding-top: 102px;
+	}
 }
 .cso-events__heading {
 	margin: 0 0 26px;
@@ -207,9 +212,7 @@ h2 {
 		width: 54.4%;
 	}
 }
-.cso-events__location {
-	display: none;
-}
+.cso-events__location,
 .cso-events__date span,
 .cso-events__location span {
 	display: none;
@@ -228,6 +231,9 @@ h2 {
 	min-width: 120px;
 	padding: 0 15px;
 }
+.cso-events__location-text {
+	margin: 10px 0;
+}
 @media (min-width: 720px) {
 	.cso-events__location {
 		display: flex;
@@ -238,6 +244,9 @@ h2 {
 	}
 	.cso-events__date {
 		display: flex;
+	}
+	.cso-events__location-text {
+		display: none;
 	}
 }
 @media (min-width: 980px) {
