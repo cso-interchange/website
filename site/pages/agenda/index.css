@@ -1,0 +1,231 @@
+.cso__hero-banner-wraper--inner {
+	background-image: url(/asset/image/cso-agenda-banner.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.cso-overview__container {
+	padding-top: 5em;
+}
+@media (min-width: 720px) {
+	.cso-overview__container {
+		padding-top: 108px;
+	}
+}
+.cso-overview__heading {
+	margin: 0;
+	font-size: 2.5em;
+	line-height: 1.150;
+	letter-spacing: normal;
+}
+.cso-overview__heading span.time-seperator {
+	margin: 0 12px 0;
+}
+.cso-overview__container .q-button {
+	margin-top: 24px;
+	min-width: 120px;
+}
+.cso__hero-banner-inner .heading--2 {
+	color: #FFF;
+	font-weight: 500;
+	font-size: 38px;
+	line-height: 41px;
+	max-width: 650px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: normal;
+}
+.cso-partner-logo__container {
+	margin-left: auto;
+	margin-right: 0;
+	max-width: 184px;
+	padding-top: 2px;
+}
+.cso-partner-logo__text img {
+	margin: 3px 0 0 10px;
+}
+.cso-partner-logo__text {
+	color: #6A778B;
+	font-size: 15px;
+	line-height: 27px;
+	letter-spacing: -0.1px;
+}
+.cso-agenda .time {
+	width: 22.3%;
+}
+
+.cso-agenda .description {
+	width: 77.7%;
+}
+
+.description .text {
+	max-width: 430px;
+}
+
+.toggle-button {
+	min-height: 14.94px;
+	min-width: 14.94px;
+}
+
+.cso-agenda .toggle {
+	margin-left: 2em;
+	margin-top: 8px;
+	width: 4%;
+}
+
+.toggle-button .minus {
+	padding: 6.44px 0;
+}
+
+.collapsed .minus,
+.expanded .plus {
+	display: none;
+}
+
+.cso-agenda {
+	width: 100%;
+}
+
+.cso-agenda table {
+	border-collapse: collapse;
+	font-size: 13.3pt;
+	width: 100%;
+	max-width: 990px;
+	margin-top: 56px;
+}
+
+.partners {
+	margin-left: 0;
+	margin-top: 4em;
+	width: auto;
+}
+
+.partner-container {
+	float: none;
+}
+.cso-agenda-container {
+	padding-top: 81px;
+}
+.cso-agenda-container .q-grid__row {
+	flex-direction: column;
+}
+
+@media(min-width: 720px) {
+	.cso-agenda {
+		width: 80%;
+	}
+	.partners {
+		margin-left: 8.33333%;
+	}
+}
+
+@media(min-width: 1220px) {
+	.cso-agenda-container .q-grid__row {
+		flex-direction: row;
+	}
+}
+
+@media(min-width: 1310px) {
+	.partner-container {
+		float: none;
+	}
+	.cso-agenda {
+		width: inherit;
+	}
+}
+.cso-agenda td {
+	border-bottom: 1px solid #ccc;
+	color: #1d2737;
+	padding: 28px 0;
+	vertical-align: text-bottom;
+}
+
+.cso-agenda .speaker {
+	color: #6a778b;
+}
+.title-speaker-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-speaker-container:hover {
+	cursor: pointer;
+}
+
+.title-speaker-container p {
+	margin-top: 0;
+}
+.cso-agenda__heading {
+	font-size: 40px;
+	color: #1D2737;
+	letter-spacing: -1px;
+	line-height: 41px;
+	margin: 0;
+}
+
+.cso-speakers-container {
+	padding-top: 120px;
+}
+.cso-agenda__heading {
+	font-size: 40px;
+	color: #1D2737;
+	letter-spacing: -1px;
+	line-height: 41px;
+}
+.cso-speakers__thumbnails-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 92px;
+}
+.cso-speakers__thumbnails-box {
+	padding-right: 40px;
+}
+.cso-speakers__thumbnails-box:last-child {
+	padding-right: 0;
+}
+.cso-speakers__name {
+	margin: 0;
+	font-weight: normal;
+	padding: 41px 0 0;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.11px;
+}
+.cso-speakers__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: -0.11px;
+}
+.cso-speakers__description {
+	padding-top: 24px;
+}
+.cso-speakers__description p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: -0.11px;
+}
+img.cso-location-thumbnail {
+	max-width: unset;
+}
+.cso-location-container {
+	padding-top: 73px;
+}
+.cso-location__thumbnail-container {
+	direction: rtl;
+	padding-right: 0;
+}
+.cso-location {
+	padding-left: 40px;
+	padding-top: 106px;
+}
+.cso-location .heading--3 {
+	font-size: 40px;
+	color: #1D2737;
+	letter-spacing: -0.16px;
+	line-height: 38px;
+	margin: 0;
+}
+

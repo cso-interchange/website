@@ -8146,6 +8146,33 @@ hr {
 /* END Marketo form reset */
 
 /* CSO Site Global Styles */
+body {
+	padding-top: 0;
+	font-family: "Gotham", sans-serif;
+}
+h1 {
+	color: #fff;
+	font-size: 9vw;
+	font-weight: 500;
+	line-height: 1.1;
+	margin-bottom: 0;
+	margin-top: 0;
+	letter-spacing: -0.1pt;
+}
+@media (min-width: 500px) {
+	h1 {
+		font-size: 41pt;
+	}
+}
+p {
+	font-size: 12.6pt;
+	margin-bottom: 1.5em;
+}
+h2 {
+	font-weight: 400;
+	color: #1D2737;
+	font-size: 29.5pt;
+}
 .cso-header-wrapper {
 	position: absolute;
 	left: 0;
@@ -8283,6 +8310,51 @@ hr {
 .cso-header__cta-events--menu a > span {
 	font-weight: 500;
 }
+
+.cso__hero-banner-wraper {
+	background: #F7FAFC;
+}
+.cso__hero-banner-container {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+@media (min-width: 375px) {
+	.cso__hero-banner-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (min-width: 720px) {
+	.cso__hero-banner-container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+@media (min-width: 1080px) {
+	.cso__hero-banner-container {
+		padding-left: 70px;
+		padding-right: 70px;
+		max-width: 1430px;
+	}
+}
+.cso__hero-banner-inner {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding-top: 130px;
+	padding-bottom: 59px;
+}
+@media (min-width: 720px) {
+	.cso__hero-banner-inner {
+		padding-top: 126px;
+	}
+}
+@media (min-width: 1080px) {
+	.cso__hero-banner-inner {
+		width: 82.94574%;
+	}
+}
 .cso-footer-quote {
 	text-align: center;
 }
@@ -8345,7 +8417,7 @@ hr {
 	font-family: "Caecilia";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.786em;
+	font-size: 1.88em;
 	color: #1D2737;
 	letter-spacing: -0.12px;
 	line-height: 1.267;
@@ -8435,7 +8507,7 @@ hr {
 	margin: 0 0 1.6em;
 	padding: 0;
 	color: #fff;
-	font-size: 1.738em;
+	font-size: 1.88em;
 	font-weight: 400;
 	line-height: 1.133;
 	letter-spacing: -0.15px;
@@ -8574,6 +8646,10 @@ hr {
 }
 .cso-site-container {
 	position: relative;
+}
+.cso__hero-banner-wraper--inner {
+	border-bottom: 12px solid #2E8BE0;
+	min-height: 432px;
 }
 
 
