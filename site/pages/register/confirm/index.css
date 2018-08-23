@@ -1,8 +1,59 @@
-.thanks {
-	font-size: 16pt;
-	color: #000;
-	margin-bottom: 0.4em;
+.cso__hero-banner-wraper--inner {
+	background-image: url(/asset/image/cso-register-banner.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.address {
-	margin-top: 1.4em;
+.cso-overview__container {
+	padding-top: 5em;
+}
+@media (min-width: 720px) {
+	.cso-overview__container {
+		padding-top: 117px;
+	}
+}
+.cso-overview__heading {
+	margin: 0;
+	font-size: 2.5em;
+	line-height: 1.150;
+	letter-spacing: normal;
+	letter-spacing: -1px;
+}
+.cso-overview__heading span.time-seperator {
+	margin: 0 12px 0;
+}
+.cso-registeration__heading {
+	font-size: 1.85em;
+	line-height: 1.15;
+	color: #ED2E26;
+	letter-spacing: -1px;
+	margin: 0 0 20px;
+}
+.cso-overview__sub-heading {
+	font-size: 30px;
+	color: #6A778B;
+	letter-spacing: -1px;
+	line-height: 41px;
+	font-weight: 400;
+	max-width: 514px;
+	margin: 23px 0 0;
+}
+.cso-overview__sub-heading span.time-seperator {
+	margin: 0 12px 0;
+}
+.cso-overview__text {
+	font-size: 18px;
+	color: #6A778B;
+	letter-spacing: -0.1px;
+	line-height: 27px;
+	max-width: 850px;
+	margin: 32px 0 0;
+}
+.cso-seperator-hr {
+	border-bottom: 1px solid #9B9B9B;
+	margin: 42px 0 29px;
+}
+.cso-location-link {
+	text-decoration: none;
+	color: #2E8BE0;
 }

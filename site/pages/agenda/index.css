@@ -54,39 +54,27 @@
 .cso-agenda .time {
 	width: 22.3%;
 }
-
 .cso-agenda .description {
 	width: 77.7%;
 }
-
 .description .text {
 	max-width: 430px;
 }
-
-.toggle-button {
-	min-height: 14.94px;
-	min-width: 14.94px;
-}
-
 .cso-agenda .toggle {
 	margin-left: 2em;
 	margin-top: 8px;
 	width: 4%;
 }
-
 .toggle-button .minus {
 	padding: 6.44px 0;
 }
-
 .collapsed .minus,
 .expanded .plus {
 	display: none;
 }
-
 .cso-agenda {
 	width: 100%;
 }
-
 .cso-agenda table {
 	border-collapse: collapse;
 	font-size: 13.3pt;
@@ -94,13 +82,11 @@
 	max-width: 990px;
 	margin-top: 56px;
 }
-
 .partners {
 	margin-left: 0;
 	margin-top: 4em;
 	width: auto;
 }
-
 .partner-container {
 	float: none;
 }
@@ -136,7 +122,7 @@
 }
 .cso-agenda td {
 	border-bottom: 1px solid #ccc;
-	color: #1d2737;
+	color: #262626;
 	padding: 28px 0;
 	vertical-align: text-bottom;
 }
@@ -180,6 +166,7 @@
 }
 .cso-speakers__thumbnails-box {
 	padding-right: 40px;
+	flex: 1;
 }
 .cso-speakers__thumbnails-box:last-child {
 	padding-right: 0;
@@ -191,12 +178,14 @@
 	font-size: 15px;
 	line-height: 25px;
 	letter-spacing: -0.11px;
+	color: #627281;
 }
 .cso-speakers__title {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 25px;
 	letter-spacing: -0.11px;
+	color: #1D2737;
 }
 .cso-speakers__description {
 	padding-top: 24px;
@@ -206,6 +195,7 @@
 	font-size: 16px;
 	line-height: 25px;
 	letter-spacing: -0.11px;
+	color: #6A778B;
 }
 img.cso-location-thumbnail {
 	max-width: unset;
@@ -226,6 +216,91 @@ img.cso-location-thumbnail {
 	color: #1D2737;
 	letter-spacing: -0.16px;
 	line-height: 38px;
-	margin: 0;
+	margin: 0 0 21px;
 }
+.cso-location__details {
+	padding-right: 0;
+}
+.cso-location-paragraph {
+	margin: 0;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: -0.1px;
+}
+.cso-location__logo {
+	margin: 53px 0 38px;
+}
+.cso-location-directions {
+	color: #2E8BE0;
+	font-weight: 500;
+	text-decoration: none;
+}
+.cso-location-directions:hover {
+	color: #297FCD;
+}
+.cso-register-outer {
+	padding: 140px 0 26px;
+}
+.cso-register-container {
+	background-color: #2E8BE0;
+	background-image: url(/asset/image/cio-text-logo-18-opc.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.cso-register-content {
+	max-width: 624px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 106px 0 120px;
+}
+.cso-register-content .heading--3 {
+	margin: 0;
+	font-size: 40px;
+	color: #FFFFFF;
+	letter-spacing: -0.2px;
+	text-align: center;
+	line-height: 46px;
+}
+.cso-register__overview {
+	margin: 39px 0 40px;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: -0.1px;
+	text-align: center;
+	line-height: 32px;
+}
+.bio-link {
+	color: #2E8BE0;
+	text-decoration: none;
+}
+.cso-it-asset__text {
+	color: #6A778B;
+}
+.expandable.expanded [class^="collapse-container"],
+.expandable.expanded [class^="expand-container"] {
+	display: none;
+}
+.expandable [class^="collapse-container"],
+.expandable [class^="expand-container"] {
+	background: linear-gradient(180deg, rgba(247, 250, 252, 0) 0, #FFF 60%, #FFF);
+	bottom: 0;
+	left: 0;
+	margin: -20px 0;
+	padding-top: 10em;
+	position: absolute;
+	width: 100%;
+}
+.bio-wrapper {
+	max-height: 195px;
+	overflow: hidden;
+	position: relative;
+}
+.bio-wrapper:hover {
+	cursor: pointer;
+}
+.bio-wrapper.expanded {
+	max-height: unset;
+}
+
 

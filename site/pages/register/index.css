@@ -1,134 +1,55 @@
-.background {
-	min-height: 345px;
-	position: absolute;
-	width: 100%;
-	background-image: url(/asset/image/cio-ciso-background2.svg);
-	background-repeat: no-repeat;
-	background-position: center 50%;
+.cso__hero-banner-wraper--inner {
+	background-image: url(/asset/image/cso-register-banner.jpg);
+	background-position: center top;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
-.header-container {
-	min-height: 345px;
-}
-body {
-	padding-top: 0;
-	font-family: "Gotham", sans-serif;
-}
-.header {
-	display: flex;
-	padding-top: 2em;
-	margin-bottom: 1.4em;
-	flex-direction: column;
-	justify-content: center;
-}
-.logo {
-	margin: 0 auto;
-}
-@media (min-width: 500px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.logo {
-		margin-left: 30px;
-	}
-}
-h1 {
-	color: #fff;
-	font-size: 34px;
-	max-width: 640px;
-	text-align: center;
-	margin: 0 auto;
-	line-height: 1.1;
-	margin-top: 1em;
-	font-weight: 500;
-	letter-spacing: -0.1pt;
-}
-@media (min-width: 800px) {
-	h1 {
-		font-size: 50px;
-		margin-top: 0;
-	}
-}
-p {
-	font-size: 12.6pt;
-	margin-bottom: 1.5em;
-}
-h2 {
-	font-weight: 400;
-	color: #1D2737;
-	font-size: 29.5pt;
-}
-.register-container {
-	margin-bottom: 4.2em;
-	margin-top: 2.7em;
-}
-.register-container h2 {
-	font-size: 28.7pt;
-	font-weight: 500;
-	line-height: 1.2;
-}
-.register-container h3 {
-	color: #1D2737;
-	font-size: 18.2pt;
-	font-weight: 400;
-	margin-top: 0;
-	margin-bottom: 31px;
-	line-height: 1.2;
-}
-.register {
-	color: #D0021B;
-	font-weight: 500;
-}
-.register-container h2 {
-	margin-top: 0;
-	margin-bottom: 0;
+.cso-overview__container {
+	padding-top: 5em;
 }
 @media (min-width: 720px) {
-	.register-container h2 {
-		margin-bottom: 1px;
-	}
-	.register-container h3 {
-		line-height: 1.5;
-		font-size: 21.2pt;
+	.cso-overview__container {
+		padding-top: 117px;
 	}
 }
-.mktoForm  input {
-	padding: 1em 1em 1em 2em !important;
-	width: 100% !important;
-	font-weight: 500 !important;
-	font-size: 11pt !important;
+.cso-overview__heading {
+	margin: 0;
+	font-size: 2.5em;
+	line-height: 1.150;
+	letter-spacing: normal;
+	letter-spacing: -1px;
 }
-.mktoForm .mktoFormCol {
-	margin-bottom: 12px !important;
+.cso-overview__heading span.time-seperator {
+	margin: 0 12px 0;
 }
-.mktoForm button.mktoButton {
-	padding: 2em !important;
-	height: auto !important;
+.cso-registeration__heading {
+	font-size: 18px;
+	color: #ED2E26;
+	letter-spacing: -0.1px;
+	line-height: 27px;
+	margin: 0;
 }
-.mktoForm .mktoError {
-	right: 0 !important;
-	left: 21px !important;
+.cso-overview__sub-heading {
+	font-size: 30px;
+	color: #6A778B;
+	letter-spacing: -1px;
+	line-height: 41px;
+	font-weight: 400;
+	max-width: 514px;
+	margin: 23px 0 0;
 }
-.mktoForm {
-	max-width: 360px !important;
+.cso-overview__sub-heading span.time-seperator {
+	margin: 0 12px 0;
 }
-.inaugural-event {
-	font-weight: 500;
-	text-transform: uppercase;
-	margin-bottom: 0;
+.cso-overview__text {
+	font-size: 18px;
+	color: #6A778B;
+	letter-spacing: -0.1px;
+	line-height: 27px;
+	max-width: 850px;
+	margin: 32px 0 0;
 }
-.not-icon {
-	display: inline-block;
-	width: 1em;
-	margin-bottom: -0.15em;
-	margin-left: 2px;
-}
-@media (min-width: 500px) {
-	.not-icon {
-		width: 56px;
-	}
-}
-.not-wrapper {
-	white-space: nowrap;
+.cso-seperator-hr {
+	border-bottom: 1px solid #9B9B9B;
+	margin: 42px 0 29px;
 }
