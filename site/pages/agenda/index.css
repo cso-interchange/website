@@ -12,6 +12,11 @@
 		padding-top: 108px;
 	}
 }
+@media (min-width: 720px) {
+	.cso__hero-banner-inner {
+		padding-top: 126px;
+	}
+}
 .cso-overview__heading {
 	margin: 0;
 	font-size: 2.5em;

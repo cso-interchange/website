@@ -23,11 +23,11 @@
 	margin: 0 12px 0;
 }
 .cso-registeration__heading {
-	font-size: 1.85em;
-	line-height: 1.15;
+	font-size: 18px;
 	color: #ED2E26;
-	letter-spacing: -1px;
-	margin: 0 0 20px;
+	letter-spacing: -0.1px;
+	line-height: 27px;
+	margin: 0;
 }
 .cso-overview__sub-heading {
 	font-size: 30px;
@@ -45,18 +45,11 @@
 	font-size: 18px;
 	color: #6A778B;
 	letter-spacing: -0.1px;
-	line-height: 1.75;
+	line-height: 27px;
 	max-width: 850px;
 	margin: 32px 0 0;
 }
 .cso-seperator-hr {
 	border-bottom: 1px solid #9B9B9B;
 	margin: 42px 0 29px;
-}
-.cso-overview__text a {
-	text-decoration: none;
-	color: #2E8BE0;
-}
-.cso-overview__location-label {
-	font-weight: 500;
 }

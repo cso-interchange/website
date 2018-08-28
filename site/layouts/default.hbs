@@ -38,11 +38,6 @@
 		<link rel="stylesheet" href="/asset/stylesheet/common.css">
 	{{/block}}
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js" integrity="sha256-NCAKIW9CtzSpcjpTZ2RbtRfDHgNrQuK/akgMYogPwSw=" crossorigin="anonymous"></script>
-	<script src="https://app-sj08.marketo.com/js/forms2/js/forms2.min.js"></script>
-	<script src="/asset/script/common.js"></script>
-
 	{{! script tags in scripts-head should be async}}
 	{{#block "scripts-head"}}
 	{{/block}}
@@ -85,11 +80,12 @@
 		<div class="cso-header-wrapper">
 			<div class="cso-header-container">
 				<a href="/" class="cso-header-logo">
-					<img src="/asset/image/cio-cisointerchange-logo.svg" width="222" height="63" alt="CIO / CISO Interchange">
+					<img src="/asset/image/cio-cisointerchange-logo-dark.svg" class="cso-logo-dark" width="222" height="63" alt="CIO / CISO Interchange">
+					<img src="/asset/image/cio-cisointerchange-logo.svg" class="cso-logo-light" width="222" height="63" alt="CIO / CISO Interchange">
 				</a>
 				<div class="cso-header__cta-container">
 					<div class="cso-header__cta-events">
-						<a href="javascript:void(0)" class="q-link cso-header__cta-link">Events</a>
+						<a href="#" class="q-link cso-header__cta-link">Events</a>
 						<ul class="cso-header__cta-events--menu">
 							<li>
 								<a href="/agenda/">Oct 18, 2018 –  <span>Washington, DC</span></a>
@@ -101,6 +97,16 @@
 					</div>
 					<a href="/register/" class="q-button cso-header__register-button">Register</a>
 				</div>
+			</div>
+			<div class="cso-events__menu cso-events__menu-container">
+				<ul class="cso-mobile__cta-events--menu">
+					<li>
+						<a href="/agenda/">Oct 18, 2018 –  <span>Washington, DC</span></a>
+					</li>
+					<li>
+						<a href="/agenda/florida/">Dec 10, 2018 –  <span>Florida</span></a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
@@ -163,6 +169,10 @@
 	{{#block "scripts"}}
 		<!-- libraries -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js" integrity="sha256-NCAKIW9CtzSpcjpTZ2RbtRfDHgNrQuK/akgMYogPwSw=" crossorigin="anonymous"></script>
+		<script src="https://app-sj08.marketo.com/js/forms2/js/forms2.min.js"></script>
+		<script src="/asset/script/common.js"></script>
 	{{/block}}
 
 </body>

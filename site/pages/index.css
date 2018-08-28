@@ -1,8 +1,10 @@
-.cso__hero-banner-wraper--home {
-	background-image: url(/asset/image/cso-home-hero-banner.jpg);
-	background-position: center top;
-	background-size: cover;
-	background-repeat: no-repeat;
+@media (min-width: 680px) {
+	.cso__hero-banner-wraper--home {
+		background-image: url(/asset/image/cso-home-hero-banner.jpg);
+		background-position: center top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
 @media (min-width: 1080px) {
 	.cso__hero-banner-wraper--home {
@@ -28,7 +30,12 @@
 	}
 }
 .cso-hero__box-inner {
-	padding: 60px 60px 65px;
+	padding: 30px 20px;
+}
+@media (min-width: 680px) {
+	.cso-hero__box-inner {
+		padding: 60px 60px 65px;
+	}
 }
 .cso-hero__box-inner .heading--2 {
 	padding: 0;
@@ -48,13 +55,18 @@
 	margin: 0;
 	line-height: 1.688;
 	color: #FFF;
-	font-size: 1em;
+	font-size: 1.25em;
+}
+@media (min-width: 680px) {
+	.cso-hero__box-content p {
+		font-size: 1em;
+	}
 }
 .cso-hero__box-content p:first-child {
 	margin-bottom: 1.750em;
 }
 .cso-overview__container {
-	padding-top: 5em;
+	padding-top: 4em;
 }
 @media (min-width: 720px) {
 	.cso-overview__container {
@@ -62,7 +74,14 @@
 	}
 }
 .cso-overview__heading {
-	margin: 0 0 8px;
+	margin: 0 0 0.45em;
+	line-height: 1.15;
+}
+@media (min-width: 680px) {
+	.cso-overview__heading {
+		margin: 0 0 8px;
+		line-height: inherit;
+	}
 }
 .cso-overview__paragraph {
 	margin: 0;
@@ -79,7 +98,7 @@
 	color: #52A2EC;
 }
 .cso-events__container {
-	padding-top: 5em;
+	padding-top: 4em;
 }
 @media (min-width: 720px) {
 	.cso-events__container {
@@ -87,10 +106,22 @@
 	}
 }
 .cso-events__heading {
-	margin: 0 0 26px;
+	margin: 0 0 0.45em;
+	line-height: 1.15;
+}
+@media (min-width: 680px) {
+	.cso-events__heading {
+		margin: 0 0 26px;
+		line-height: inherit;
+	}
 }
 .cso-evenets__table {
-	padding-top: 34px;
+	padding-top: 50px;
+}
+@media (min-width: 680px) {
+	.cso-evenets__table {
+		padding-top: 34px;
+	}
 }
 .cso-events__table-row {
 	display: flex;
@@ -151,6 +182,12 @@
 .cso-events__cta {
 	text-align: left;
 	flex: 1 0 0;
+	padding-top: 10px;
+}
+@media (min-width: 680px) {
+	.cso-events__cta {
+		padding-top: 0;
+	}
 }
 @media (min-width: 480px) {
 	.cso-events__cta {
