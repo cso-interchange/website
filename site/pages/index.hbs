@@ -19,6 +19,12 @@ twitter:card: summary
 	<script src="index.js"></script>
 {{/append}}
 
+{{#block "cta-register"}}
+{{>
+	cta-register-btn
+	url="#upcoming-events"
+}}
+{{/block}}
 {{#block "content"}}
 	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--home">
 		<div class="cso__hero-banner-container">
@@ -26,15 +32,23 @@ twitter:card: summary
 				<div class="cso-hero__box-wrapper">
 					<div class="cso-hero__box-inner">
 						<h2 class="heading--2">
-							Building security into the digital transformation – not bolting it on.
+							Building security into the digital transformation – not bolting <span class="nowrap">it on.</span>
 						</h2>
 						<div class="cso-hero__box-content">
-							<p>
-								As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud.
-							</p>
-							<p>
-								Co-founded by Philippe Courtot, Chairman &amp; CEO, Qualys, Inc. and the Cloud Security Alliance (CSA), the CIO/CISO Interchange is a non-profit, non-commercial organization.
-							</p>
+							<div class="cso-hero-more__trigger">
+								<a href="javascript:void(0)" class="cso-hero-more__action">
+									<img src="/asset/image/plus-white.svg" class="icon-plus">
+									<img src="/asset/image/minus-white.svg" class="icon-minus">
+								</a>
+							</div>
+							<div class="cso-hero__box-content-text">
+								<p>
+									As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. <span class="cso-hero-more">But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud.</span>
+								</p>
+								<p class="cso-hero-more">
+									Co-founded by Philippe Courtot, Chairman &amp; CEO, Qualys, Inc. and the Cloud Security Alliance (CSA), the CIO/CISO Interchange is a non-profit, non-commercial organization.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -42,72 +56,72 @@ twitter:card: summary
 		</div>
 	</div>
 
-	<div class="q-grid__container cso-overview__container">
-		<div class="q-grid__inner">
-			<div class="q-grid__row">
-				<div class="q-grid__column q-grid__column-10">
-					<h2 class="cso-overview__heading">About</h2>
-					<p class="cso-overview__paragraph">
-						The CIO/CISO Interchange is an open forum for discussions, debates and exchanges between CIOs, CTOs and CISOs. CSA’s community of cloud and security executives will provide the CIO/CISO Interchange with vendor-neutral content for securing the next generation of information technology.
-					</p>
+	<div class="cso-section-wrapper">
+		<div class="q-grid__container cso-overview__container">
+			<div class="q-grid__inner">
+				<div class="q-grid__row">
+					<div class="q-grid__column q-grid__column-10">
+						<h2 class="cso-overview__heading">About</h2>
+						<p class="cso-overview__paragraph">
+							The CIO/CISO Interchange is an open forum for discussions, debates and exchanges between CIOs, CTOs and CISOs. CSA’s community of cloud and security executives will provide the CIO/CISO Interchange with vendor-neutral content for securing the next generation of information technology.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="q-grid__container cso-events__container">
-		<div class="q-grid__inner">
-			<div class="q-grid__row">
-				<div class="q-grid__column q-grid__column-10">
-					<h2 class="cso-events__heading">Upcoming events</h2>
-					<p class="cso-overview__paragraph">
-						We are constantly adding events around the world. Find an event below, or <a href="#">sign up to our newsletter</a> to find out about new events near you.
-					</p>
-				</div>
-			</div>
-			<div class="q-grid__row">
-				<div class="q-grid__column q-grid__column-10">
-					<div class="cso-evenets__table">
-						<div class="cso-events__table-row">
-							<div class="cso-events__title">
-								<a href="/agenda/">CIO/CISO Interchange 2018<br> Washington, DC</a>
-							</div>
-							<div class="cso-events__date">
-								<span>
-									<img src="/asset/image/icon-calendar.svg">
-								</span> Oct 18, 2018
-								<p class="cso-events__location-text">Washington, DC</p>
-							</div>
-							<div class="cso-events__location">
-								<span>
-									<img src="/asset/image/icon-location.svg">
-								</span> Washington, DC
-							</div>
-							<div class="cso-events__cta">
-								<a href="/register/" class="q-button">Register</a>
-							</div>
-						</div>
-						<div class="cso-events__table-row">
-							<div class="cso-events__title">
-								<a href="/agenda/florida/">CIO/CISO Interchange 2018<br> Florida</a>
-							</div>
-							<div class="cso-events__date">
-								<span>
-									<img src="/asset/image/icon-calendar.svg">
-								</span> Dec 10, 2018
-								<p class="cso-events__location-text">Championsgate, FL</p>
-							</div>
-							<div class="cso-events__location">
-								<span>
-									<img src="/asset/image/icon-location.svg">
-								</span> Championsgate, FL
-							</div>
-							<div class="cso-events__cta">
-								<a href="/register/florida/" class="q-button">Register</a>
-							</div>
-						</div>
+		<div class="q-grid__container cso-events__container js-register-section" id="upcoming-events">
+			<div class="q-grid__inner">
+				<div class="q-grid__row">
+					<div class="q-grid__column q-grid__column-10">
+						<h2 class="cso-events__heading">Upcoming events</h2>
+						<p class="cso-overview__paragraph">
+							We are constantly adding events around the world. Find an event below, or <a href="https://www.qualys.com/communication-preferences/">sign up to our newsletter</a> to find out about new events near you.
+						</p>
 					</div>
+				</div>
+				<div class="q-grid__row">
+					<div class="q-grid__column q-grid__column-10">
+						<div class="cso-events__table">
+							<div class="cso-events__table-row">
+								<div class="cso-events__title">
+									<a href="/agenda/washington-dc/">CIO/CISO Interchange<br> Washington, DC</a>
+								</div>
+								<div class="cso-events__date">
+									<span>
+										<img src="/asset/image/icon-calendar.svg">
+									</span> Tuesday, October 16
+								</div>
+								<div class="cso-events__location">
+									<span>
+										<img src="/asset/image/icon-location.svg">
+									</span> Ronald Reagan Building and International Trade Center, Washington, DC
+								</div>
+								<div class="cso-events__cta">
+									<a href="/register/washington-dc/" class="q-button">Register</a>
+								</div>
+							</div>
+							<div class="cso-events__table-row">
+								<div class="cso-events__title">
+									<a href="/agenda/florida/">CIO/CISO Interchange, Orlando<br>  FL (at CSA Congress 2018)</a>
+								</div>
+								<div class="cso-events__date">
+									<span>
+										<img src="/asset/image/icon-calendar.svg">
+									</span> Monday, December 10
+								</div>
+								<div class="cso-events__location">
+									<span>
+										<img src="/asset/image/icon-location.svg">
+									</span> Omni Orlando Resort at ChampionsGate, FL
+								</div>
+								<div class="cso-events__cta">
+									<a href="/register/florida/" class="q-button">Register</a>
+								</div>
+							</div>
+						</div>
 
+					</div>
 				</div>
 			</div>
 		</div>
@@ -129,314 +143,6 @@ twitter:card: summary
 			</div>
 		</div>
 	</div>
-
-	{{!--
-	<div class="background">
-		<img src="/asset/image/cio-ciso.svg" class="cio-ciso-bg" width="1485" height="325">
-	</div>
-	<div class="q-grid__container header-container">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-12 header">
-				<a href="/"><img class="logo" src="/asset/image/cio-cisointerchange-logo.svg" width="222" height="63" alt="CIO / CISO Interchange"></a>
-				<div>
-					<a class="q-button register" href="/register">Register</a>
-				</div>
-			</div>
-		</div>
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-8 q-grid__column-push-1 topic-container">
-				<p class="inaugural">Inaugural Event:</p>
-				<h1>Building security into the digital transformation
-
-					<span class="not-wrapper"> &ndash; 
-						N<img src="/asset/image/not-icon.svg" width="38" height="38" class="not-icon">T
-					</span>
-
-					bolting <span class="nowrap">it on</span></h1>
-				<p class="date-location">Four Seasons, <span class="nowrap">San Francisco</span>  /  <span class="nowrap">April 16</span></p>
-				<a href="#agenda"><img src="/asset/image/down-arrow.svg" width="35" height="15" class="down-arrow"></a>
-			</div>
-		</div>
-	</div>
-	<div class="q-grid__container content-container">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-8 q-grid__column-push-1">
-				<h2 class="about">About</h2>
-				<p>As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud. </p>
-
-				<p>Co-founded by Philippe Courtot, Chairman & CEO, Qualys, Inc. and the Cloud Security Alliance (CSA), the CIO/CISO Interchange is a non-profit, non-commercial organization.</p>
-
-				<p>It’s an open forum for discussions, debates and exchanges between CIOs, CTOs and CISOs. CSA’s community of cloud and security executives will provide the CIO/CISO Interchange with vendor-neutral content for securing the next generation of information technology.</p>
-
-				<p ><a href="/docs/cio-ciso-interchange-launches.pdf" class="press-release">Read the media alert</a></p>
-
-				<p><a href="https://medium.com/@ciociso.interchange/security-in-the-age-of-digital-transformation-687faa37b662" class="press-release">Read Philippe Courtot's Medium post: Security in the Age of Digital Transformation</a></p>
-			</div>
-		</div>
-	</div>
-
-	<div class="q-grid__container divider-container">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-10 q-grid__column-push-1">
-				<hr class="divider">
-			</div>
-		</div>
-	</div>
-
-	<div class="q-grid__container quote-container">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-8 q-grid__column-push-1">
-				<div class="quote-wrapper">
-					<img class="logo-gray" src="/asset/image/cso-interchange-logo-gray.svg" width="150" alt="Four Seasons Hotel">
-
-					<div class="quote">
-						<p class="text"><img src="/asset/image/left-quote-mark.svg" width="66.4" height="58.8" class="left-quote">This private event has no product pitches and no sales personnel, just candid talk on the important topics and issues facing you and your peers to secure the digital transformation.</p>
-						<p class="byline">Philippe Courtot, Founder of CIO/CISO Interchange </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="q-grid__container divider-container">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-10 q-grid__column-push-1">
-				<hr class="divider">
-			</div>
-		</div>
-	</div>
-	<div class="q-grid__container register-container">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-10 q-grid__column-push-1">
-				<p class="inaugural-event">Inaugural Event:</p>
-				<h2>CIO/CISO Interchange 2018</h2>
-				<h3>Four Seasons, <span class="nowrap">San Francisco</span><br>
-					April 16, <span class="nowrap">4:00 – 6:30 PM</span>
-				 </h3>
-
-				<a class="q-button register" href="/register">Register</a>
-			</div>
-		</div>
-	</div>
-	<div class="q-grid__container agenda-container" id="agenda">
-		<div class="q-grid__row">
-			<div class="q-grid__column q-grid__column-8 q-grid__column-push-1 agenda">
-				<table>
-					<tr>
-						<td class="time">4:00 PM</td>
-						<td class="description">Registration</td>
-					</tr>
-					<tr>
-						<td class="time">4:30 PM</td>
-						<td class="description">Welcome and Introduction<br>
-							<span class="speaker">Philippe Courtot, Founder of CIO/CISO Interchange</span></td>
-					</tr>
-					<tr>
-						<td class="time">4:45 PM</td>
-						<td class="description">
-							<div class="text">
-								Driving Secure Digital Transformation with Cloud<br>
-								<span class="speaker">Jim Reavis, Co-founder and Chief Executive Officer, Cloud Security Alliance</span>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="time">5:00 PM</td>
-						<td class="description">
-							<a class="title-speaker-container collapsed">
-								<p class="title">Digital Business Transformations: <br>Key Trends & The Impact On Security<br>
-								<span class="speaker">Julie Ask, VP, Principal Analyst, Forrester</span></p>
-								<div class="toggle">
-									<img class="plus toggle-button" src="/asset/image/plus.svg" width="14.94" height="14.94">
-									<img class="minus toggle-button"src="/asset/image/minus.svg" width="14.94" height="1.66">
-								</div>
-							</a>
-							<div class="abstract hidden">
-								<img class="forrester speaker-logo" src="/asset/image/forrester-logo.svg" width="90" height="29" alt="Forrester">
-								Technology is having a profound impact on how businesses operate and win, serve and retain customers.  Digital, mobile, cloud, sensors and more are fundamentally changing how enterprises operate. Technology enables new business models. It also creates experiences that are much more intuitive, proactive and relevant to consumers. For example, allowing customers to open a hotel door with a mobile app may seem straightforward, but there is ripple effect through processes, infrastructure, talent and more … including security. This session will explore both the trends and key drivers of digital business transformations as well as highlight the impact on security.
-								<p class="bio-link-wrapper"><a href="#speakers" data-speaker="julie-ask" class="bio-link cso-link">Julie Ask's bio</a></p>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="time">5:30 PM</td>
-						<td class="description">Introduction of Advisory Board Members<br>
-							<span class="speaker">Philippe Courtot, Founder of CIO/CISO Interchange</span></td>
-					</tr>
-					<tr>
-						<td class="time">5:45 PM</td>
-						<td class="description">Presentation and Book Signing<br>
-							<span class="speaker">Dr. Michio Kaku, Physicist and Futurist</span></td>
-					</tr>
-					<tr>
-						<td class="time">7:00 PM</td>
-						<td class="description">Networking Reception – SFMOMA</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-	<div class="speaker-container">
-		<div class="q-grid__container">
-			<div class="q-grid__row">
-				<div class="q-grid__column q-grid__column-11 q-grid__column-push-1">
-					<h2 id="speakers">Speakers</h2>
-
-					<!-- carousel pagination -->
-					<div class="q-home-feed__pagination">
-						<button class="q-carousel-button q-carousel-button--prev">
-							<title>Prevoius</title>
-							<svg class="q-carousel-button__icon">
-								<path d="M7 11L2 6l5-5" />
-							</svg>
-						</button>
-						<button class="q-carousel-button q-carousel-button--next">
-							<title>Next</title>
-							<svg class="q-carousel-button__icon">
-								<path d="M1 1l5 5-5 5"/>
-							</svg>
-						</button>
-					</div>
-
-					<div class="q-company-management__carousel">
-						<div class="q-company-carousel">
-							<div class="q-company-carousel__container swiper-container">
-								<!-- Additional required wrapper  -->
-								<div class="swiper-wrapper">
-									<!-- Slides -->
-									<div class="q-company-carousel__slide swiper-slide">
-
-										<!-- Profile component -->
-										<div class="q-company-profile">
-
-											<img class="q-company-profile__image" src="/asset/image/headshot-philippe-courtot-300-2x.jpg" width="300" height="290" alt="Headshot of Philippe Courtot">
-
-											<div class="q-company-profile__content">
-												<p class="q-company-profile__name">Philippe Courtot</p>
-												<p class="q-company-profile__role">Founder</p>
-												<p class="q-company-profile__company">CIO/CISO Interchange</p>
-												<div class="bio-wrapper expandable">
-													<p class="q-company-profile__bio">Demonstrating a unique mix of technical vision, marketing and business acumen, Philippe Courtot has repeatedly built innovative companies into industry leaders. As CEO of Qualys, Philippe has worked with thousands of companies to improve their IT security and compliance postures. Philippe received the SC Magazine Editor’s Award in 2004 for bringing on demand technology to the network security industry and for co-founding the CSO Interchange to provide a forum for sharing information in the security industry. He was also named the 2011 CEO of the Year by SC Magazine Awards Europe.</p>
-													<p class="expand-container0"></p>
-												</div>
-											</div>
-
-										</div>
-									</div>
-									<div class="q-company-carousel__slide swiper-slide">
-
-										<!-- Profile component -->
-										<div class="q-company-profile">
-
-											<img class="q-company-profile__image" src="/asset/image/headshot-jim-reavis-300-2x.jpg" width="300" height="290" alt="Headshot of Jim Reavis">
-
-											<div class="q-company-profile__content">
-												<p class="q-company-profile__name">Jim Reavis</p>
-												<p class="q-company-profile__role">Co-founder and Chief Executive Officer</p>
-												<p class="q-company-profile__company">Cloud Security Alliance</p>
-												<div class="bio-wrapper expandable">
-													<p class="q-company-profile__bio">For many years, Jim Reavis has worked in the information security industry as an entrepreneur, writer, speaker, technologist and business strategist. Jim’s innovative thinking about emerging security trends has been published and presented widely throughout the industry and has influenced many. Jim is helping shape the future of information security and related technology industries as co-founder, CEO and driving force of the Cloud Security Alliance. Jim has been named as one of the Top 10 cloud computing leaders by SearchCloudComputing.com.  Jim received a B.A. in Business Administration / Computer Science from Western Washington University in 1987 and formerly served on WWU’s alumni board. Jim was recognized as a WWU Distinguished Alumnus in 2015. In 2016, Jim was inducted into the Information Systems Security Association (ISSA) Hall of Fame.</p>
-													<p class="expand-container0"></p>
-												</div>
-											</div>
-
-										</div>
-									</div>
-									<div class="q-company-carousel__slide swiper-slide dr-kaku">
-
-										<!-- Profile component -->
-										<div class="q-company-profile">
-
-											<img class="q-company-profile__image" src="/asset/image/headshot-dr-kaku-300-2x.jpg" width="300" height="290" alt="Headshot of Dr. Kaku">
-
-											<div class="q-company-profile__content">
-												<p class="q-company-profile__name">Dr. Michio Kaku</p>
-												<p class="q-company-profile__role"></p>
-												<p class="q-company-profile__company">Bestselling Author</p>
-												<div class="bio-wrapper expandable">
-													<p class="q-company-profile__bio">Dr. Michio Kaku is one of the most widely recognized figures in science in
-the world today. He is an internationally recognized authority in two areas. The
-first is Einstein’s unified field theory, which Dr. Kaku is attempting to complete.
-The other is to predict trends affecting business, medicine, finance, and our way
-of life, based on the latest research in science. He has written three NY Times
-Best Sellers. His book, The Future of the Mind, hit #1 on the NY Times, Amazon,
-and Barnes and Noble Best Sellers List, making it the #1 hardcover, non-fiction
-book in the country. He appears regularly on national and international TV, and
-hosts numerous science TV and radio programs.</p>
-<p>His New York Times bestselling book, <i>The Future of Humanity</i>, is about the future destiny of humanity as
-we reach for the planets and the stars. He wrote a full-page feature article for the
-Wall Street Journal about this book.</p>
-													<p class="expand-container0"></p>
-												</div>
-											</div>
-
-										</div>
-									</div>
-									<div class="q-company-carousel__slide swiper-slide" id="julie-ask">
-
-										<!-- Profile component -->
-										<div class="q-company-profile">
-
-											<img class="q-company-profile__image" src="/asset/image/headshot-julie-ask-300-2x.jpg" width="300" height="290" alt="Headshot of Julie A. Ask">
-
-											<div class="q-company-profile__content">
-
-												<p class="q-company-profile__name">Julie A. Ask</p>
-												<p class="q-company-profile__role">Vice President, Principal Analyst</p>
-												<p class="q-company-profile__company">Forrester</p>
-												<div class="bio-wrapper expandable">
-													<p class="q-company-profile__bio">Julie serves eBusiness & Channel Strategy Professionals. Her nearly 30 years of work experience is balanced between the engineering and management consulting work she did in the first half of her career and her work as an analyst for the past 17 years. The combination of technical and business expertise positions prepared her well to work with business leaders to identify new opportunities offered by mobile technology and to develop strategies to engage with consumers on mobile devices. She has worked with hundreds of clients across retail, travel, banking, insurance, CPG, healthcare, and more to advise and guide the development of their mobile strategies.</p>
-													<p>Julie's research and analysis have been widely cited in publications including The Wall Street Journal, The New York Times, USA Today, Los Angeles Times, and The Onion, as well as on Bloomberg, CBS, NBC, and PBS.</p>
-													<p class="expand-container0"></p>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="location-container">
-		<div class="photo-container location-subcontainer">
-			<img class="hotel-photo" src="/asset/image/4seasons-721-2x.jpg" width="721" alt="Four Seasons Hotel">
-		</div>
-		<div class="address-container location-subcontainer">
-			<div class="location-info">
-				<h2 class="location">Location</h2>
-				<p class="description">The CIO/CISO Interchange hosts events around the world. Find an event below, or sign up for our newsletter to find out about new events near you. </p>
-				<img src="/asset/image/four-seasons-logo.svg" width="157" height="105" alt="Four Seasons Logo">
-				<p class="address">
-					757 Market St. <br>
-					San Francisco, CA 94103 <br>
-					<a href="https://www.google.com/maps/place/757+Market+St,+San+Francisco,+CA+94103/@37.7865227,-122.4044554,17z/data=!3m1!4b1!4m5!3m4!1s0x808580888478050b:0x43b60dd959a640e7!8m2!3d37.7865227!4d-122.4044554?hl=en" class="directions cso-link">Directions</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="footer-container">
-		<div class="q-grid__container">
-			<div class="q-grid__row">
-				<div class="q-grid__column q-grid__column-7 q-grid__column-push-1">
-					<p class="get-updates">Want to get updates on future events? </p>
-					<form id="mktoForm_2446"></form>
-					<p class="copyright">© {{site.year}} CIO/CISO Interchange. <span class="nowrap">All rights reserved.</span></p>
-				</div>
-				<div class="q-grid__column q-grid__column-3 q-grid__column-push-1">
-					<a href="#" class="back-to-top-container">
-						<div class="back-to-top-wrapper">
-							<div class="back-to-top-box"><img src="/asset/image/triangle.svg" width="17" height="12"></div>
-							<p class="back-to-top">Back to top</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	--}}
 {{/block}}
 
 {{/extends}}

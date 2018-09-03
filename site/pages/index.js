@@ -1,48 +1,20 @@
-// expand / collapse agenda rows
-/*
+
 (function ($) {
 	"use strict";
 
-	$(".title-speaker-container").on("click", function(event){
-		if ($(event.currentTarget).hasClass("expanded")) {
-			$(event.currentTarget).removeClass("expanded").addClass("collapsed");
-			$(event.currentTarget).parent(".description").find(".abstract").addClass("hidden");
-		} else if ($(event.currentTarget).hasClass("collapsed")) {
-			$(event.currentTarget).removeClass("collapsed").addClass("expanded");
-			$(event.currentTarget).parent(".description").find(".abstract").removeClass("hidden");
-		}
-	});
-
-}(jQuery));
-*/
-
-/**
- * expand / collapse long passages of text
- */
- /*
-(function ($) {
-	"use strict";
-
-	$(".bio-wrapper.expandable").on("click", function(event){
-		if ($(event.currentTarget).hasClass("expanded")) {
-			$(event.currentTarget).removeClass("expanded");
-		} else {
-			$(event.currentTarget).addClass("expanded");
-		}
-	});
-
-}(jQuery));
-*/
-
-/**
- * wrap marketo form fields in a div
- */
-(function ($) {
-	"use strict";
+	/**
+	 * wrap marketo form fields in a div
+	 */
 
 	MktoForms2.whenReady(function (form) {
 		var $emailField = $("#Email").parents(".mktoFormRow").addClass("field");
 		var $buttonField = $(".mktoButtonRow").addClass("field");
+	});
+
+	// hero content read more on mobile devices
+	$('.cso-hero-more__action').on('click', function(){
+		$(".cso-hero-more").toggleClass("show-more");
+		$(this).toggleClass("more-action-show");
 	});
 
 	

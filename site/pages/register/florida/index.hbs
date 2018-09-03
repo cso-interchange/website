@@ -13,6 +13,12 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 	<script src="index.js"></script>
 {{/append}}
 
+{{#block "cta-register"}}
+{{>
+	cta-register-btn
+	url="#event-registration"
+}}
+{{/block}}
 {{#block "content"}}
 	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--inner">
 		<div class="cso__hero-banner-container">
@@ -20,7 +26,7 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 		</div>
 	</div>
 
-	<div class="q-grid__container cso-overview__container">
+	<div class="q-grid__container cso-overview__container js-register-section" id="event-registration">
 		<div class="q-grid__inner">
 			<div class="q-grid__row">
 				<div class="q-grid__column q-grid__column-10">

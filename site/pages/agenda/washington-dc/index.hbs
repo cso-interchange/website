@@ -6,13 +6,19 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 {{#extends "default"}}
 
 {{#append "styles"}}
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="/asset/stylesheet/agenda.css">
 {{/append}}
 
 {{#append "scripts"}}
-	<script src="index.js"></script>
+	<script src="/asset/script/agenda.js"></script>
 {{/append}}
 
+{{#block "cta-register"}}
+{{>
+	cta-register-btn
+	url="/register/washington-dc/"
+}}
+{{/block}}
 {{#block "content"}}
 	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--inner">
 		<div class="cso__hero-banner-container">
@@ -29,11 +35,12 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 			<div class="q-grid__row">
 				<div class="q-grid__column q-grid__column-7">
 					<h2 class="cso-overview__heading">
-						<span class="nowrap">CIO/CISO Interchange 2018</span>
-						<span class="nowrap">Four Seasons, Washington, DC</span>
-						<span class="nowrap">October 18, 2018 <span class="time-seperator">|</span> 4:00 - 6:30PM</span>
+						CIO/CISO Interchange,<br>
+						Ronald Reagan Building and International Trade Center, <br>
+						Washington, DC
+						<span class="nowrap">Tuesday, October 16 <span class="time-seperator">|</span> TBD</span>
 					</h2>
-					<a href="/register/" class="q-button">Register</a>
+					<a href="/register/washington-dc/" class="q-button">Register</a>
 				</div>
 				<div class="q-grid__column q-grid__column-3">
 					<div class="cso-partner-logo__container">
@@ -174,7 +181,7 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 		<div class="q-grid__inner">
 			<div class="q-grid__row">
 				<div class="q-grid__column q-grid__column-5 cso-location__thumbnail-container">
-					<img src="/asset/image/four-seasons-thumbnails.jpg" width="721" class="cso-location-thumbnail">
+					<img src="/asset/image/ronald-reagan-thumbnails.jpg" width="721" class="cso-location-thumbnail">
 				</div>
 				<div class="q-grid__column q-grid__column-5 cso-location__details">
 					<div class="cso-location">
@@ -182,11 +189,14 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 						<p class="cso-location-paragraph">
 							The CIO/CISO Interchange is constantly adding events around the world. Find an event below, or sign up to our newsletter to find out about new events near you.
 						</p>
-						<img src="/asset/image/logo-four-seasons.svg" class="cso-location__logo" />
+						<a href="https://itcdc.com/" class="cso-location__web">
+							<img src="/asset/image/logo-ronald-reagan.png" width="150" class="cso-location__logo" />
+						</a>
 						<p class="cso-location-paragraph">
-							757 Market St,<br>
-							San Francisco, CA 94103 <br>
-							<a href="https://www.google.com/maps/place/757+Market+St,+San+Francisco,+CA+94103/@37.7865227,-122.4044554,17z/data=!3m1!4b1!4m5!3m4!1s0x808580888478050b:0x43b60dd959a640e7!8m2!3d37.7865227!4d-122.4044554?hl=en" target="_blank" rel="noopener" class="cso-location-directions">Directions</a>
+							Ronald Reagan Building and International Trade Center,<br>
+							1300 Pennsylvania Avenue NW, <br>
+							Washington, DC 20004 <br>
+							<a href="https://www.google.co.in/maps/place/1300+Pennsylvania+Ave+NW,+Washington,+DC+20004,+USA/@38.8940263,-77.0328148,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b65bdab49ea7:0x41341f7a7c7979e!8m2!3d38.8940221!4d-77.0306261?hl=en&authuser=0" target="_blank" rel="noopener" class="cso-location-directions">Directions</a>
 						</p>
 					</div>
 				</div>
@@ -204,7 +214,7 @@ description: CIO/CISO Interchange is an invitation-only forum to discuss ideas a
 							<p class="cso-register__overview">
 								CIO/CISO Interchange is an invitation only, exclusive event. We qualify all attendees to ensure the best possible event. In fact, we limit the attendee list to no more than 30 high profile executives. There is no cost to attend this event.
 							</p>
-							<a href="/register/" class="q-button">Register</a>
+							<a href="/register/washington-dc/" class="q-button">Register</a>
 						</div>
 					</div>
 				</div>

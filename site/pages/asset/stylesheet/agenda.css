@@ -216,6 +216,10 @@ img.cso-location-thumbnail {
 	padding-left: 40px;
 	padding-top: 106px;
 }
+.cso-location__web {
+	display: inline-block;
+	margin: 53px 0 38px;
+}
 .cso-location .heading--3 {
 	font-size: 40px;
 	color: #1D2737;
@@ -231,9 +235,6 @@ img.cso-location-thumbnail {
 	font-size: 18px;
 	line-height: 27px;
 	letter-spacing: -0.1px;
-}
-.cso-location__logo {
-	margin: 53px 0 38px;
 }
 .cso-location-directions {
 	color: #2E8BE0;
