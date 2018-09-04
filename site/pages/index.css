@@ -14,9 +14,13 @@
 .cso-hero__box-wrapper {
 	background: #2E8BE0;
 	width: 100%;
-	max-width: 470px;
 	margin-left: auto;
 	margin-right: auto;
+}
+@media (min-width: 680px) {
+	.cso-hero__box-wrapper {
+		max-width: 470px;
+	}
 }
 @media (min-width: 720px) {
 	.cso-hero__box-wrapper {
@@ -171,27 +175,32 @@
 	margin-bottom: 40px;
 	min-height: 89px;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
-@media (max-width: 679px) {
+@media (max-width: 719px) {
 	.cso-events__table-row:last-child {
 		border-bottom: 0;
 		margin-bottom: 20px;
 	}
 }
-@media (min-width: 480px) {
+@media (min-width: 720px) {
 	.cso-events__table-row {
 		flex-direction: row;
-		padding-bottom: 10px;
+		padding-bottom: 30px;
+	}
+}
+@media (min-width: 1024px) {
+	.cso-events__table-row {
+		flex-wrap: nowrap;
 	}
 }
 .cso-events__title {
 	font-weight: 500;
 	margin-bottom: 25px;
 }
-@media (min-width: 480px) {
+@media (min-width: 720px) {
 	.cso-events__title {
 		margin-bottom: 0;
-		width: 30.8%;
 		padding-right: 15px;
 	}
 }
@@ -234,36 +243,20 @@
 	min-height: 35px;
 	margin-bottom: 25px;
 }
-@media (min-width: 480px) {
-	.cso-events__date {
-		width: 54.4%;
-	}
-}
-@media (min-width: 680px) {
+@media (min-width: 720px) {
 	.cso-events__date,
 	.cso-events__location {
-		padding-left: 0;
 		margin-bottom: 0;
-		background: none;
-
 	}
-}
-.cso-events__date span,
-.cso-events__location span {
-	display: none;
 }
 .cso-events__cta {
 	text-align: left;
 	flex: 1 0 0;
 	padding-top: 10px;
 }
-@media (min-width: 680px) {
+@media (min-width: 720px) {
 	.cso-events__cta {
 		padding-top: 0;
-	}
-}
-@media (min-width: 480px) {
-	.cso-events__cta {
 		text-align: right;
 	}
 }
@@ -280,20 +273,16 @@
 }
 @media (min-width: 720px) {
 	.cso-events__location {
-		display: flex;
-	}
-	.cso-events__date,
-	.cso-events__location {
-		width: 27.2%;
+		background-position: 0 5px;
 	}
 	.cso-events__date {
-		display: flex;
+		background-position: 1px 8px;
 	}
 	.cso-events__location-text {
 		display: none;
 	}
 }
-@media (min-width: 980px) {
+@media (min-width: 720px) {
 	.cso-events__date {
 		padding-top: 6px;
 	}
@@ -321,6 +310,30 @@
 	}
 	.cso-events__location span {
 		min-width: 23px;
+	}
+}
+@media (min-width: 720px) {
+	.cso-events__title,
+	.cso-events__date,
+	.cso-events__location {
+		width: 33.33%;
+	}
+	.cso-events__cta {
+		width: 100%;
+		padding-top: 20px;
+		text-align: left;
+	}
+}
+@media (min-width: 1024px) {
+	.cso-events__title {
+		width: 30.8%;
+	}
+	.cso-events__date,
+	.cso-events__location {
+		width: 27.2%;
+	}
+	.cso-events__cta {
+		text-align: right;
 	}
 }
 

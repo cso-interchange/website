@@ -26,6 +26,14 @@ MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);
 		$('html, body').animate({
 			scrollTop: $('.js-register-section').offset().top
 		}, 200);
+		if($(".cso-navigation-mobile").hasClass("show-mobile-menu")) {
+			$(".cso-navigation-mobile").removeClass("show-mobile-menu")
+		}
+	});
+
+	// show/hide mobile menu
+	$(".js-menu").on("click", function(){
+		$(".cso-navigation-mobile").toggleClass("show-mobile-menu");
 	});
 
 }(jQuery));

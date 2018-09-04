@@ -8201,13 +8201,7 @@ h2 {
 @media (min-width: 680px) {
 	.cso-header-container {
 		flex-direction: row;
-		padding: 18px 0 40px;
-	}
-}
-@media (min-width: 720px) {
-	.cso-header-container {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding: 18px 50px 40px;
 	}
 }
 @media (min-width: 1080px) {
@@ -8415,15 +8409,11 @@ h2 {
 	}
 
 }
-@media (min-width: 680px) {
-	.cso-footer-quote__container {
-		background-image: none;
-	}
-}
 @media (min-width: 720px) {
 	.cso-footer-quote__container {
 		padding-left: 50px;
 		padding-right: 50px;
+		background-image: none;
 	}
 
 }
@@ -8460,12 +8450,12 @@ h2 {
 	padding-top: 172px;
 	background-size: 147px 127px;
 }
-@media (min-width: 680px) {
+@media (min-width: 720px) {
 	.cso-footer-quote__blockquote {
 		padding-left: 10px;
 	}
 }
-@media (min-width: 810px) {
+@media (min-width: 720px) {
 	.cso-footer-quote__blockquote {
 		padding-top: 0;
 		background-position: right 37px;
@@ -8494,12 +8484,12 @@ h2 {
 	display: block;
 	padding-bottom: 24px;
 }
-@media (min-width: 680px) {
+@media (min-width: 720px) {
 	.cso-footer-quote__blockquote span {
 		background-image: url(/asset/image/lower-quote-icon.svg);
 		background-repeat: no-repeat;
-		background-position: calc(100% - 137px) bottom;
-		max-width: 480px;
+		background-position: right bottom;
+		max-width: 380px;
 	}
 	.cso-footer-quote__blockquote p {
 		padding-top: 30px;
@@ -8507,6 +8497,12 @@ h2 {
 		font-size: 1.88em;
 		line-height: 1.267;
 		background-size: inherit;
+	}
+}
+@media (min-width: 810px) {
+	.cso-footer-quote__blockquote span {
+		max-width: 480px;
+		background-position: calc(100% - 137px) bottom;
 	}
 }
 .cso-footer {
@@ -8545,7 +8541,7 @@ h2 {
 .cso-footer-quote__footer {
 	display: none;
 }
-@media (min-width: 680px) {
+@media (min-width: 720px) {
 	.cso-footer-quote__footer {
 		display: block;
 		padding-left: 51px;
@@ -8768,64 +8764,6 @@ h2 {
 		display: none;
 	}
 }
-/*
-.cso-events__menu-container {
-	padding: 35px 15px 0;
-	border-top: 1px solid #dedede;
-	margin-top: 15px;
-	position: relative;
-	display: none;
-}
-.cso-events__menu-container.cso-menu-show {
-	display: block;
-}
-@media (min-width: 680px) {
-	.cso-events__menu-container,
-	.cso-events__menu-container.cso-menu-show {
-		display: none !important;
-	}
-}
-.cso-mobile__cta-events--menu {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	list-style-position: inside;
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-.cso-events__menu-container.cso-menu-show .cso-mobile__cta-events--menu {
-	opacity: 1;
-}
-.cso-mobile__cta-events--menu li {
-	margin-bottom: 15px;
-}
-.cso-mobile__cta-events--menu li:last-child {
-	margin-bottom: 0;
-}
-.cso-mobile__cta-events--menu li a {
-	text-decoration: none;
-	font-size: 1.15em;
-}
-.cso-mobile__cta-events--menu li a span {
-	font-weight: 500;
-}
-.cso-events__menu--close {
-	display: block;
-	height: 14px;
-	position: absolute;
-	right: 15px;
-	top: 15px;
-	width: 14px;
-	vertical-align: middle;
-}
-.cso-events__menu--close img {
-	width: 14px;
-	opacity: 0.4;
-	height: 14px;
-}
-*/
-
-
 .cso-registration__form {
 	max-width: 360px;
 	padding-top: 25px;
@@ -8854,4 +8792,77 @@ h2 {
 }
 .cso-addto-link {
 	margin-right: 12px;
+}
+.cso-mobile-menu__svg-fill {
+	fill: #262626;
+}
+.cso-mobile-menu {
+	position: absolute;
+	top: 67px;
+	left: 15px;
+	padding: 0;
+	margin: 0;
+}
+@media (min-width: 375px) {
+	.cso-mobile-menu {
+		left: 40px;
+	}
+}
+.cso-navigation-mobile {
+	width: 100vw;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #FFF;
+	transform: translateX(-100%);
+	visibility: hidden;
+	transition: transform 0.3s ease-in-out, visibility 0.3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1001;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.cso-navigation-mobile.show-mobile-menu {
+	transform: translateX(0);
+	visibility: visible;
+}
+.q-navigation-mobile-wrapper {
+	display: block;
+	padding-left: 93px;
+	padding-right: 30px;
+}
+.cso-mobile-men__header {
+	font-size: 18px;
+	color: #262626;
+	letter-spacing: -0.12px;
+	font-weight: 500;
+	padding: 13px 0 0;
+	margin: 0;
+}
+.cso-mobile-menu__list {
+	list-style-position: inside;
+	list-style: none;
+	padding: 0;
+	margin: 30px 0 50px;
+}
+.cso-mobile-menu__list li {
+	display: block;
+	padding-bottom: 20px;
+}
+.cso-mobile-menu__list li a {
+	font-size: 18px;
+	color: #6A778B;
+	letter-spacing: -0.12px;
+	line-height: 28px;
+	font-weight: 500;
+	text-decoration: none;
+}
+@media (min-width: 720px) {
+	.cso-mobile-menu {
+		display: none;
+	}
+	.q-navigation-mobile {
+		display: none;
+	}
 }

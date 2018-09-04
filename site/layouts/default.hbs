@@ -79,6 +79,9 @@
 	<div class="cso-site-container">
 		<div class="cso-header-wrapper">
 			<div class="cso-header-container">
+				<button class="cso-mobile-menu js-menu">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="14"><g class="cso-mobile-menu__svg-fill"><rect width="24" height="2" rx="1"/><rect width="24" height="2" y="6" rx="1"/><rect width="24" height="2" y="12" rx="1"/></g></svg>
+				</button>
 				<a href="/" class="cso-header-logo">
 					<img src="/asset/image/cio-ciso-logo-red.svg" class="cso-logo-dark" width="166" height="47" alt="CIO / CISO Interchange">
 					<img src="/asset/image/cio-cisointerchange-logo.svg" class="cso-logo-light" width="222" height="63" alt="CIO / CISO Interchange">
@@ -96,6 +99,27 @@
 						</ul>
 					</div>
 					{{#block "cta-register"}}{{/block}}
+				</div>
+			</div>
+		</div>
+		<div class="cso-navigation-mobile">
+			<div class="q-navigation-mobile__panel q-navigation-mobile__panel--first">
+				<div class="q-navigation-mobile__header">
+					<button class="q-navigation-mobile__button js-menu">close</button>
+				</div>
+				<div class="q-navigation-mobile-wrapper">
+					<div class="cso-mobile-menu-wrapper">
+						<h3 class="cso-mobile-men__header">Events</h3>
+						<ul class="cso-mobile-menu__list">
+							<li>
+								<a href="/agenda/washington-dc/">Oct 16, 2018 –  <span>Washington, DC</span></a>
+							</li>
+							<li>
+								<a href="/agenda/florida/">Dec 10, 2018 –  <span>Florida</span></a>
+							</li>
+						</ul>
+						{{#block "cta-register-mobile"}}{{/block}}
+					</div>
 				</div>
 			</div>
 		</div>
