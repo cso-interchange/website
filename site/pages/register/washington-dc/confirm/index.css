@@ -1,13 +1,17 @@
 .cso__hero-banner-wraper--inner {
-	background-image: url(/asset/image/cso-register-banner.jpg);
-	background-position: center top;
-	background-size: cover;
-	background-repeat: no-repeat;
+	display: none;
 }
 .cso-overview__container {
-	padding-top: 5em;
+	padding-top: 14px;
 }
 @media (min-width: 720px) {
+	.cso__hero-banner-wraper--inner {
+		display: block;
+		background-image: url(/asset/image/cso-register-banner.jpg);
+		background-position: center top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	.cso-overview__container {
 		padding-top: 117px;
 	}
