@@ -23,10 +23,10 @@
 	margin: 0 12px 0;
 }
 .cso-registeration__heading {
-	font-size: 1.85em;
+	font-size: 18px;
 	line-height: 1.15;
 	color: #ED2E26;
-	letter-spacing: -1px;
+	letter-spacing: -0.1px;
 	margin: 0 0 20px;
 }
 .cso-overview__sub-heading {
@@ -59,4 +59,7 @@
 }
 .cso-overview__location-label {
 	font-weight: 500;
+}
+.cso-registeration-container {
+	padding-top: 60px;
 }
