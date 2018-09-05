@@ -8858,7 +8858,7 @@ h2 {
 	font-weight: 500;
 	text-decoration: none;
 }
-@media (min-width: 720px) {
+@media (min-width: 680px) {
 	.cso-mobile-menu {
 		display: none;
 	}
@@ -9028,4 +9028,19 @@ h2 {
 	font-weight: 400;
 	padding: 10px 0 0;
 	color: #1d2737;
+}
+.cso-mobile__logo-fill {
+	fill: #ED2E26;
+}
+@media (max-width: 719px) {
+	.cso-header__overlay .cso-header-wrapper {
+		position: absolute;
+	}
+	.cso-header__overlay .cso__hero-banner-wraper {
+		padding-top: 137px;
+	}
+	.cso-header__overlay .cso-mobile__logo-fill,
+	.cso-header__overlay .cso-mobile-menu__svg-fill {
+		fill: #FFFFFF;
+	}
 }
