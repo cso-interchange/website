@@ -21,7 +21,7 @@ MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);
 		$(this).toggleClass("cso-menu-open");
 	});
 
-	// scroll register cta
+	// scroll to register cta
 	$('a.cso-header__register-button[href^="#"]').on('click', function(){
 		$('html, body').animate({
 			scrollTop: $('.js-register-section').offset().top

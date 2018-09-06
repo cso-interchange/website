@@ -56,6 +56,13 @@
 .cso-overview__sub-heading span.time-seperator {
 	margin: 0 12px 0;
 }
+.cso-overview__sub-heading a {
+	text-decoration: none;
+	color: #2e8be0;
+}
+.cso-overview__sub-heading a:hover {
+	color: #297fcd;
+}
 .cso-overview__text {
 	font-size: 18px;
 	color: #6A778B;

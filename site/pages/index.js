@@ -17,7 +17,12 @@
 		$(this).toggleClass("more-action-show");
 	});
 
-	
+	// smooth scroll to signup section
+	$('.js-signup').on('click', function(){
+		$('html, body').animate({
+			scrollTop: $('.js-signup-section').offset().top
+		}, 200);
+	});
 
 }(jQuery));
 
