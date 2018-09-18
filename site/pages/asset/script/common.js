@@ -36,4 +36,10 @@ MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2446);
 		$(".cso-navigation-mobile").toggleClass("show-mobile-menu");
 	});
 
+	// show thank you message
+	if (window.location.search.indexOf("aliId") > 0) {
+		$(".get-updates").text("Thank you!");
+		window.scrollTo(0,document.body.scrollHeight);
+	}
+
 }(jQuery));

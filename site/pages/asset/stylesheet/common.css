@@ -8970,11 +8970,13 @@ h2 {
 	font-weight: 400;
 	color: #FFF;
 	transition: background 0.2s;
-	width: 60px;
+	min-width: 60px;
+	padding: 0 10px;
+	width: auto;
 }
 @media (min-width: 680px) {
 	.cso-footer-mkto__content .mktoForm button.mktoButton {
-		width: 79px;
+		min-width: 79px;
 	}
 }
 .cso-footer-mkto__content .mktoForm button.mktoButton:hover {

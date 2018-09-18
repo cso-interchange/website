@@ -481,5 +481,9 @@ img.cso-location-thumbnail {
 .bio-wrapper.expanded {
 	max-height: unset;
 }
-
+.cso-agenda__intro {
+	font-family: "Gotham", sans-serif;
+	margin-top: 2.5em;
+	max-width: 46em;
+}
 
