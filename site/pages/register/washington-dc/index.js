@@ -1,33 +1,42 @@
-MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2636);
+(function ($, MktoForms2) {
 
-MktoForms2.whenReady(function (form) {
+	"use strict";
 
-	// cleanup HTML and CSS from Marketo
-	// remove Marketo CSS
-	$("link[rel=\"stylesheet\"]").each(function (index, item) {
+	if (MktoForms2) {
+		MktoForms2.loadForm("//app-sj08.marketo.com", "797-ENI-742", 2636);
 
-		if ($(item).attr("href").match(/(lps\.qualys|\.marketo)\.com\/.*\.css$/)) {
+		MktoForms2.whenReady(function (form) {
 
-			$(item).remove();
+			// cleanup HTML and CSS from Marketo
+			// remove Marketo CSS
+			$("link[rel=\"stylesheet\"]").each(function (index, item) {
 
-		}
+				if ($(item).attr("href").match(/(lps\.qualys|\.marketo)\.com\/.*\.css$/)) {
 
-	});
+					$(item).remove();
 
-	// remove style tag inside Marketo forms
-	$(".mktoForm style").remove();
+				}
 
-	// remove inline style from Marketo elements
-	$(".mktoForm, .mktoForm *").each(function (index, item) {
+			});
 
-		$(item).attr("style", null);
+			// remove style tag inside Marketo forms
+			let $form = form.getFormElem();
+			$form.find("style").remove();
 
-	});
+			// remove inline style from Marketo elements
+			$form.find("*").addBack().each(function (index, item) {
 
-	// add unique class to each form row container
-	$(".mktoField").each(function (index, item) {
-		var name = $(item).attr("name");
-		$(item).parents(".mktoFormRow").addClass(name);
-	});
+				$(item).attr("style", null);
 
-});
+			});
+
+			// add unique class to each form row container
+			$(".mktoField").each(function (index, item) {
+				var name = $(item).attr("name");
+				$(item).parents(".mktoFormRow").addClass(name);
+			});
+
+		});
+	}
+
+}(window.jQuery, window.MktoForms2));

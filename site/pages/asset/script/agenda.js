@@ -12,7 +12,7 @@
 		}
 	});
 
-}(jQuery));
+}(window.jQuery));
 
 /**
  * expand / collapse long passages of text
@@ -37,4 +37,4 @@
 		}
 	});
 
-}(jQuery));
+}(window.jQuery));
