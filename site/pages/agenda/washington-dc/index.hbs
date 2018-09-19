@@ -7,10 +7,12 @@ overlayHeader: "true"
 {{#extends "default"}}
 
 {{#append "styles"}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="/asset/stylesheet/agenda.css">
 {{/append}}
 
 {{#append "scripts"}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 	<script src="/asset/script/agenda.js"></script>
 {{/append}}
 
@@ -79,13 +81,14 @@ overlayHeader: "true"
 						<tr>
 							<td class="time">1:00 - 1:10 PM</td>
 							<td class="description">Welcome<br>
-								<span class="speaker">Philippe Courtot, CEO, Qualys</span></td>
+								<span class="speaker">Philippe Courtot, Chairman and CEO, Qualys</span></td>
 						</tr>
 						<tr>
 							<td class="time">1:10 – 1:20 PM</td>
 							<td class="description">
 								Cloud Security Alliance in the Federal Government<br>
-								<span class="speaker">Katie Lewin, Federal Director, CSA</span>
+								<span class="speaker">
+									<a data-fancybox href="#katie-lewin" class="cso-speaker-bio__link">Katie Lewin</a>, Federal Director, CSA</span>
 								{{!--
 								<a class="title-speaker-container collapsed">
 									<p class="title">
@@ -151,7 +154,7 @@ overlayHeader: "true"
 							<td class="time">3:30 – 4:00 PM</td>
 							<td class="description">
 								Roundtable Recap<br>
-								<span class="speaker">Philippe Courtot, CEO, Qualys</span>
+								<span class="speaker">Philippe Courtot, Chairman and CEO, Qualys</span>
 							</td>
 						</tr>
 					</table>
@@ -281,6 +284,25 @@ overlayHeader: "true"
 			</div>
 		</div>
 	</div>
+
+<div id="katie-lewin" class="cso-speaker-bio">
+	<div class="cso-title-wrapper">
+
+		<div>
+			<h2 class="cso-bio-title">Katie Lewin</h2>
+			<h3 class="cso-bio-job-title">Federal Director, CSA</h3>
+		</div>
+	</div>
+
+	<div class="cso-bio">
+		<p>
+			Katie Lewin is the Federal Director of the Cloud Security Alliance - a non-profit, vendor neutral organization dedicated to defining and promulgating best practices for a secure cloud computing environment. CSA and its members offer cloud security-specific research, education, certification, events and products.
+		</p>
+		<p>
+			As the first director of the Federal Cloud Computing Program, she developed, promulgated, and implemented FedRAMP across the Federal government; managed the Federal Data Center Consolidation Initiative; and supported multiple cutting edge cloud programs for agencies including infrastructure as a service, e-mail as a service and cloud brokers. She has also served in senior Program Management positions at SRA, Lockheed Martin and CSC specializing in serving the financial agencies including Treasury, CFTC and FDIC.
+		</p>
+	</div>
+</div>
 
 {{/block}}
 
