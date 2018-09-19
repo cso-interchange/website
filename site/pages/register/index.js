@@ -36,6 +36,12 @@
 				$(item).parents(".mktoFormRow").addClass(name);
 			});
 
+			// preselect location based on hash value
+			if (window.location.hash) {
+				var location = 	window.location.hash.replace("#", "").replace("/", "");
+				$("option[value='" + location + "']").prop('selected', true);
+			}
+
 		});
 	}
 
