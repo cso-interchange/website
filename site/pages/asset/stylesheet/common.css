@@ -8301,8 +8301,6 @@ h2 {
 .cso-header__cta-events--menu {
 	position: absolute;
 	background: rgba(181,208,229,0.8);
-	width: 363px;
-	height: 120px;
 	z-index: 10;
 	top: 100%;
 	margin: 0;
@@ -8318,6 +8316,7 @@ h2 {
 	.cso-header__cta-events:hover .cso-header__cta-events--menu {
 		opacity: 1;
 		visibility: visible;
+		text-align: left;
 	}
 }
 .cso-header__cta-events--menu a {
@@ -8326,6 +8325,7 @@ h2 {
 	line-height: 2;
 	text-decoration: none;
 	font-weight: 400;
+	white-space: nowrap;
 }
 .cso-header__cta-events--menu a:hover {
 	color: #3C3C3C;
