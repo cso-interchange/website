@@ -194,14 +194,11 @@
 }
 .cso-agenda td:first-child {
 	padding: 40px 0 0;
+	white-space: nowrap;
 }
 .cso-agenda td:last-child {
 	border-bottom: 1px solid #ccc;
 	padding: 15px 0 40px;
-}
-.cso-agenda td.description {
-	padding-left: 40px;
-	position: relative;
 }
 @media(min-width: 720px) {
 	.cso-agenda td {
@@ -214,20 +211,23 @@
 	.cso-agenda td:first-child {
 		padding: 28px 0;
 	}
+	.cso-agenda td.description {
+		padding-left: 20px;
+	}
 }
-
+@media(min-width: 900px) {
+	.cso-agenda td.description {
+		padding-left: 0;
+	}
+}
 .cso-agenda .speaker {
 	color: #6a778b;
 	display: block;
-	padding-top: 20px;
 }
 .cso-agenda .abstract {
 		padding-top: 22px;
 	}
 @media(min-width: 720px) {
-	.cso-agenda .speaker {
-		padding-top: 0;
-	}
 	.cso-agenda .abstract {
 		padding-top: 30px;
 	}
@@ -548,4 +548,24 @@ img.cso-location-thumbnail {
 .no-js .cso-speaker-bio {
 	margin: 3em auto;
 	display: block;
+}
+.abstract ul,
+.class ul {
+	list-style-type: none;
+	padding-left: 1em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.abstract li:before,
+.class li:before {
+	content: '\2013';
+	position: absolute;
+	margin-left: -15px;
+}
+.bio-link-wrapper {
+	margin-bottom: 0;
+}
+/* REMOVE FOLLOWING RULE WHEN SESSION DESCRIPTIONS ARE PUBLISHED */
+a.title-speaker-container:hover {
+	cursor: default;
 }
