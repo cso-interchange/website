@@ -120,6 +120,9 @@
 		margin: 0 0 21px;
 	}
 }
+.cso-events__container {
+	padding-bottom: 70px;
+}
 .cso-overview__paragraph {
 	margin: 0;
 	font-size: 18px;
