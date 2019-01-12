@@ -19,6 +19,18 @@ twitter:card: summary
 	<script src="index.js"></script>
 {{/append}}
 
+{{#block "cta-register"}}
+{{>
+	cta-register-btn
+	url="/register"
+}}
+{{/block}}
+{{#block "cta-register-mobile"}}
+{{>
+	cta-register-btn
+	url="/register"
+}}
+{{/block}}
 {{#block "content"}}
 	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--home">
 		<div class="cso__hero-banner-container">
@@ -70,33 +82,31 @@ twitter:card: summary
 					<div class="q-grid__column q-grid__column-10">
 						<h2 class="cso-events__heading">Upcoming events</h2>
 						<p class="cso-overview__paragraph">
-							We are constantly adding events around the world. <a href="#sign-up" class="js-signup">Sign up to our newsletter</a> to find out about new events near you.
+
 						</p>
 					</div>
 				</div>
-				{{!--
 				<div class="q-grid__row">
 					<div class="q-grid__column q-grid__column-10">
 						<div class="cso-events__table">
 							<div class="cso-events__table-row">
 								<div class="cso-events__title">
-									<a href="/agenda/florida/">CIO/CISO Interchange<br>Orlando, FL at CSA Congress 2018</a>
+									<a href="/agenda/florida/">CIO/CISO Interchange<br>San Francisco at RSA Conference 2019</a>
 								</div>
 								<div class="cso-events__date">
-									Monday, December 10
+									Monday, March 4
 								</div>
 								<div class="cso-events__location">
-									Omni Orlando Resort at ChampionsGate, FL
+									TBD
 								</div>
 								<div class="cso-events__cta">
-									<a href="/agenda/florida/" class="q-button">Agenda</a>
+									<a href="/agenda/san-francisco/" class="q-button">Agenda</a>
 								</div>
 							</div>
 						</div>
 
 					</div>
 				</div>
-				--}}
 			</div>
 		</div>
 	</div>
