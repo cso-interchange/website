@@ -8790,10 +8790,11 @@ h2 {
 }
 .cso-mobile-menu {
 	position: absolute;
-	top: 67px;
+	top: 64px;
 	left: 15px;
 	padding: 0;
 	margin: 0;
+	border: none;
 }
 @media (min-width: 375px) {
 	.cso-mobile-menu {
@@ -9040,8 +9041,16 @@ h2 {
 	.cso-header__overlay .cso__hero-banner-wraper {
 		padding-top: 137px;
 	}
-	.cso-header__overlay .cso-mobile__logo-fill,
-	.cso-header__overlay .cso-mobile-menu__svg-fill {
+	.cso-header__overlay .cso-mobile__logo-fill {
 		fill: #FFFFFF;
+	}
+	.cso-mobile-menu__svg-fill rect {
+	    fill: #737070;
+	}
+	.cso-mobile-menu {
+		background-color: #fff;
+		padding: 3px;
+		padding-top: 5px;
+		border-radius: 2px;
 	}
 }

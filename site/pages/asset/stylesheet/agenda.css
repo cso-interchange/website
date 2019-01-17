@@ -106,9 +106,6 @@
 .cso-agenda .toggle {
 	width: 15px;
 	display: block;
-	position: absolute;
-	left: 0;
-	top: 23px;
 }
 @media(min-width: 720px) {
 	.cso-agenda .time {
