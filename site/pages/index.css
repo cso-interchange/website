@@ -187,6 +187,7 @@
 	.cso-events__table-row {
 		flex-direction: row;
 		padding-bottom: 30px;
+		align-items: center;
 	}
 }
 @media (min-width: 1024px) {
@@ -293,6 +294,9 @@
 	.cso-events__location {
 		font-size: 18px;
 		line-height: 29px;
+		min-height: 40px;
+		align-items: center;
+		display: flex;
 	}
 	.cso-events__title a {
 		font-size: 18px;
