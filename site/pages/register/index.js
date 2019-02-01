@@ -42,6 +42,16 @@
 				$("option[value='" + location + "']").prop('selected', true);
 			}
 
+			form.onSuccess(function () {
+				// wait a moment before redirecting to allow GTM tags to fire
+				setTimeout(function () {
+					window.location = window.location.pathname + "san-francisco/confirm/";
+				}, 200);
+
+				// return false to prevent the submission handler continuing with its own processing
+				return false;
+			});
+
 		});
 	}
 
