@@ -2,15 +2,53 @@
 (function ($) {
 	"use strict";
 
-	$(".title-speaker-container").on("click", function(event){
-		if ($(event.currentTarget).hasClass("expanded")) {
-			$(event.currentTarget).removeClass("expanded").addClass("collapsed");
-			$(event.currentTarget).parent(".description").find(".abstract").addClass("hidden");
-		} else if ($(event.currentTarget).hasClass("collapsed")) {
-			$(event.currentTarget).removeClass("collapsed").addClass("expanded");
-			$(event.currentTarget).parent(".description").find(".abstract").removeClass("hidden");
+	// expand/collapse the clicked element
+	// when click "Expand+" link, expand the text
+	// when click "Collapse+" link, collapse the text
+	function handleExpandCollapseClick (event) {
+
+		const button = event.currentTarget;
+		const element = button.parentNode;
+		const isExpanded = element.classList.contains("expandedHeight");
+		if (isExpanded) {
+
+			element.classList.add("collapsedHeight");
+			element.classList.remove("expandedHeight");
+			setTimeout(() => button.innerText = "Expand +", 200);
+
+		} else {
+
+			element.classList.remove("collapsedHeight");
+			element.classList.add("expandedHeight");
+			setTimeout(() => button.innerText = "Collapse –", 200);
+
 		}
-	});
+
+	}
+
+	function setUpExpandCollapseLinks() {
+		const elements = Array.from(document.querySelectorAll(".abstract.expandable"));
+
+		elements.forEach(function (element) {
+
+			if (element.querySelector("button") === null) {
+
+				if (element.offsetHeight > 134) {
+					// create Expand+, Collapse- button
+					let button = document.createElement("button");
+					button.innerText = "Expand +";
+					button.addEventListener("click", handleExpandCollapseClick);
+					element.appendChild(button);
+
+					// collapse text
+					element.classList.add("collapsedHeight");
+
+				}
+			}
+		});
+	}
+
+	setUpExpandCollapseLinks();
 
 }(window.jQuery));
 
