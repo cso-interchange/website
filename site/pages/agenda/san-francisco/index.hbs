@@ -7,10 +7,12 @@ overlayHeader: "true"
 {{#extends "default"}}
 
 {{#append "styles"}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="/asset/stylesheet/agenda.css">
 {{/append}}
 
 {{#append "scripts"}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 	<script src="/asset/script/agenda.js"></script>
 {{/append}}
 
@@ -72,24 +74,19 @@ overlayHeader: "true"
 					<table>
 						<tr>
 							<td class="time">3:30 – 4:15 PM</td>
-							<td class="description">Registration and Hors d'oeuvres</td>
+							<td class="description">
+								<span class="title">Registration and Hors d'oeuvres</span>
+							</td>
 						</tr>
 						<tr>
 							<td class="time">4:15 – 4:25 PM</td>
 							<td class="description">
-								<a class="title-speaker-container collapsed">
-									<p class="title">
-										Welcome: Security at a Crossroads<br>
-										<span class="speaker">Philippe Courtot, Chairman and CEO, Qualys</span>
-									</p>
-									<div class="toggle">
-										<img class="plus toggle-button" src="/asset/image/icon-plus-blue.svg" width="14.94" height="14.94">
-										<img class="minus toggle-button"src="/asset/image/icon-minus-blue.svg" width="14.94" height="1.66">
-									</div>
-								</a>
-								<div class="abstract hidden">
-									<p class="bio-link-wrapper">
-										<a href="#speakers" data-speaker="bio-sumedh-thakar" class="bio-link cso-link">Philippe Courtot’s bio </a>
+								<div class="title-speaker-container collapsed">
+									<p>
+										<span class="title">Welcome: Security at a Crossroads</span><br>
+										<span class="speaker">
+											<a href="#philippe-courtot" class="cso-link--copy" data-fancybox>Philippe Courtot</a>, Chairman and CEO, Qualys
+										</span>
 									</p>
 								</div>
 							</td>
@@ -97,75 +94,69 @@ overlayHeader: "true"
 						<tr>
 							<td class="time">4:25 – 4:55 PM</td>
 							<td class="description">
-								<a class="title-speaker-container collapsed">
-									<p class="title">
-										The Future of Human-Robot Interaction<br>
-										<span class="speaker">Dr. Kate Darling, Research Specialist, MIT Media Lab</span>
+								<div class="title-speaker-container collapsed">
+									<p>
+										<span class="title">The Future of Human-Robot Interaction</span><br>
+										<span class="speaker">
+											<a href="#kate-darling" class="cso-link--copy" data-fancybox >Dr. Kate Darling</a>, Research Specialist, MIT Media Lab
+										</span>
 									</p>
-									<div class="toggle">
-										<img class="plus toggle-button" src="/asset/image/icon-plus-blue.svg" width="14.94" height="14.94">
-										<img class="minus toggle-button"src="/asset/image/icon-minus-blue.svg" width="14.94" height="1.66">
+									<div class="abstract expandable">
+										<p>
+											Dr. Kate Darling, a well known TED speaker and MIT researcher, will discuss the future of human-robot interaction and share her research on the surprising behavior we exhibit around robots as they move from behind factory walls into shared spaces. Dr. Darling’s keynote will explore why people have an emotional connection to robots, and why it matters.
+										</p>
 									</div>
-								</a>
-								<div class="abstract hidden">
-									Dr. Kate Darling, a well known TED speaker and MIT researcher, will discuss the future of human-robot interaction and share her research on the surprising behavior we exhibit around robots as they move from behind factory walls into shared spaces. Dr. Darling’s keynote will explore why people have an emotional connection to robots, and why it matters.
-									<p class="bio-link-wrapper">
-										<a href="#speakers" data-speaker="bio-kate-darling" class="bio-link cso-link">Kate Darling’s bio </a>
-									</p>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td class="time">4:55 – 5:35 PM</td>
 							<td class="description">
-								<a class="title-speaker-container collapsed">
-									<p class="title">
-										The State of Cloud Security: Insights from our Panel<br>
-										<span class="speaker">Moderator: Jim Reavis, Co-Founder and CEO, Cloud Security Alliance</span>
-										<span class="speaker">Panelist: Sumedh Thakar, Chief Product Officer, Qualys</span>
-										<span class="speaker">Panelist: Gary Hayslip, CISO, Webroot</span>
-										<span class="speaker">Panelist: Peeyush Patel, Vice President, Information Security, Experian</span>
-										<span class="speaker">Panelist: Marisa Ruffolo, PhD, Cybersecurity Enterprise Architect, Chevron</span>
+								<div class="title-speaker-container collapsed">
+									<p>
+										<span class="title">The State of Cloud Security: Insights from our Panel</span><br>
+										<span class="speaker">
+											<b>Moderator</b>: <a href="#jim-reavis" class="cso-link--copy" data-fancybox >Jim Reavis</a>, Co-Founder and CEO, Cloud Security Alliance <br>
+											<b>Panelist</b>: <a href="#sumedh-thakar" class="cso-link--copy" data-fancybox >Sumedh Thakar</a>, Chief Product Officer, Qualys<br>
+											<b>Panelist</b>: <a href="#gary-hayslip" class="cso-link--copy" data-fancybox >Gary Hayslip</a>, CISO, Webroot<br>
+											<b>Panelist</b>: <a href="#peeyush-patel" class="cso-link--copy" data-fancybox >Peeyush Patel</a>, Vice President, Information Security, Experian<br>
+											<b>Panelist</b>: <a href="#marisa-ruffolo" class="cso-link--copy" data-fancybox >Marisa Ruffolo</a>, Cybersecurity Enterprise Architect, Chevron
+										</span>
 									</p>
-									<div class="toggle">
-										<img class="plus toggle-button" src="/asset/image/icon-plus-blue.svg" width="14.94" height="14.94">
-										<img class="minus toggle-button"src="/asset/image/icon-minus-blue.svg" width="14.94" height="1.66">
+									<div class="abstract expandable">
+										<p>
+											Industry leaders will discuss where we are on the Digital Transformation journey, how security has effectively changed with Digital Transformation initiatives, and what security leaders must focus on now to support the full promise of transformation.
+										</p>
 									</div>
-								</a>
-								<div class="abstract hidden">
-									Industry leaders will discuss where we are on the Digital Transformation journey, how security has effectively changed with Digital Transformation initiatives, and what security leaders must focus on now to support the full promise of transformation.
-									<p class="bio-link-wrapper">
-										<a href="#speakers" data-speaker="bio-sumedh-thakar" class="bio-link cso-link">Jim Reavis’s bio </a>
-									</p>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td class="time">5:40 – 6:30 PM</td>
 							<td class="description">
-								<a class="title-speaker-container collapsed">
-									<p class="title">
-										Round Table Session
+								<div class="title-speaker-container collapsed">
+									<p>
+										<span class="title">Round Table Session</span><br>
 									</p>
-									<div class="toggle">
-										<img class="plus toggle-button" src="/asset/image/icon-plus-blue.svg" width="14.94" height="14.94">
-										<img class="minus toggle-button"src="/asset/image/icon-minus-blue.svg" width="14.94" height="1.66">
+									<div class="abstract expandable">
+										<p>
+											Topical Roundtables spanning technical to organizational issues facing CIO’s and CISO’s moderated by industry experts.
+										</p>
 									</div>
-								</a>
-								<div class="abstract hidden">
-									Topical Roundtables spanning technical to organizational issues facing CIO’s and CISO’s moderated by industry experts.
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td class="time">6:35 – 6:45 PM</td>
 							<td class="description">
-								<a class="title-speaker-container collapsed">
-									<p class="title">
-										Closing Comments<br>
-										<span class="speaker">Philippe Courtot, Chairman and CEO, Qualys</span>
+								<div class="title-speaker-container collapsed">
+									<p>
+										<span class="title">Closing Comments</span><br>
+										<span class="speaker">
+											<a href="#philippe-courtot" class="qsc-link--copy" data-fancybox>Philippe Courtot</a>, Chairman and CEO, Qualys
+										</span>
 									</p>
-								</a>
+								</div>
 							</td>
 						</tr>
 					</table>
@@ -227,6 +218,75 @@ overlayHeader: "true"
 							</div>
 						</div>
 
+					</div>
+
+					<div class="cso-speakers__thumbnails-container">
+
+						<div class="cso-speakers__thumbnails-box">
+							<img src="/asset/image/headshot-sumedh-thakar-330-2x.jpg" width="330">
+							<h4 class="cso-speakers__name">
+								Sumedh Thakar <br>
+								Chief Product Officer
+							</h4>
+							<div class="cso-speakers__title">Qualys</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									As Chief Product Officer at Qualys, Sumedh oversees worldwide engineering, development and product management for the Qualys Cloud Platform and integrated suite of security and compliance applications. A core systems and database engineer, Sumedh started at Qualys in 2003, architecting and delivering Qualys' PCI compliance platform to meet the Payment Card Industry (PCI) Data Security Standard (DSS) requirements.
+								</p>
+								<p class="expand-container0"></p>
+							</div>
+						</div>
+
+						<div class="cso-speakers__thumbnails-box">
+							<img src="/asset/image/headshot-gary-hayslip-330-2x.jpg" width="330">
+							<h4 class="cso-speakers__name">
+								Gary Hayslip <br>
+								CISO
+							</h4>
+							<div class="cso-speakers__title">Webroot</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									As CISO for Webroot, Gary Hayslip advises executive leadership on protecting critical information resources and oversees enterprise cyber-security strategy. His mission includes creating a “risk aware” culture that places a high value on securing and protecting customer information entrusted to Webroot. <br><br>
+									Hayslip’s career in the fields of enterprise information security and network security spans more than 20 years and includes multiple CIO, CISO, and deputy director of IT positions for the U.S. Navy, the Federal Government, and the City of San Diego. In these positions, he was instrumental in architecting security programs from the ground up, auditing large, disparate networks and consolidated extensive legacy network infrastructures into converged virtualized datacenters.<br><br>
+									Hayslip recently co-authored the CISO Desk Reference Guide: A Practical Guide for CISOs – Volumes 1 & 2, which are considered among the leading books on enabling CISOs to expand their expertise and scope of business knowledge. Hayslip has a BS in information systems management from UMUC and an MBA from San Diego State University.
+								</p>
+								<p class="expand-container0"></p>
+							</div>
+						</div>
+
+
+						<div class="cso-speakers__thumbnails-box">
+							<img src="/asset/image/headshot-peeyush-patel-330-2x.jpg" width="330">
+							<h4 class="cso-speakers__name">
+								Peeyush Patel<br>
+								VP of Information Security
+							</h4>
+							<div class="cso-speakers__title">Experian</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									Experian is custodian of more than a billion customers'  information globally. Through series of multiple acquisitions, Experian has a broad technology footprint that includes cloud, hybrid and on-premises environments and is managed in a federated and decentralized manner. Peeyush Patel, VP, Information Security at Experian will illustrate how the Qualys Cloud Agent enables instant, global visibility of IT assets – including cloud server instances and remote users – with up-to-date asset configuration data for security and compliance. Learn how Qualys has enabled Experian to automate and streamline security and compliance supporting business functions globally, without compromising speed to market.
+								</p>
+								<p class="expand-container0"></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="cso-speakers__thumbnails-container">
+						<div class="cso-speakers__thumbnails-box">
+							<img src="/asset/image/headshot-marisa-ruffolo-330-2x.jpg" width="330">
+							<h4 class="cso-speakers__name">
+								Marisa Ruffolo <br>
+								Cybersecurity Enterprise Architect
+							</h4>
+							<div class="cso-speakers__title">Chevron</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									With more than 20 years of combined work experience in cybersecurity, systems architecture, software development and engineering, Marisa Ruffolo is an accomplished technology leader with a proven track record of designing and implementing enterprise wide cybersecurity solutions. As a Cybersecurity Enterprise Architect at Chevron, Ruffolo is responsible for developing the corporate cybersecurity technology architecture and strategy. Ruffolo serves as the Chair of the American Petroleum Institute Information Technology Security Subcommittee (API ITSS). She is also a Certified Information Systems Security Professional (CISSP). Ruffolo earned her undergraduate degree in electrical engineering from the University of Illinois in Urbana and her Ph.D. in electrical engineering from Northwestern University.
+								</p>
+								<p class="expand-container0"></p>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -296,6 +356,114 @@ overlayHeader: "true"
 			</div>
 		</div>
 	</div>
+
+
+<div id="philippe-courtot" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Philippe Courtot" class="headshot" height="65" src="/asset/image/philippe-courtot-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Philippe Courtot</h2>
+			<h3 class="job-title">Chairman and CEO, Qualys</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>As CEO of Qualys, Philippe has worked with thousands of companies to improve their IT security and compliance postures. Philippe received the SC Magazine Editor's Award in 2004 for bringing on demand technology to the network security industry. He was also named the 2011 CEO of the Year by SC Magazine Awards Europe. He was previously Chairman and CEO of Signio until its acquisition by VeriSign. He is also a member of the Board of Directors of StopBadware, a non-profit, anti-malware organization.</p>
+	</div>
+</div>
+
+<div id="sumedh-thakar" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Sumedh Thakar" class="headshot" height="65" src="/asset/image/sumedh-thakar-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Sumedh Thakar</h2>
+			<h3 class="job-title">Chief Product Officer, Qualys</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>As Chief Product Officer at Qualys, Sumedh oversees worldwide engineering, development and product management for the Qualys Cloud Platform and integrated suite of security and compliance applications. A core systems and database engineer, Sumedh started at Qualys in 2003, architecting and delivering Qualys' PCI compliance platform to meet the Payment Card Industry (PCI) Data Security Standard (DSS) requirements.</p>
+	</div>
+</div>
+
+<div id="kate-darling" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Dr. Kate Darling" class="headshot" height="65" src="/asset/image/kate-darling-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Dr. Kate Darling</h2>
+			<h3 class="job-title">Research Specialist, MIT Media Lab</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>Dr. Kate Darling is a leading expert in Robot Ethics. She’s a researcher at the Massachusetts Institute of Technology (MIT) Media Lab, where she investigates social robotics and conducts experimental studies on human-robot interaction. Kate explores the emotional connection between people and life-like machines, seeking to influence technology design and policy direction. Her writing and research anticipate difficult questions that lawmakers, engineers, and the wider public will need to address as human-robot relationships evolve in the coming decades. Forever interested in how technology intersects with society, Kate has a background in law & economics and intellectual property.</p>
+	</div>
+</div>
+
+<div id="jim-reavis" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Jim Reavis" class="headshot" height="65" src="/asset/image/jim-reavis-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Jim Reavis</h2>
+			<h3 class="job-title">Co-Founder and CEO, Cloud Security Alliance</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>For many years, Jim Reavis has worked in the information security industry as an entrepreneur, writer, speaker, technologist and business strategist. Jim’s innovative thinking about emerging security trends have been published and presented widely throughout the industry and have influenced many. Jim is helping shape the future of information security and related technology industries as co-founder, CEO and driving force of the Cloud Security Alliance. Jim has been named as one of the Top 10 cloud computing leaders by SearchCloudComputing.com. Jim received a B.A. in Business Administration / Computer Science from Western Washington University in 1987 and formerly served on WWU’s alumni board. Jim was recognized as a WWU Distinguished Alumnus in 2015. In 2016, Jim was inducted into the Information Systems Security Association (ISSA) Hall of Fame..</p>
+	</div>
+</div>
+
+<div id="gary-hayslip" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Gary Hayslip" class="headshot" height="65" src="/asset/image/gary-hayslip-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Gary Hayslip</h2>
+			<h3 class="job-title">CISO, Webroot</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>As CISO for Webroot, Gary Hayslip advises executive leadership on protecting critical information resources and oversees enterprise cyber-security strategy. His mission includes creating a “risk aware” culture that places a high value on securing and protecting customer information entrusted to Webroot.</p>
+		<p>Hayslip’s career in the fields of enterprise information security and network security spans more than 20 years and includes multiple CIO, CISO, and deputy director of IT positions for the U.S. Navy, the Federal Government, and the City of San Diego. In these positions, he was instrumental in architecting security programs from the ground up, auditing large, disparate networks and consolidated extensive legacy network infrastructures into converged virtualized datacenters.</p>
+		<p>Hayslip recently co-authored the CISO Desk Reference Guide: A Practical Guide for CISOs – Volumes 1 & 2, which are considered among the leading books on enabling CISOs to expand their expertise and scope of business knowledge. Hayslip has a BS in information systems management from UMUC and an MBA from San Diego State University.</p>
+	</div>
+</div>
+
+<div id="marisa-ruffolo" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Marisa Ruffolo" class="headshot" height="65" src="/asset/image/marisa-ruffolo-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Marisa Ruffolo</h2>
+			<h3 class="job-title">Cybersecurity Enterprise Architect, Chevron</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>With more than 20 years of combined work experience in cybersecurity, systems architecture, software development and engineering, Marisa Ruffolo is an accomplished technology leader with a proven track record of designing and implementing enterprise wide cybersecurity solutions. As a Cybersecurity Enterprise Architect at Chevron, Ruffolo is responsible for developing the corporate cybersecurity technology architecture and strategy. Ruffolo serves as the Chair of the American Petroleum Institute Information Technology Security Subcommittee (API ITSS). She is also a Certified Information Systems Security Professional (CISSP). Ruffolo earned her undergraduate degree in electrical engineering from the University of Illinois in Urbana and her Ph.D. in electrical engineering from Northwestern University.</p>
+	</div>
+</div>
+
+<div id="peeyush-patel" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Peeyush Patel" class="headshot" height="65" src="/asset/image/peeyush-patel-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Peeyush Patel</h2>
+			<h3 class="job-title">VP of Information Security, Experian</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>Experian is custodian of more than a billion customers' information globally. Through series of multiple acquisitions, Experian has a broad technology footprint that includes cloud, hybrid and on-premises environments and is managed in a federated and decentralized manner. Peeyush Patel, VP, Information Security at Experian will illustrate how the Qualys Cloud Agent enables instant, global visibility of IT assets – including cloud server instances and remote users – with up-to-date asset configuration data for security and compliance. Learn how Qualys has enabled Experian to automate and streamline security and compliance supporting business functions globally, without compromising speed to market.</p>
+	</div>
+</div>
 
 {{/block}}
 
