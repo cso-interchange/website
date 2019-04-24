@@ -1,6 +1,6 @@
 const AWS = require("aws-sdk");
 
-let cf = new AWS.CloudFront({apiVersion: "2016-11-25", region: "us-east-1"});
+let cf = new AWS.CloudFront({apiVersion: "2018-11-05", region: "us-east-1"});
 
 const distributionId = process.argv[2] || process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID;
 const paths = process.argv[3] || "/*";
