@@ -29,14 +29,12 @@ deploy:
     acl: public_read
     on:
       branch: develop
-    provider: heroku
+  - provider: heroku
     on:
       branch: develop
     api_key:
-      master:
-        secure: $HEROKU_API_KEY
-    app:
-      master: dev-cio-ciso-interchange
+      secure: $HEROKU_API_KEY
+    app: dev-cio-ciso-interchange
     strategy: git
 after_deploy:
   # Invalidate every object in the distribution.
