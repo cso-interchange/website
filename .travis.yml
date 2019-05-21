@@ -34,7 +34,7 @@ deploy:
       branch: develop
     api_key:
       master:
-        secure: f8e0acde-1839-41f2-9d12-0b2cfea7e33d
+        secure: $HEROKU_API_KEY
     app:
       master: dev-cio-ciso-interchange
     strategy: git
