@@ -29,6 +29,15 @@ deploy:
     acl: public_read
     on:
       branch: develop
+    provider: heroku
+    on:
+      branch: develop
+    api_key:
+      master:
+        secure: f8e0acde-1839-41f2-9d12-0b2cfea7e33d
+    app:
+      master: dev-cio-ciso-interchange
+    strategy: git
 after_deploy:
   # Invalidate every object in the distribution.
   - bin/auto-invalidate.sh
