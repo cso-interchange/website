@@ -1,0 +1,15 @@
+{
+	"name": "qualys/cio-ciso-interchange",
+	"description": "",
+	"require": {
+		 "vlucas/phpdotenv": "2.4.0",
+		 "auth0/auth0-php": "~5.0"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Abdullah Yahya",
+			"email": "ayahya@qualys.com"
+		}
+	]
+}
