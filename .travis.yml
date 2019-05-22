@@ -35,7 +35,7 @@ deploy:
     api_key:
       secure: $HEROKU_API_KEY
     app: dev-cio-ciso-interchange
-    strategy: git
+    strategy: api # git
     skip_cleanup: true
     local-dir: build
 after_deploy:
