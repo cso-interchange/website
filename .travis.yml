@@ -8,6 +8,7 @@ env:
     - NODE_ENV=production
 script:
   - npm run build
+before_deploy: bin/prepare-heroku-deployment.sh
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY_ID # declared in Travis repo settings
@@ -37,7 +38,6 @@ deploy:
     app: dev-cio-ciso-interchange
     strategy: api # git
     skip_cleanup: true
-    before_deploy: "bin/prepare-heroku-deployment.sh"
 after_deploy:
   # Invalidate every object in the distribution.
   - bin/auto-invalidate.sh
