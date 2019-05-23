@@ -8,7 +8,7 @@ env:
     - NODE_ENV=production
 script:
   - npm run build
-before_deploy: bin/prepare-heroku-deployment.sh
+# before_deploy: bin/prepare-heroku-deployment.sh
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY_ID # declared in Travis repo settings
