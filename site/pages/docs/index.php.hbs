@@ -1,0 +1,89 @@
+<?php
+	require('../../vendor/autoload.php');
+	require('../dotenv-loader.php');
+
+	use Auth0\SDK\Auth0;
+
+	$domain        = getenv('AUTH0_DOMAIN');
+	$client_id     = getenv('AUTH0_CLIENT_ID');
+	$client_secret = getenv('AUTH0_CLIENT_SECRET');
+	$redirect_uri  = getenv('AUTH0_CALLBACK_URL');
+	$audience      = getenv('AUTH0_AUDIENCE');
+
+	$auth0 = new Auth0([
+	  'domain' => $domain,
+	  'client_id' => $client_id,
+	  'client_secret' => $client_secret,
+	  'redirect_uri' => $redirect_uri,
+	  'audience' => $audience,
+	  'scope' => 'openid profile',
+	  'persist_id_token' => true,
+	  'persist_access_token' => true,
+	  'persist_refresh_token' => true,
+	]);
+
+	$userInfo = $auth0->getUser();
+?>
+
+{{#extends "default"}}
+
+{{#append "styles"}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="/asset/stylesheet/agenda.css">
+{{/append}}
+
+{{#append "scripts"}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+	<script src="/asset/script/agenda.js"></script>
+{{/append}}
+
+{{#block "cta-register"}}
+{{!-- {{>
+	cta-register-btn
+	url="/register/#san-francisco"
+}}
+{{/block}}
+{{#block "cta-register-mobile"}}
+{{>
+	cta-register-btn
+	url="/register/#san-francisco"
+}} --}}
+{{/block}}
+{{#block "content"}}
+	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--inner">
+		<div class="cso__hero-banner-container">
+			<div class="cso__hero-banner-inner">
+				<h2 class="heading--2">
+					Building security into the digital transformation – not bolting it on.
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="q-grid__container cso-overview__container">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h2 class="cso-overview__heading">
+						Docs
+					</h2>
+					<?php if (isset($_GET["signedout"])): ?>
+						<p>You have successfully signed out. </p>
+						<p><a href="/sign-in-out">Sign in</a> again.</p>
+					<?php elseif (!$userInfo): ?>
+						<p>Please <a href="/sign-in-out">sign in</a> to access this content. If you don't have an account, you can <a href="/sign-in-out">create one</a>.</p>
+					<?php else: ?>
+						<ul>
+							<li><a href="#">PDF 1</a></li>
+							<li><a href="#">PDF 2</a></li>
+							<li><a href="#">PDF 3</a></li>
+						</ul>
+						<p><a href="/sign-in-out">Sign out</a></p>
+					<?php endif ?>
+				</div>
+			</div>
+		</div>
+	</div>
+{{/block}}
+
+{{/extends}}

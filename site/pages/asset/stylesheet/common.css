@@ -8240,7 +8240,6 @@ h2 {
 	.cso-header__cta-container {
 		display: flex;
 		flex: none;
-		min-width: 238px;
 		justify-content: space-between;
 		align-items: flex-end;
 		flex-flow: row;
@@ -8277,14 +8276,16 @@ h2 {
 		color: #ECECEC;
 	}
 }
-.cso-header__cta-events {
+.cso-header__cta-events,
+.cso-header__cta-docs {
 	position: relative;
 	height: 44px;
 	vertical-align: top;
 	margin-left: 30px;
 }
 @media (min-width: 680px) {
-	.cso-header__cta-events {
+	.cso-header__cta-events,
+	.cso-header__cta-docs {
 		margin-left: 0;
 		padding-left: 15px;
 		padding-right: 15px;
