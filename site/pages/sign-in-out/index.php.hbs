@@ -7,7 +7,7 @@ use Auth0\SDK\Auth0;
 $domain        = getenv('AUTH0_DOMAIN');
 $client_id     = getenv('AUTH0_CLIENT_ID');
 $client_secret = getenv('AUTH0_CLIENT_SECRET');
-$redirect_uri  = getenv('AUTH0_CALLBACK_URL');
+$redirect_uri  = getenv('AUTH0_CALLBACK_URL'); // URL to redirect to after login
 $audience      = getenv('AUTH0_AUDIENCE');
 
 $auth0 = new Auth0([
@@ -24,13 +24,22 @@ $auth0 = new Auth0([
 
 $userInfo = $auth0->getUser();
 
+$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
+
 if (!$userInfo) {
+  // redirect user to login
 	$auth0->login();
+} else if (isset($_GET["code"])) {
+  // redirect after user has logged in
+  $logged_in_url = $protocol . $_SERVER['HTTP_HOST'] . "/docs";
+  header('Location: ' . $logged_in_url);
+  die();
 } else {
+  // log user out
 	$auth0->logout();
-	$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
+  // redirect after logout
 	$return_to = $protocol . $_SERVER['HTTP_HOST'] . "/docs?signedout";
-	$logout_url = sprintf('http://%s/v2/logout?client_id=%s&returnTo=%s', $domain, $client_id, $return_to);
-	header('Location: ' . $logout_url);
+	$logged_out_url = sprintf('http://%s/v2/logout?client_id=%s&returnTo=%s', $domain, $client_id, $return_to);
+	header('Location: ' . $logged_out_url);
 	die();
 }
