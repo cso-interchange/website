@@ -23,21 +23,16 @@
 	]);
 
 	$userInfo = $auth0->getUser();
-
-	if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == 'off' || $_SERVER['SERVER_PORT'] !== 443) {
-		// URL is not secure so redirect to secure url
-		if (stripos($_SERVER['HTTP_HOST'],'interchange') !== false) {
-			$secure_url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-			header('Location: ' . $secure_url);
-			die();
-		}
-	}
 ?>
 
 {{#extends "default"}}
 
 {{#append "styles"}}
 	<link rel="stylesheet" href="/asset/stylesheet/agenda.css">
+{{/append}}
+
+{{#append "scripts"}}
+	<script src="index.js"></script>
 {{/append}}
 
 {{#block "cta-register"}}
