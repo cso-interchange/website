@@ -26,10 +26,6 @@ $userInfo = $auth0->getUser();
 
 $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
 
-if (stripos($_SERVER['HTTP_HOST'],'interchange') !== false) {
-  $protocol = 'https://';
-}
-
 if (!$userInfo) {
   // redirect user to login
 	$auth0->login();
