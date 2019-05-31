@@ -23,18 +23,12 @@
 	]);
 
 	$userInfo = $auth0->getUser();
-
-	echo $redirect_uri;
 ?>
 
 {{#extends "default"}}
 
 {{#append "styles"}}
 	<link rel="stylesheet" href="/asset/stylesheet/agenda.css">
-{{/append}}
-
-{{#append "scripts"}}
-	<script src="index.js"></script>
 {{/append}}
 
 {{#block "cta-register"}}
