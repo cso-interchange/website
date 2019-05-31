@@ -24,10 +24,14 @@ $auth0 = new Auth0([
 
 $userInfo = $auth0->getUser();
 
+var_dump($redirect_uri);
+
 $protocol = "https://";
 if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
   $protocol = "http://";
 }
+
+var_dump($protocol);
 
 if (!$userInfo) {
   // redirect user to login
