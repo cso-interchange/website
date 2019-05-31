@@ -32,7 +32,8 @@ if (!$userInfo) {
 } else if (isset($_GET["code"])) {
   // redirect after user has logged in
   $logged_in_url = $protocol . $_SERVER['HTTP_HOST'] . "/docs";
-  header('Location: ' . $logged_in_url);
+  echo $logged_in_url;
+  // header('Location: ' . $logged_in_url);
   die();
 } else {
   // log user out
