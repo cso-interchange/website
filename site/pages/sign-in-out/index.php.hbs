@@ -26,10 +26,9 @@ $userInfo = $auth0->getUser();
 
 var_dump($redirect_uri);
 
-$protocol = "https://";
-if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
-  $protocol = "http://";
-}
+$position = strpos($redirect_uri,"://");
+
+$protocol = substr($redirect_uri,0, $position) . "://";
 
 var_dump($protocol);
 
