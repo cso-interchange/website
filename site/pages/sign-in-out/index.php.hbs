@@ -33,14 +33,14 @@ if (!$userInfo) {
 	$auth0->login();
 } else if (isset($_GET["code"])) {
   // redirect after user has logged in
-  $logged_in_url = $protocol . $_SERVER['HTTP_HOST'] . "/docs";
+  $logged_in_url = $protocol . $_SERVER['HTTP_HOST'] . "/docs/";
   header('Location: ' . $logged_in_url);
   die();
 } else {
   // log user out
 	$auth0->logout();
   // redirect after logout
-	$return_to = $protocol . $_SERVER['HTTP_HOST'] . "/docs?signedout";
+	$return_to = $protocol . $_SERVER['HTTP_HOST'] . "/docs/?signedout";
 	$logged_out_url = sprintf('http://%s/v2/logout?client_id=%s&returnTo=%s', $domain, $client_id, $return_to);
 	header('Location: ' . $logged_out_url);
 	die();
