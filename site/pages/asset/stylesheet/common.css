@@ -8162,7 +8162,7 @@ h1 {
 	margin-bottom: 0;
 	margin-top: 0;
 	letter-spacing: -0.1pt;
-    max-width: 500px;
+	max-width: 500px;
 }
 @media (min-width: 500px) {
 	h1 {
@@ -8735,14 +8735,7 @@ h2 {
 	border-bottom: 12px solid #2E8BE0;
 	min-height: 432px;
 }
-
-.cso-logo-light {
-	display: none;
-}
 @media (min-width: 680px) {
-	.cso-logo-light {
-		display: block;
-	}
 	.cso-logo-dark {
 		display: none;
 	}
@@ -9038,7 +9031,7 @@ h2 {
 		fill: #FFFFFF;
 	}
 	.cso-mobile-menu__svg-fill rect {
-	    fill: #737070;
+		fill: #737070;
 	}
 	.cso-mobile-menu {
 		background-color: #fff;

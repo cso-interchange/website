@@ -1,5 +1,6 @@
 body {
 	background-color: #12151e;
+	text-align: center;
 }
 .hero .date-location {
 	color: #FFFFFF;
@@ -11,14 +12,16 @@ body {
 .button-wrapper {
 	display: flex;
 	align-items: flex-start;
+	justify-content: center;
 }
 .heading--1 {
 	color: #fff;
-	margin-top: 2em;
+	font-size: 32px;
+	margin: 0 auto;
 }
 .hero {
-	background-image: url(/asset/image/circle-spin-2-1293-2x.jpg);
-	min-height: 662px;
+	background-image: url(/asset/image/circle-spin-mobile-320-1x.png);
+	min-height: 408px;
 	background-size: cover;
 	background-position: top;
 }
@@ -31,15 +34,14 @@ body {
 .about {
 	background-color: #4B85E2;
 	max-width: 1430px;
-	margin-left: 70px;
-	margin-right: 70px;
 	padding-top: 4em;
 	padding-bottom: 4em;
+	margin-left: 15px;
+	margin-right: 15px;
 }
-.about .q-grid__column {
-	padding-left: 60px;
-	padding-right: 60px;
-	color: #fff;
+.about .heading--2 {
+	max-width: 270px;
+	margin: 0 auto;
 }
 .about .heading--5,
 .about .heading--2,
@@ -48,83 +50,61 @@ body {
 .event .heading--3 {
 	color: #fff;
 }
-.about .col1,
-.about .col2 {
-	width: 47%;
-}
-.about .container {
-	display: flex;
-	justify-content: space-between;
-}
 .paragraph--1 {
 	font-family: "Gotham", sans-serif;
 	color: #fff;
 }
-.about .quote {
-	font-size: 36px;
-	font-family: "Caecilia", serif;
-	padding-right: 2em;
-	position: relative;
+.about .q-grid__column-push-1 {
+	margin-left: 0;
 }
-.about .quote-wrapper {
-	border-left: 10px solid #000;
+.about .quote {
+	font-size: 18px;
+	font-family: "Caecilia", serif;
+	position: relative;
+	color: #fff;
+	margin-left: 0;
+	margin-right: 0;
 }
 .about .open-quote {
 	position: absolute;
-	left: -0.7em;
 }
 .about .quote-author {
-	font-size: 18;
+	font-size: 14px;
 	font-weight: 400;
+}
+.about .horz-divider {
+	border-top: 5px solid #000;
+	width: 89px;
 }
 .event {
 	text-align: center;
 	color: #fff;
 }
-.event .heading--3 {
+.event .heading--2 {
 	font-size: 32px;
+}
+.event .heading--3 {
+	font-size: 18px;
 }
 .cso-speakers__thumbnails-container {
 	padding-top: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .cso-speakers__thumbnails-box {
 	padding-bottom: 40px;
-}
-.cso-speakers__thumbnails-box:last-child {
-	border-bottom: 1px solid #9B9B9B;
-}
-@media(min-width: 720px) {
-	.cso-speakers__thumbnails-container {
-		padding-top: 92px;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.cso-speakers__thumbnails-box {
-		padding-right: 40px;
-		flex: 1;
-		width: 33.33%;
-		justify-content: space-between;
-	}
-	.cso-speakers__thumbnails-box:first-child:last-child {
-		max-width: 33.33%;
-	}
-	.cso-speakers__thumbnails-box:last-child {
-		padding-right: 0;
-		border-bottom: 0;
-	}
-	.cso-speakers__thumbnails-box {
-		padding-bottom: 0;
-	}
+	width: 47%;
 }
 .cso-speakers__description {
 	display: none;
 }
 .cso-speakers__name {
-	font-size: 24px;
+	font-size: 14px;
 	margin-bottom: 0;
 }
 .cso-speakers__title {
-	font-size: 16px;
+	font-size: 14px;
 }
 .agenda {
 	margin-bottom: 4em;
@@ -156,6 +136,15 @@ body {
 .sessions .time {
 	margin-right: 1em;
 	white-space: nowrap;
+}
+.session .time.mobile {
+	margin-bottom: 0;
+}
+.session .description-wrapper {
+	margin-left: 2em;
+}
+.desktop {
+	display: none;
 }
 .session {
 	padding-left: 1em;
@@ -191,30 +180,6 @@ body {
 .bio-link a:hover {
 	text-decoration: underline;
 }
-@media (min-width: 720px) {
-	.session .title:before,
-	.session .title:after {
-		content: "";
-		position: absolute;
-		background: #2E8BE0;
-	}
-	.session .title:before {
-		transition: all 0.35s ease-in-out;
-		width: 15px;
-		height: 1px;
-		right: -40px;
-		top: 16px;
-	}
-	.session .title:after {
-		transition: all 0.35s ease-in-out;
-		transform: rotate(-90deg);
-		opacity: 1;
-		right: -40px;
-		top: 16px;
-		width: 15px;
-		height: 1px;
-	}
-}
 .opened {
 	opacity: 1;
 	margin-bottom: 0.7em;
@@ -226,24 +191,55 @@ body {
 	transform: rotate(90deg);
 	opacity: 0;
 }
+.session .title:before,
+.session .title:after {
+	content: "";
+	position: absolute;
+	background: #2E8BE0;
+}
+.session .title:before {
+	transition: all 0.35s ease-in-out;
+	width: 15px;
+	height: 1px;
+	top: 15px;
+	left: -25px;
+}
+.session .title:after {
+	transition: all 0.35s ease-in-out;
+	transform: rotate(-90deg);
+	opacity: 1;
+	left: -25px;
+	top: 15px;
+	width: 15px;
+	height: 1px;
+}
 .location {
 	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 .location .venue-pic,
 .location .venue-info {
-	width: 50%;
+	width: 100%;
 	background-color: #4B85E2;
+}
+.location .venue-pic {
+	order: 2;
 }
 .location .venue-info {
 	padding-left: 30px;
-	padding-right: 110px;
+	padding-right: 30px;
 	color: #fff;
+	order: 1;
 }
 .venue-info .heading--2 {
 	color: #fff;
+	font-size: 32px;
 }
 .four-seasons-logo {
 	margin-bottom: 4em;
+	margin-left: auto;
+	margin-right: auto;
 }
 .directions {
 	font-weight: 500;
@@ -253,8 +249,8 @@ body {
 	text-decoration: underline;
 }
 .register-block {
-	background-image: url(/asset/image/circle-spin-3-1440-1x.jpg);
-	min-height: 717px;
+	background-image: url(/asset/image/circle-spin-2-mobile-320-1x.png);
+	min-height: 577px;
 	background-size: cover;
 	background-position: top;
 	color: #fff;
@@ -265,4 +261,139 @@ body {
 }
 .register-block .paragraph--1 {
 	max-width: 783px;
+}
+@media (min-width: 720px) {
+	body {
+		text-align: left;
+	}
+	.heading--1 {
+		font-size: 34px;
+		margin-top: 2em;
+		margin-left: 0;
+	}
+	.hero {
+		background-image: url(/asset/image/circle-spin-2-1293-2x.jpg);
+		min-height: 662px;
+	}
+	.button-wrapper {
+		justify-content: flex-start;
+	}
+	.event .heading--3 {
+		font-size: 32px;
+	}
+	.cso-speakers__name {
+		font-size: 24px;
+	}
+	.cso-speakers__title {
+		font-size: 16px;
+	}
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+	.cso-speakers__thumbnails-container {
+		padding-top: 92px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.cso-speakers__thumbnails-box {
+		margin-bottom: 4em;
+		width: 31%;
+		max-width: 330px;
+	}
+	.cso-speakers__thumbnails-box:first-child:last-child {
+		max-width: 33.33%;
+	}
+	.cso-speakers__thumbnails-box:last-child {
+		padding-right: 0;
+		border-bottom: 0;
+	}
+	.cso-speakers__thumbnails-box {
+		padding-bottom: 0;
+	}
+	.session .title:before {
+		right: -40px;
+		left: auto;
+	}
+	.session .title:after {
+		right: -40px;
+		left: auto;
+	}
+	.register-block {
+		background-image: url(/asset/image/circle-spin-3-1440-1x.jpg);
+		min-height: 717px;
+	}
+	.agenda .q-grid__column {
+		min-width: 555px;
+	}
+	.about .heading--2 {
+		max-width: none;
+		margin-left: 0;
+	}
+	.four-seasons-logo {
+		margin-left: 0;
+	}
+}
+@media (min-width: 900px) {
+	.about .q-grid__column-push-1 {
+		margin-left: 8.3333%;
+	}
+	.about {
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	.about .container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.about .col1,
+	.about .col2 {
+		width: 47%;
+	}
+	.about .col2 {
+	    margin-top: 1.8em;
+	}
+	.about .q-grid__column {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.about .quote-wrapper {
+		border-left: 10px solid #000;
+		padding-left: 3em;
+	}
+	.about .quote {
+		font-size: 36px;
+		padding-right: 2em;
+	}
+	.about .open-quote {
+		left: -0.7em;
+	}
+	.about .open-quote-mobile {
+		display: none;
+	}
+	.about .quote-author {
+		font-size: 18px;
+	}
+	.about .horz-divider {
+		display: none;
+	}
+	.location {
+		flex-wrap: nowrap;
+		align-items: stretch;
+	}
+	.location .venue-pic {
+		order: 1;
+	}
+	.location .venue-info {
+		order: 2;
+	}
+	.location .venue-pic,
+	.location .venue-info {
+		width: 50%;
+	}
+	.location .venue-info {
+		padding-right: 110px;
+	}
 }
