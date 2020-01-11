@@ -5,6 +5,8 @@ body {
 .hero .date-location {
 	color: #FFFFFF;
 	font-weight: 400;
+	margin-top: 1em;
+	margin-bottom: 1.8em;
 }
 .hero .q-button.agenda {
 	margin-right: 1em;
@@ -18,10 +20,11 @@ body {
 	color: #fff;
 	font-size: 32px;
 	margin: 0 auto;
+	line-height: 1.25;
 }
 .hero {
 	background-image: url(/asset/image/circle-spin-mobile-320-1x.png);
-	min-height: 408px;
+	min-height: 412px;
 	background-size: cover;
 	background-position: top;
 }
@@ -34,25 +37,36 @@ body {
 .about {
 	background-color: #4B85E2;
 	max-width: 1430px;
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 2.1em;
+	padding-bottom: 3.2em;
 	margin-left: 15px;
 	margin-right: 15px;
 }
 .about .heading--2 {
 	max-width: 270px;
 	margin: 0 auto;
+	font-size: 33px;
+}
+.about .paragraph--1 {
+	font-size: 14px;
+	line-height: 1.45;
 }
 .about .heading--5,
 .about .heading--2,
 .event .heading--5,
-.event .heading--2,
+.speakers .heading--2,
 .event .heading--3 {
 	color: #fff;
 }
 .paragraph--1 {
 	font-family: "Gotham", sans-serif;
 	color: #fff;
+}
+.about .col1 {
+	margin-top: 0;
+}
+.about .col2 {
+	padding-top: 12px;
 }
 .about .q-grid__column-push-1 {
 	margin-left: 0;
@@ -64,6 +78,7 @@ body {
 	color: #fff;
 	margin-left: 0;
 	margin-right: 0;
+    line-height: 1.35;
 }
 .about .open-quote {
 	position: absolute;
@@ -71,23 +86,42 @@ body {
 .about .quote-author {
 	font-size: 14px;
 	font-weight: 400;
+    margin-top: 13px;
 }
 .about .horz-divider {
 	border-top: 5px solid #000;
 	width: 89px;
+	margin-bottom: 37px;
 }
 .event {
 	text-align: center;
 	color: #fff;
+	margin-top: 3.5em;
 }
 .event .heading--2 {
 	font-size: 32px;
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 0;
 }
-.event .heading--3 {
+.event .city {
+	font-size: 32px;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+.event .date-location {
 	font-size: 18px;
+	margin-bottom: 24px;
+}
+.speakers {
+    margin-top: 4em;
+}
+.speakers .heading--2,
+.agenda .heading--2 {
+	font-size: 32px;
 }
 .cso-speakers__thumbnails-container {
-	padding-top: 45px;
+	margin-top: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -105,10 +139,12 @@ body {
 }
 .cso-speakers__title {
 	font-size: 14px;
+    line-height: 1.2;
 }
 .agenda {
-	margin-bottom: 4em;
+	margin-bottom: 3.5em;
 	color: #fff;
+	margin-top: 1em;
 }
 .agenda .q-grid__column {
 	margin: 0 auto;
@@ -152,6 +188,7 @@ body {
 .session .title {
 	font-weight: 500;
 	position: relative;
+	line-height: 1.5;
 }
 .circle {
 	background-color: #2E8BE0;
@@ -231,6 +268,7 @@ body {
 	padding-right: 30px;
 	color: #fff;
 	order: 1;
+    padding-top: 2.5em;
 }
 .venue-info .heading--2 {
 	color: #fff;
@@ -353,7 +391,8 @@ body {
 		width: 47%;
 	}
 	.about .col2 {
-	    margin-top: 1.8em;
+		margin-top: 1.8em;
+		padding-top: 0;
 	}
 	.about .q-grid__column {
 		padding-left: 60px;
