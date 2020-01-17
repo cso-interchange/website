@@ -300,6 +300,9 @@ body {
 .register-block .paragraph--1 {
 	max-width: 783px;
 }
+.q-back-to-home-btn {
+	display: none;
+}
 @media (min-width: 720px) {
 	body {
 		text-align: left;
