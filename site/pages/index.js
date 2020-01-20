@@ -50,3 +50,17 @@
 
 }(jQuery));
 */
+
+(function ($) {
+	"use strict";
+
+	$(".about-read-more").on("click", function (event) {
+		$(event.currentTarget).parents(".col1").addClass("show");
+		$(".quote-row").addClass("show");
+	});
+
+	$(".title.toggle").on("click", function(event){
+		$(event.currentTarget).parents(".session").toggleClass("opened");
+	});
+
+}(jQuery));
