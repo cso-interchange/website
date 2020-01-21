@@ -314,6 +314,9 @@ body {
 }
 .location .venue-pic {
 	order: 2;
+	background-image: url(/asset/image/four-seasons-315-2x.jpg);
+	background-position: center center;
+	min-height: 611px;
 }
 .location .venue-info {
 	padding-left: 30px;
@@ -480,6 +483,7 @@ body {
 	}
 	.location .venue-pic {
 		order: 1;
+		background-size: cover;
 	}
 	.location .venue-info {
 		order: 2;
