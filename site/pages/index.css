@@ -7,6 +7,7 @@ body {
 	font-weight: 400;
 	margin-top: 1em;
 	margin-bottom: 1.8em;
+	line-height: 1.556;
 }
 .hero .q-button.agenda-btn {
 	margin-right: 1em;
@@ -35,12 +36,38 @@ body {
 	position: absolute;
 }
 .about {
+	margin-left: 0;
+	margin-right: 0;
+}
+.about .about-section-wrapper {
 	background-color: #4B85E2;
-	max-width: 1430px;
 	padding-top: 2.1em;
 	padding-bottom: 3.2em;
-	margin-left: 15px;
-	margin-right: 15px;
+}
+.about h5.heading--5 {
+	margin-top: 0;
+}
+.about > .about-section-wrapper {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+@media (min-width: 720px) {
+	.about > .about-section-wrapper {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+@media (min-width: 1080px) {
+	.about > .about-section-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media (min-width: 720px) {
+	.about .about-section-wrapper {
+		padding-top: 107px;
+		padding-bottom: 107px;
+	}
 }
 .about .heading--2 {
 	max-width: 270px;
@@ -49,7 +76,12 @@ body {
 }
 .about .paragraph--1 {
 	font-size: 14px;
-	line-height: 1.45;
+	line-height: 1.5;
+}
+@media (min-width: 720px) {
+	.about .paragraph--1 {
+		font-size: 18px;
+	}
 }
 .about .heading--5,
 .about .heading--2,
@@ -66,8 +98,9 @@ body {
 	margin-top: 0;
 }
 .about .col2 {
-	padding-top: 12px;
+	padding-top: 30px;
 }
+
 .about .q-grid__column-push-1 {
 	margin-left: 0;
 }
@@ -83,7 +116,7 @@ body {
 .about .open-quote {
 	position: absolute;
 }
-.about .quote-author {
+.about h5.quote-author {
 	font-size: 14px;
 	font-weight: 400;
 	margin-top: 13px;
@@ -330,7 +363,7 @@ body {
 	font-size: 32px;
 }
 .four-seasons-logo {
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -358,14 +391,21 @@ body {
 .q-back-to-home-btn {
 	display: none;
 }
+@media (min-width: 680px) {
+	.hero .heading--1 {
+		margin-top: 80px;
+	}
+}
 @media (min-width: 720px) {
 	body {
 		text-align: left;
 	}
-	.heading--1 {
-		font-size: 34px;
+	.hero .heading--1 {
+		font-size: 60px;
 		margin-top: 158px;
 		margin-left: 0;
+		max-width: 10em;
+		line-height: 1.2;
 	}
 	.hero {
 		background-image: url(/asset/image/circle-spin-2-1293-2x.jpg);
@@ -427,6 +467,7 @@ body {
 	.about .heading--2 {
 		max-width: none;
 		margin-left: 0;
+		font-size: 40px;
 	}
 	.four-seasons-logo {
 		margin-left: 0;
@@ -452,10 +493,6 @@ body {
 		margin-top: 1.8em;
 		padding-top: 0;
 	}
-	.about .q-grid__column {
-		padding-left: 60px;
-		padding-right: 60px;
-	}
 	.about .quote-wrapper {
 		border-left: 10px solid #000;
 		padding-left: 3em;
@@ -471,7 +508,7 @@ body {
 	.about .open-quote-mobile {
 		display: none;
 	}
-	.about .quote-author {
+	.about h5.quote-author {
 		font-size: 18px;
 	}
 	.about .horz-divider {
@@ -535,5 +572,39 @@ body {
 	}
 	.quote-row {
 		display: inherit;
+	}
+}
+.dinner {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+@media (min-width: 900px) {
+	.dinner {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+}
+.dinner-details h2.heading--2 {
+	color: #FFF;
+	margin-top: 0;
+}
+.dinner-details a {
+	color: #2E8BE0;
+	text-decoration: none;
+}
+.dinner-pic img {
+	margin-left: auto;
+	margin-right: auto;
+}
+.dinner-pic {
+	margin-top: 20px;
+}
+@media (min-width: 720px) {
+	.dinner-details {
+		padding-right: 25px;
+	}
+	.dinner-pic {
+		margin-left: -15px;
+		margin-top: 50px;
 	}
 }
