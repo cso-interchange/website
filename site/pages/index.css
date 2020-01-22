@@ -271,6 +271,7 @@ body {
 	font-weight: 500;
 	position: relative;
 	line-height: 1.5;
+	margin-bottom: 0;
 }
 .circle {
 	background-color: #2E8BE0;
@@ -293,10 +294,10 @@ body {
 .session .bio-link {
 	font-size: 15px;
 }
-.bio-link a {
+.speaker a {
 	text-decoration: none;
 }
-.bio-link a:hover {
+.speaker a:hover {
 	text-decoration: underline;
 }
 .opened {
