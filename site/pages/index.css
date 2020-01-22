@@ -295,9 +295,6 @@ body {
 	font-size: 15px;
 }
 .speaker a {
-	text-decoration: none;
-}
-.speaker a:hover {
 	text-decoration: underline;
 }
 .opened {
