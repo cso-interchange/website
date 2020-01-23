@@ -20,7 +20,7 @@ if (window.MktoForms2) {
 	});
 
 	// events mobile menu
-	$(".cso-header__cta-link").on("click", function(event){
+	$(".cso-header__cta-events .cso-header__cta-link").on("click", function(event){
 		event.preventDefault();
 		$(".cso-events__menu").toggleClass("cso-menu-show");
 		$(this).toggleClass("cso-menu-open");

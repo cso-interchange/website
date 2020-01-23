@@ -1,3 +1,6 @@
+body {
+	background-color: #12151e;
+}
 .cso__hero-banner-wraper--inner {
 	display: none;
 }
@@ -28,11 +31,10 @@
 }
 .cso-registeration__heading {
 	font-size: 18px;
-	color: #ED2E26;
+	color: #FFF;
 	letter-spacing: -0.1px;
-	line-height: 27px;
+	line-height: 1.5;
 	margin: 0;
-	padding-top: 30px;
 }
 .cso-overview__sub-heading {
 	margin: 30px 0 0;
@@ -58,11 +60,11 @@
 }
 .cso-overview__text {
 	font-size: 18px;
-	color: #6A778B;
-	letter-spacing: -0.1px;
-	line-height: 27px;
-	max-width: 850px;
-	margin: 40px 0 0;
+	color: #FFF;
+	letter-spacing: -.1px;
+	line-height: 1.5;
+	max-width: 53.167em;
+	margin: 25px 0 0;
 }
 .cso-seperator-hr {
 	display: none;
@@ -81,4 +83,158 @@
 	.cso-registeration-container .q-grid__row {
 		flex-flow: column;
 	}
+}
+
+
+.q-back-to-home-btn {
+	display: block;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 26px;
+	letter-spacing: -0.2px;
+	text-decoration: none;
+}
+.q-back-to-home-btn span {
+	margin-right: 10px;
+}
+.cso-header-wrapper {
+	position: unset;
+}
+@media (min-width: 720px) {
+	.cso-overview__container {
+		padding-top: 93px;
+	}
+}
+.cso-overview__heading {
+	font-size: 2.5em;
+	color: #FFF;
+}
+@media (min-width: 720px) {
+	.cso-overview__heading {
+		font-size: 60px;
+		line-height: 1.2;
+	}
+}
+.cso-overview__subheading {
+	color: #FFF;
+	font-size: 1.75em;
+	margin: 0;
+	padding: 60px 0 0;
+}
+@media (min-width: 720px) {
+	.cso-overview__subheading {
+		font-size: 40px;
+		padding: 20px 0 0;
+	}
+}
+.cso-overview__subheading-date {
+	font-size: 1.45em;
+	line-height: 1.313;
+	font-weight: 400;
+	line-height: 1.45;
+	color: #FFF;
+	margin: 0;
+}
+.cso-overview__subheading-date a {
+	color: #FFF;
+	font-weight: 400;
+	text-decoration: underline;
+}
+@media (min-width: 720px) {
+	.cso-overview__subheading-date {
+		font-size: 32px;
+	}
+}
+.q-registration-section {
+	margin-top: 63px;
+}
+.cso-registration__form form.mktoForm {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+@media (min-width: 920px) {
+	.cso-registration__form form.mktoForm {
+		flex-direction: row;
+	}
+}
+.cso-registration__form {
+	max-width: 360px;
+	padding-top: 0;
+	margin-top: 27px;
+}
+@media (min-width: 920px) {
+	.cso-registration__form {
+		max-width: unset;
+		margin-left: -15px;
+	}
+	
+}
+.cso-registration__form .mktoFormRow.Marketing_Asset_Id_Current__c,
+.cso-registration__form .mktoFormRow.Campaign_Id_Current__c {
+	display: none;
+}
+.cso-registration__form .mktoFormRow {
+	padding: 0 0 10px;
+}
+@media (min-width: 920px) {
+	.cso-registration__form .mktoFormRow {
+		width: 33.33%;
+		padding: 0 15px 15px 15px;
+	}
+}
+.cso-registration__form .mktoButton {
+	margin-top: 0;
+}
+@media (min-width: 920px) {
+	.cso-registration__form .mktoButtonRow .mktoButtonWrap .mktoButton {
+		margin: 0 0 0 15px;
+		max-width: calc(33.33% - 30px);
+	}
+}
+.cso-registration__form .mktoForm input {
+	color: #6A778B;
+	background: #FFF;
+}
+.cso-registeration-container.confirmation {
+	margin-top: 77px;
+}
+.cso-registeration-container.confirmation .cso-registeration__heading {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+.cso-registeration-container.confirmation .addeventatc {
+	background: unset;
+	background-color: #ed2e26;
+	font-family: Gotham,sans-serif;
+	border: 0;
+	border-radius: 3px;
+	width: 197px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: background-color .2s;
+	height: 50px;
+}
+/* .cso-registeration-container.confirmation .addeventatc:hover,
+.cso-registeration-container.confirmation .addeventatc:focus {
+	background-color: #c20219;
+} */
+.cso-registeration-container.confirmation .addeventatc .button-text {
+	color: #FFF !important;
+	font-weight: 500;
+	line-height: 22px;
+	font-size: 15px;
+}
+.cso-registeration-container.confirmation .addeventatc .addeventatc_icon.atc_node {
+	display: none;
+}
+.addeventatc_dropdown {
+	margin-top: 5px !important;
+	border-radius: 3px !important;
+}
+.cso-registeration-container.confirmation .cso-registeration__heading font {
+	margin-left: 20px;
 }

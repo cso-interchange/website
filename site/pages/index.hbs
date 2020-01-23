@@ -12,15 +12,17 @@ twitter:card: summary
 {{#extends "default"}}
 
 {{#append "styles"}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="index.css">
 {{/append}}
 
 {{#append "scripts"}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 {{/append}}
 
 {{#block "cta-register"}}
-{{!-- {{>
+{{>
 	cta-register-btn
 	url="/register"
 }}
@@ -29,31 +31,141 @@ twitter:card: summary
 {{>
 	cta-register-btn
 	url="/register"
-}} --}}
+}}
 {{/block}}
 {{#block "content"}}
-	<div class="cso__hero-banner-wraper cso__hero-banner-wraper--home">
-		<div class="cso__hero-banner-container">
-			<div class="cso__hero-banner-inner">
-				<div class="cso-hero__box-wrapper">
-					<div class="cso-hero__box-inner">
-						<h2 class="heading--2">
-							Building security into the digital transformation – not bolting <span class="nowrap">it on.</span>
-						</h2>
-						<div class="cso-hero__box-content">
-							<div class="cso-hero-more__trigger">
-								<a href="javascript:void(0)" class="cso-hero-more__action">
-									<img src="/asset/image/plus-white.svg" class="icon-plus">
-									<img src="/asset/image/minus-white.svg" class="icon-minus">
-								</a>
+	<div class="q-grid__container hero">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h1 class="heading--1">Exchange ideas.
+						Secure the digital transformation.</h1>
+					<h5 class="date-location heading--5">San Francisco <br>
+Monday, February 24 at the Four Seasons Hotel <br>3:30 – 8:00 PM</h5>
+					<div class="button-wrapper">
+						<a href="#agenda" class="q-button q-button--outline agenda-btn">Agenda</a>
+						<a href="/register" class="q-button register">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about q-grid__container">
+		<div class="about-section-wrapper">
+			<div class="q-grid__inner">
+				<div class="q-grid__row">
+					<div class="q-grid__column q-grid__column-10">
+						<h5 class="heading--5">About</h5>
+						<h2 class="heading--2">CIO/CISO Interchange</h2>
+					</div>
+				</div>
+				<div class="q-grid__row">
+					<div class="q-grid__column q-grid__column-10">
+						<div class="container">
+							<div class="col1">
+								<p class="paragraph--1">As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud.</p>
+								<a href="javascript:" class="about-read-more">Read more</a>
+								<p class="paragraph--1">Co-founded by Philippe Courtot, Chairman & CEO, Qualys, Inc. and the Cloud Security Alliance (CSA), the CIO/CISO Interchange is a non-profit, non-commercial organization.</p>
+								<p class="paragraph--1">It’s an open forum for discussions, debates and exchanges between CIOs, CTOs and CISOs. CSA’s community of cloud and security executives will provide the CIO/CISO Interchange with vendor-neutral content for securing the next generation of information technology.</p>
 							</div>
-							<div class="cso-hero__box-content-text">
-								<p>
-									As companies embrace technologies such as the Internet of Things, big data, cloud, and mobility, security must be more than an afterthought. <span class="cso-hero-more">But in the digital era, the focus needs to shift from securing network perimeters to safeguarding data spread across systems, devices, and the cloud.</span>
+							<div class="col2">
+								<img src="/asset/image/speaking-on-stage-244-2x.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="q-grid__row quote-row">
+					<div class="q-grid__column q-grid__column-10 q-grid__column-push-1">
+						<hr class="horz-divider">
+						<div class="quote-wrapper">
+							<blockquote class="quote">
+								<span class="open-quote">“</span><span class="open-quote-mobile">“</span> This private event has no product pitches and no sales personnel, just candid talk on the important topics and issues facing you and your peers to secure the digital transformation.’’
+								<h5 class="quote-author heading--5">— Philippe Courtot, Founder of CIO/CISO Interchange </h5>
+							</blockquote>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="q-grid__container event">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h5 class="heading--5">Event details</h5>
+					<h2 class="heading--2">CIO/CISO Interchange 2020</h2>
+					<h3 class="heading--3 city">San Francisco</h3>
+					<h3 class="heading--3 date-location">Monday, February 24 at the Four Seasons Hotel | <span class="nowrap">3:30 – 8:00 PM</span></h3>
+					<a href="/register" class="q-button register">Register</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="q-grid__container speakers">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h2 class="heading--2">Speakers</h2>
+					<div class="cso-speakers__thumbnails-container">
+						<div class="cso-speakers__thumbnails-box">
+							<div class="speaker-headshot">
+								<img src="/asset/image/headshot-philippe-courtot-330-2x.jpg">
+							</div>
+							<h4 class="cso-speakers__name">
+								Philippe Courtot
+							</h4>
+							<div class="cso-speakers__title">Chairman &amp; CEO, Qualys</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									Demonstrating a unique mix of technical vision, marketing and business acumen, Philippe Courtot has repeatedly built innovative companies into industry leaders. As CEO of Qualys, Philippe has worked with thousands of companies to improve their IT security and compliance postures. Philippe received the SC Magazine Editor’s Award in 2004 for bringing on demand technology to the network security industry and for co-founding the CSO Interchange to provide a forum for sharing information in the security industry. He was also named the 2011 CEO of the Year by SC Magazine Awards Europe.
 								</p>
-								<p class="cso-hero-more">
-									Co-founded by Philippe Courtot, Chairman &amp; CEO, Qualys, Inc. and the Cloud Security Alliance (CSA), the CIO/CISO Interchange is a non-profit, non-commercial organization.
+								<p class="expand-container0"></p>
+							</div>
+						</div>
+						<div class="cso-speakers__thumbnails-box">
+							<div class="speaker-headshot">
+								<img src="/asset/image/headshot-jimreavis-330-2x.jpg">
+							</div>
+							<h4 class="cso-speakers__name">
+								Jim Reavis
+							</h4>
+							<div class="cso-speakers__title">Co-founder and Chief Executive Officer, Cloud Security Alliance</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									For many years, Jim Reavis has worked in the information security industry as an entrepreneur, writer, speaker, technologist and business strategist. Jim’s innovative thinking about emerging security trends have been published and presented widely throughout the industry and have influenced many. Jim is helping shape the future of information security and related technology industries as co-founder, CEO and driving force of the Cloud Security Alliance. Jim has been named as one of the Top 10 cloud computing leaders by SearchCloudComputing.com.  Jim received a B.A. in Business Administration / Computer Science from Western Washington University in 1987 and formerly served on WWU’s alumni board. Jim was recognized as a WWU Distinguished Alumnus in 2015. In 2016, Jim was inducted into the Information Systems Security Association (ISSA) Hall of Fame.
 								</p>
+								<p class="expand-container0"></p>
+							</div>
+						</div>
+						<div class="cso-speakers__thumbnails-box">
+							<div class="speaker-headshot">
+								<img src="/asset/image/headshot-gary-gruver-330-2x.jpg">
+							</div>
+							<h4 class="cso-speakers__name">
+								Gary Gruver
+							</h4>
+							<div class="cso-speakers__title">Analyst at Accelerated Strategies Group and President of Gruver Consulting</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									Acclaimed author and in-demand speaker and executive, Gary Gruver brings a proven track record of transforming software development and delivery processes in large organizations. Gary's demonstrable experience includes leading transformations at HP, resulting in 2-3X productivity improvements on a product team of 800, and implementing continuous delivery at scale for Macy's digital retail dot com business. Today, Gary works with organizations leading digital transformation to help them achieve impactful results in their businesses through consulting, speaking, webinars, presentations, and books. Gary is the author of Enterprise Digital Transformation and Starting and Scaling DevOps in the Enterprise, and co-author of Leading the Transformation: Applying Agile and DevOps Principles at Scale and A Practical Approach to Large-Scale Agile Development: How HP Transformed LaserJet FutureSmartFirmware.
+								</p>
+								<p class="expand-container0"></p>
+							</div>
+						</div>
+						<div class="cso-speakers__thumbnails-box">
+							<div class="speaker-headshot">
+								<img src="/asset/image/headshot-sumedh-thakar-330-2x.jpg">
+							</div>
+							<h4 class="cso-speakers__name">
+								Sumedh Thakar
+							</h4>
+							<div class="cso-speakers__title">Chief Product Officer, Qualys</div>
+							<div class="cso-speakers__description bio-wrapper expandable">
+								<p class="q-company-profile__bio">
+									As Chief Product Officer at Qualys, Sumedh oversees worldwide engineering, development and product management for the Qualys Cloud Platform and integrated suite of security and compliance applications. A core systems and database engineer, Sumedh started at Qualys in 2003, architecting and delivering Qualys' PCI compliance platform to meet the Payment Card Industry (PCI) Data Security Standard (DSS) requirements.
+								</p>
+								<p class="expand-container0"></p>
 							</div>
 						</div>
 					</div>
@@ -61,72 +173,269 @@ twitter:card: summary
 			</div>
 		</div>
 	</div>
-
-	<div class="cso-section-wrapper">
-		<div class="q-grid__container cso-overview__container">
-			<div class="q-grid__inner">
-				<div class="q-grid__row">
-					<div class="q-grid__column q-grid__column-10">
-						<h2 class="cso-overview__heading">About</h2>
-						<p class="cso-overview__paragraph">
-							The CIO/CISO Interchange is an open forum for discussions, debates and exchanges between CIOs, CTOs and CISOs. CSA’s community of cloud and security executives will provide the CIO/CISO Interchange with vendor-neutral content for securing the next generation of information technology.
-						</p>
-					</div>
+	<div class="q-grid__container agenda" id="agenda">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-6">
+					<h2 class="heading--2">Agenda</h2>
+					<table class="sessions">
+						<tr>
+							<td class="desktop"><p class="time">3:30 - 4:00 PM</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle empty"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">3:30 - 4:00 PM</p>
+								<div class="description-wrapper">
+									<p class="title">Registration & Networking</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">4:00 - 4:10 PM	</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">4:00 - 4:10 PM	</p>
+								<div class="description-wrapper">
+									<p class="title {{!-- toggle --}}">
+									<span class="touch-target"></span>
+									Welcome</p>
+									<p class="speaker"><a href="#philippe-courtot" data-fancybox>Philippe Courtot</a>, Chairman and CEO, Qualys</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt dolor vitae vehicula placerat. Nunc et fringilla ante, auctor posuere ex. Maecenas hendrerit nisi tellus, sit amet consequat magna gravida at</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">4:10 - 4:50 PM	</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">4:10 - 4:50 PM</p>
+								<div class="description-wrapper">
+									<p class="title toggle">
+									<span class="touch-target"></span>
+									Keynote and Q&A: Engineering the Digital Transformation with DevOps</p>
+									<p class="speaker"><a href="#gary-gruver" data-fancybox>Gary Gruver</a>, Analyst at Accelerated Strategies Group and President of Gruver Consulting</p>
+									<p class="description">Businesses implement the latest Agile and DevOps practices, hoping that simply doing so will power digital transformation strategies. Companies need to understand their unique challenges rather than merely copying others. Engineering the Digital Transformation requires systematic approaches to improving how organizations create software for a broad range of applications. In this talk, business and technology leaders will hear about the essential principles for engineering sustainable improvements, how to leverage proven methods from the manufacturing domain, and the importance of applying them to address the unique characteristics and capabilities of software strategies in each organization.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">4:50 – 5:05 PM	</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">4:50 – 5:05 PM	</p>
+								<div class="description-wrapper">
+									<p class="title {{!-- toggle --}}">
+									<span class="touch-target"></span>
+									Roundtable Discussions: Hosted by CISO/CIOs Leading the Digital Transformation Charge </p>
+									<p class="speaker"><a href="#sumedh-thakar" data-fancybox>Sumedh Thakar</a>, President and Chief Product Officer, Qualys</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt dolor vitae vehicula placerat. Nunc et fringilla ante, auctor posuere ex. Maecenas hendrerit nisi tellus, sit amet consequat magna gravida at</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">5:05 – 5:40 PM</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle empty"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">5:05 – 5:40 PM</p>
+								<div class="description-wrapper">
+									<p class="title">Roundtable Discussions Session 1 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">5:40 – 6:10 PM</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle empty"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">5:40 – 6:10 PM</p>
+								<div class="description-wrapper">
+									<p class="title">Roundtable Discussions Session 2 </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">6:10 – 6:20 PM</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle empty"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">6:10 – 6:20 PM</p>
+								<div class="description-wrapper">
+									<p class="title">Roundtable Report Outs </p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">6:20 - 6:30 PM	</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">6:20 - 6:30 PM	</p>
+								<div class="description-wrapper">
+									<p class="title {{!-- toggle --}}">
+									<span class="touch-target"></span>
+									Closing Remarks</p>
+									<p class="speaker"><a href="#jim-reavis" data-fancybox>Jim Reavis</a>, Founder and Chief Executive Officer, CSA</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt dolor vitae vehicula placerat. Nunc et fringilla ante, auctor posuere ex. Maecenas hendrerit nisi tellus, sit amet consequat magna gravida at</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="desktop"><p class="time">6:30 – 8:00 PM</p></td>
+							<td class="divider">
+								<div class="circle-wrapper">
+									<div class="circle empty"></div>
+								</div>
+							</td>
+							<td class="session">
+								<p class="time mobile">6:30 – 8:00 PM</p>
+								<div class="description-wrapper">
+									<p class="title">Cocktail Reception, Networking and Book Signing </p>
+								</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
-
-		<div class="q-grid__container cso-events__container js-register-section" id="upcoming-events">
-			<div class="q-grid__inner">
-				<div class="q-grid__row">
-					<div class="q-grid__column q-grid__column-10">
-						<h2 class="cso-events__heading">Recent events</h2>
-						<p class="cso-overview__paragraph">
-
+	</div>
+	<div class="q-grid__container dinner">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-5">
+					<div class="dinner-details">
+						<h2 class="heading--2">Join us Tuesday evening  for a Private Dinner</h2>
+						<p class="paragraph--1">
+							Four Seasons Hotel, Veranda Ballroom <span class="nowrap">5<sup>th</sup> Floor</span><br>
+							Tuesday, February <span class="nowrap">25</span><br>
+							Cocktails and networking – <span class="nowrap">6:00 PM</span><br>
+							Dinner followed by book signing – <span class="nowrap">7:00 PM</span>
+						</p>
+						<p class="paragraph--1">
+							Please join us to hear Sanjeev Sharma, Accelerated Strategies Group Principal Analyst and author of The DevOps Adoption Playbook. Sharma will discuss "How DevOps, the Engine Behind Digital Transformation, is Changing Security."
+						</p>
+						<p class="paragraph--1">
+							<a href="https://www.qualys.com/2020/c-level-private-dinner/">Must register separately for the dinner</a>
 						</p>
 					</div>
 				</div>
-				<div class="q-grid__row">
-					<div class="q-grid__column q-grid__column-10">
-						<div class="cso-events__table">
-							<div class="cso-events__table-row">
-								<div class="cso-events__title">
-									<a href="/agenda/san-francisco/">CIO/CISO Interchange <span class="nowrap">San Francisco</span></a>
-								</div>
-								<div class="cso-events__date">
-									Monday, March 4
-								</div>
-								<div class="cso-events__location">
-									Four Seasons Hotel
-								</div>
-								<div class="cso-events__cta">
-									<a href="/agenda/san-francisco/" class="q-button">Agenda</a>
-								</div>
-							</div>
-						</div>
-
+				<div class="q-grid__column q-grid__column-5">
+					<div class="dinner-pic">
+						<img src="/asset/image/pricate-dinner-banner.png" width="550" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="cso-footer-quote">
-		<div class="cso-footer-quote__container">
-			<div class="cso-footer-quote__content">
-				<div class="cso-footer-quote__blockquote">
-					<span>
-						<p>
-							This private event has no product pitches and no sales personnel, just candid talk on the important topics and issues facing you and your peers to secure the digital transformation.
-						</p>
-					</span>
+	<div class="q-grid__container location">
+		<div class="venue-pic"></div>
+		<div class="venue-info">
+			<h2 class="heading--2">Location</h2>
+			<p class="paragraph--1">CIO/CISO Interchange will be held at the Four Seasons Hotel, Veranda Ballroom 5th Floor</p>
+			<img src="/asset/image/logo-four-seasons.svg" width="157" class="four-seasons-logo">
+			<p class="paragraph--1 address"><strong>Four Seasons Hotel</strong><br>757 Market Street<br>San Francisco, CA 94103<br>Tel: +1-800-819-5053<br><a href="https://www.fourseasons.com/sanfrancisco/">fourseasons.com/sanfrancisco/</a><br>
+				<a href="https://www.google.com/maps/dir//Four+Seasons+Hotel+San+Francisco,+757+Market+St,+San+Francisco,+CA+94103/@37.7863499,-122.4064572,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8085808883879e69:0x31f749319c073bc5!2m2!1d-122.4042632!2d37.7863499!3e0" class="directions">Directions</a></p>
+		</div>
+	</div>
+	<div class="q-grid__container register-block">
+		<div class="q-grid__inner">
+			<div class="q-grid__row">
+				<div class="q-grid__column q-grid__column-10">
+					<h2 class="heading--2">Register</h2>
+					<p class="paragraph--1">CIO/CISO Interchange is an invitation only, exclusive event. We qualify all attendees to ensure the best possible event. In fact, we limit the attendee list to no more than 30 high profile executives. There is no cost to attend this event.</p>
+					<a href="/register" class="q-button register">Register</a>
 				</div>
-				<p class="cso-footer-quote__footer">
-					Philippe Courtot, Founder of CIO/CISO Interchange
-				</p>
 			</div>
 		</div>
 	</div>
+
+<div id="sumedh-thakar" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Sumedh Thakar" class="headshot" height="65" src="/asset/image/sumedh-thakar-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Sumedh Thakar</h2>
+			<h3 class="job-title">President and Chief Product Officer, Qualys</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>As President and Chief Product Officer at Qualys, Sumedh oversees worldwide field operations as well as all things product including engineering, development, product management, cloud operations, DevOps, and customer support. He is responsible for the design, development, delivery and support of all product lines. He has also built up multiple Qualys sites resulting in a global 24x7 follow-the-sun product team. Sumedh has been with Qualys since 2003 and was most recently vice president of engineering. He has a bachelor’s degree in computer engineering with distinction from the University of Pune.</p>
+	</div>
+</div>
+
+<div id="philippe-courtot" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Philippe Courtot" class="headshot" height="65" src="/asset/image/philippe-courtot-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Philippe Courtot</h2>
+			<h3 class="job-title">Chairman and CEO, Qualys</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>As CEO of Qualys, Philippe has worked with thousands of companies to improve their IT security and compliance postures. Philippe received the SC Magazine Editor's Award in 2004 for bringing on demand technology to the network security industry. He was also named the 2011 CEO of the Year by SC Magazine Awards Europe. He was previously Chairman and CEO of Signio until its acquisition by VeriSign. He is also a member of the Board of Directors of StopBadware, a non-profit, anti-malware organization.</p>
+	</div>
+</div>
+
+<div id="jim-reavis" class="speaker-bio">
+	<div class="title-wrapper">
+		<img alt="Jim Reavis" class="headshot" height="65" src="/asset/image/jim-reavis-65-2x.jpg" width="65">
+
+		<div>
+			<h2 class="title">Jim Reavis</h2>
+			<h3 class="job-title">Co-founder and Chief Executive Officer, Cloud Security Alliance</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>For many years, Jim Reavis has worked in the information security industry as an entrepreneur, writer, speaker, technologist and business strategist. Jim’s innovative thinking about emerging security trends have been published and presented widely throughout the industry and have influenced many. Jim is helping shape the future of information security and related technology industries as co-founder, CEO and driving force of the Cloud Security Alliance. Jim has been named as one of the Top 10 cloud computing leaders by SearchCloudComputing.com.  Jim received a B.A. in Business Administration / Computer Science from Western Washington University in 1987 and formerly served on WWU’s alumni board. Jim was recognized as a WWU Distinguished Alumnus in 2015. In 2016, Jim was inducted into the Information Systems Security Association (ISSA) Hall of Fame.</p>
+	</div>
+</div>
+
+<div id="gary-gruver" class="speaker-bio">
+	<div class="title-wrapper">
+		{{!-- <img alt="Gary Gruver" class="headshot" height="65" src="/asset/image/jim-reavis-65-2x.jpg" width="65"> --}}
+
+		<div>
+			<h2 class="title">Gary Gruver</h2>
+			<h3 class="job-title">Analyst at Accelerated Strategies Group and President of Gruver Consulting</h3>
+		</div>
+	</div>
+
+	<div class="bio">
+		<p>Acclaimed author and in-demand speaker and executive, Gary Gruver brings a proven track record of transforming software development and delivery processes in large organizations. Gary's demonstrable experience includes leading transformations at HP, resulting in 2-3X productivity improvements on a product team of 800, and implementing continuous delivery at scale for Macy's digital retail dot com business. Today, Gary works with organizations leading digital transformation to help them achieve impactful results in their businesses through consulting, speaking, webinars, presentations, and books. Gary is the author of Enterprise Digital Transformation and Starting and Scaling DevOps in the Enterprise, and co-author of Leading the Transformation: Applying Agile and DevOps Principles at Scale and A Practical Approach to Large-Scale Agile Development: How HP Transformed LaserJet FutureSmartFirmware.</p>
+	</div>
+</div>
+
 {{/block}}
 
 {{/extends}}
