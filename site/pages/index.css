@@ -432,6 +432,12 @@ body {
 	line-height: 1.625;
 	color: #6A778B;
 }
+.touch-target {
+	position: absolute;
+	width: 30px;
+	left: -33px;
+	height: 30px;
+}
 @media (min-width: 680px) {
 	.hero .heading--1 {
 		margin-top: 80px;
@@ -500,6 +506,11 @@ body {
 	}
 	.session .title.toggle:after {
 		right: -40px;
+		left: auto;
+	}
+	.touch-target {
+		width: 30px;
+		right: -47px;
 		left: auto;
 	}
 	.register-block {
