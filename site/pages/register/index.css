@@ -216,7 +216,8 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: background-color .2s;
-	height: 50px;
+	color: #fff !important;
+	padding: 18px 12px;
 }
 /* .cso-registeration-container.confirmation .addeventatc:hover,
 .cso-registeration-container.confirmation .addeventatc:focus {
