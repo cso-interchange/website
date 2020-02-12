@@ -141,12 +141,14 @@ body {
 	margin-bottom: 0;
 }
 .event .heading--2 {
-	font-size: 32px;
-	margin-top: 0;
-	line-height: 1.2;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	color: #FFF;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: .3em;
+    margin-top: .3em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .event .city {
 	font-size: 32px;
@@ -438,6 +440,10 @@ body {
 	left: -33px;
 	height: 30px;
 }
+.after-agenda {
+	text-align: center;
+	margin-top: 4em;
+}
 @media (min-width: 680px) {
 	.hero .heading--1 {
 		margin-top: 80px;
@@ -452,10 +458,10 @@ body {
 		padding: 44px;
 	}
 	.hero .heading--1 {
-		font-size: 60px;
+		font-size: 53px;
 		margin-top: 158px;
 		margin-left: 0;
-		max-width: 10em;
+		max-width: 600px;
 		line-height: 1.2;
 	}
 	.hero {
@@ -466,7 +472,7 @@ body {
 		justify-content: flex-start;
 	}
 	.event .heading--3 {
-		font-size: 32px;
+		font-size: 18px;
 	}
 	.cso-speakers__name {
 		font-size: 24px;
