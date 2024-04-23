@@ -47,4 +47,13 @@ if (window.MktoForms2) {
 		window.scrollTo(0,document.body.scrollHeight);
 	}
 
+	// Wait for the document to be ready
+	$(document).ready(function(){
+		// Get the current year
+		var currentYear = new Date().getFullYear();
+
+		// Insert the current year into the div with ID "copyright_year"
+		$("#copyright_year").text(currentYear);
+	});
+
 }(jQuery));
